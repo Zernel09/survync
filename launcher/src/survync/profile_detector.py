@@ -51,28 +51,56 @@ def find_profile(
 ) -> Path | None:
     """Locate a specific Modrinth profile by name.
 
-    Args:
-        profile_name: The profile folder name to look for.
-        profiles_dir: Override for the profiles root directory.
+    Tries the following in order:
+        1. Exact folder name match.
+        2. Case-insensitive exact match.
+        3. Any folder whose name starts with profile_name (e.g. 'survival 1.0.0').
+        4. Hard-coded fallbacks: 'NeoForge 1.21.1'.
 
     Returns:
-        Path to the profile directory, or None if not found.
+        Path to the profile directory, or None if nothing matched
+        (callers should then prompt the user to choose manually).
     """
     if profiles_dir is None:
         profiles_dir = get_modrinth_profiles_dir()
     if profiles_dir is None:
         return None
 
+    # exact match
     profile_path = profiles_dir / profile_name
     if profile_path.is_dir():
         logger.info("Found profile '%s' at %s", profile_name, profile_path)
         return profile_path
 
-    # Try case-insensitive search
+    lower_name = profile_name.lower()
+    prefix_match: Path | None = None
     for child in profiles_dir.iterdir():
-        if child.is_dir() and child.name.lower() == profile_name.lower():
+        if not child.is_dir():
+            continue
+        child_lower = child.name.lower()
+        # case-insensitive exact
+        if child_lower == lower_name:
             logger.info("Found profile '%s' (case-insensitive) at %s", profile_name, child)
             return child
+        # prefix match (e.g. "survival 1.0.0")
+        if prefix_match is None and child_lower.startswith(lower_name):
+            prefix_match = child
+
+    if prefix_match is not None:
+        logger.info("Found profile via prefix match at %s", prefix_match)
+        return prefix_match
+
+    # hard-coded loader-name fallbacks
+    for fallback in ["NeoForge 1.21.1"]:
+        fb_lower = fallback.lower()
+        fb_exact = profiles_dir / fallback
+        if fb_exact.is_dir():
+            logger.info("Found fallback profile '%s' at %s", fallback, fb_exact)
+            return fb_exact
+        for child in profiles_dir.iterdir():
+            if child.is_dir() and child.name.lower() == fb_lower:
+                logger.info("Found fallback profile '%s' at %s", fallback, child)
+                return child
 
     logger.warning("Profile '%s' not found in %s", profile_name, profiles_dir)
     return None

@@ -11,8 +11,6 @@ class SourceType(enum.Enum):
 
     DIRECT = "direct"
     MODRINTH = "modrinth"
-    CURSEFORGE = "curseforge"
-    LOCAL = "local"
 
 
 class SyncAction(enum.Enum):
@@ -32,7 +30,6 @@ class LauncherState(enum.Enum):
     READY = "Ready"
     CHECKING = "Checking for updates..."
     UPDATING = "Updating"
-    LAUNCHING = "Launching..."
     REPAIRING = "Repairing..."
     ERROR = "Error"
 
@@ -179,6 +176,9 @@ class SyncResult:
             lines.append(f"  Skipped: {len(self.skipped)} files")
         if self.failed:
             lines.append(f"  Failed: {len(self.failed)} files")
+        if self.total_downloaded_bytes:
+            mb = self.total_downloaded_bytes / (1024 * 1024)
+            lines.append(f"  Downloaded: {mb:.1f} MB")
         if not lines:
             return "  No changes needed."
         return "\n".join(lines)

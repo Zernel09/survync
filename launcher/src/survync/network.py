@@ -18,6 +18,14 @@ DEFAULT_TIMEOUT = 30  # seconds
 MAX_RETRIES = 3
 RETRY_DELAY = 2  # seconds
 
+# extensiones de texto que GitHub Pages puede alterar los line endings
+# para estas no validamos tamaño — solo el hash sha256 es confiable
+_TEXT_EXTENSIONS = {
+    ".toml", ".properties", ".json", ".json5",
+    ".yml", ".yaml", ".cfg", ".txt", ".css",
+    ".ini", ".conf", ".xml", ".md", ".bak",
+}
+
 
 class NetworkError(Exception):
     """Raised when a network operation fails after retries."""
@@ -77,18 +85,23 @@ def download_file(
 
     Uses atomic replace: downloads to dest.tmp then renames.
 
+    For text-based file types (toml, properties, json, etc.) the size check is
+    skipped because GitHub Pages may normalise line endings (CRLF -> LF), which
+    changes the byte count but leaves the content semantically identical.
+    Integrity is still guaranteed by the SHA-256 hash check.
+
     Args:
         url: Download URL.
         dest: Final destination path.
         expected_hash: Expected SHA-256 hex digest for verification.
-        expected_size: Expected file size in bytes.
+        expected_size: Expected file size in bytes (skipped for text files).
 
     Returns:
         The final destination path.
 
     Raises:
         NetworkError: If download fails.
-        ValueError: If hash or size verification fails.
+        ValueError: If hash verification fails.
     """
     import hashlib
 
@@ -98,7 +111,10 @@ def download_file(
     logger.info("Downloading %s -> %s", url, dest)
     data = _request(url)
 
-    if expected_size is not None and len(data) != expected_size:
+    # solo validamos tamaño para archivos binarios — los de texto pueden tener
+    # line endings distintos entre el servidor y el disco local
+    is_text = dest.suffix.lower() in _TEXT_EXTENSIONS
+    if expected_size is not None and not is_text and len(data) != expected_size:
         raise ValueError(
             f"Size mismatch for {url}: expected {expected_size}, got {len(data)}"
         )
@@ -115,7 +131,7 @@ def download_file(
             f.write(data)
         tmp_path.replace(dest)
     except OSError:
-        # On Windows, replace can fail if dest is locked; try remove+rename
+        # en Windows, replace puede fallar si dest está bloqueado
         if dest.exists():
             dest.unlink()
         tmp_path.rename(dest)

@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from PySide6.QtCore import Qt, QThreadPool
+from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import (
     QFileDialog,
     QFrame,
@@ -22,8 +23,7 @@ from PySide6.QtWidgets import (
 )
 
 from survync import __version__
-from survync.config import LauncherConfig
-from survync.launcher import launch_profile
+from survync.config import LauncherConfig, get_app_data_dir
 from survync.models import LauncherState, RemoteVersion, SyncResult
 from survync.profile_detector import find_profile, validate_profile
 from survync.ui.settings_dialog import SettingsDialog
@@ -32,9 +32,32 @@ from survync.ui.workers import CheckUpdateWorker, RepairWorker, SyncWorker
 
 logger = logging.getLogger(__name__)
 
+# colores para el log en html
+_LOG_COLORS = {
+    "error":   "#e05c5c",
+    "warn":    "#e0a84a",
+    "success": "#5cba7d",
+    "info":    "#cfd3cf",
+}
+
+
+def _icon_path() -> Path:
+    """Ruta al icono empaquetado junto al ejecutable o en assets/."""
+    # cuando se corre como .exe, los assets están junto al ejecutable
+    import sys
+    base = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent.parent.parent.parent))
+    candidates = [
+        base / "assets" / "icon.ico",
+        Path(__file__).resolve().parent.parent.parent.parent.parent / "assets" / "icon.ico",
+    ]
+    for p in candidates:
+        if p.is_file():
+            return p
+    return Path()
+
 
 class MainWindow(QMainWindow):
-    """Primary launcher window."""
+    """Ventana principal del launcher de Survync."""
 
     def __init__(self, config: LauncherConfig) -> None:
         super().__init__()
@@ -42,39 +65,48 @@ class MainWindow(QMainWindow):
         self.thread_pool = QThreadPool()
         self._remote_version: RemoteVersion | None = None
         self._state = LauncherState.READY
+        self._downloaded_bytes = 0
 
         self.setWindowTitle(f"Survync v{__version__}")
-        self.setMinimumSize(620, 640)
+        self.setMinimumSize(600, 480)
         self.setStyleSheet(DARK_THEME)
 
+        icon = _icon_path()
+        if icon.is_file():
+            self.setWindowIcon(QIcon(str(icon)))
+
         self._build_ui()
+        self._load_recent_log()
         self._auto_detect_profile()
 
         if self.config.check_updates_on_start and self.config.remote_base_url:
             self._check_for_updates()
 
+    # ------------------------------------------------------------------ build
+
     def _build_ui(self) -> None:
         central = QWidget()
         self.setCentralWidget(central)
         layout = QVBoxLayout(central)
-        layout.setContentsMargins(28, 24, 28, 22)
-        layout.setSpacing(14)
+        layout.setContentsMargins(28, 20, 28, 18)
+        layout.setSpacing(12)
 
         title = QLabel("Survync")
         title.setObjectName("titleLabel")
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(title)
 
-        subtitle = QLabel("Survival profile updater")
+        subtitle = QLabel("Modpack sync tool")
         subtitle.setObjectName("subtitleLabel")
         subtitle.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(subtitle)
 
+        # panel de info
         summary = QFrame()
         summary.setObjectName("summaryPanel")
         summary_layout = QVBoxLayout(summary)
-        summary_layout.setContentsMargins(18, 14, 18, 14)
-        summary_layout.setSpacing(8)
+        summary_layout.setContentsMargins(18, 12, 18, 12)
+        summary_layout.setSpacing(6)
 
         version_row = QHBoxLayout()
         self.local_version_label = QLabel("Local: unknown")
@@ -106,26 +138,24 @@ class MainWindow(QMainWindow):
         self.progress_bar.setTextVisible(True)
         layout.addWidget(self.progress_bar)
 
-        self.play_btn = QPushButton("Play")
-        self.play_btn.setObjectName("playButton")
-        self.play_btn.clicked.connect(self._on_play)
-        layout.addWidget(self.play_btn, alignment=Qt.AlignmentFlag.AlignCenter)
+        # botón principal
+        self.sync_btn = QPushButton("Sync")
+        self.sync_btn.setObjectName("playButton")
+        self.sync_btn.clicked.connect(self._on_sync)
+        layout.addWidget(self.sync_btn, alignment=Qt.AlignmentFlag.AlignCenter)
 
+        # botones secundarios
         btn_row = QHBoxLayout()
         btn_row.setSpacing(10)
-
         self.check_btn = QPushButton("Check Updates")
         self.check_btn.clicked.connect(self._check_for_updates)
         btn_row.addWidget(self.check_btn)
-
         self.repair_btn = QPushButton("Repair")
         self.repair_btn.clicked.connect(self._repair)
         btn_row.addWidget(self.repair_btn)
-
         self.settings_btn = QPushButton("Settings")
         self.settings_btn.clicked.connect(self._open_settings)
         btn_row.addWidget(self.settings_btn)
-
         layout.addLayout(btn_row)
 
         log_title = QLabel("Activity")
@@ -134,7 +164,7 @@ class MainWindow(QMainWindow):
 
         self.log_panel = QTextEdit()
         self.log_panel.setReadOnly(True)
-        self.log_panel.setMaximumHeight(210)
+        self.log_panel.setMaximumHeight(180)
         layout.addWidget(self.log_panel)
 
         footer = QLabel(f"Survync v{__version__}")
@@ -145,22 +175,63 @@ class MainWindow(QMainWindow):
         self._update_version_labels()
         self._update_profile_labels()
 
+    # ------------------------------------------------------------------ state
+
     def _set_state(self, state: LauncherState, detail: str = "") -> None:
         self._state = state
         text = state.value
         if detail:
-            text = f"{state.value} - {detail}"
+            text = f"{state.value} — {detail}"
         self.status_label.setText(text)
 
         busy = state not in (LauncherState.READY, LauncherState.ERROR)
-        self.play_btn.setEnabled(not busy)
+        self.sync_btn.setEnabled(not busy)
         self.check_btn.setEnabled(not busy)
         self.repair_btn.setEnabled(not busy)
 
-    def _log(self, message: str) -> None:
+    def _update_sync_btn(self, up_to_date: bool) -> None:
+        """Cambia la apariencia del botón según si hay update disponible."""
+        if up_to_date:
+            self.sync_btn.setText("✓ Up to date")
+            self.sync_btn.setProperty("upToDate", True)
+        else:
+            self.sync_btn.setText("Sync")
+            self.sync_btn.setProperty("upToDate", False)
+        # forzar recarga del estilo
+        self.sync_btn.style().unpolish(self.sync_btn)
+        self.sync_btn.style().polish(self.sync_btn)
+
+    # ------------------------------------------------------------------ log
+
+    def _log(self, message: str, kind: str = "info") -> None:
         ts = datetime.now(timezone.utc).strftime("%H:%M:%S")
-        self.log_panel.append(f"[{ts}] {message}")
+        color = _LOG_COLORS.get(kind, _LOG_COLORS["info"])
+        html = f'<span style="color:#666;">[{ts}]</span> <span style="color:{color};">{message}</span>'
+        self.log_panel.append(html)
         logger.info(message)
+
+    def _load_recent_log(self) -> None:
+        """Muestra las últimas 20 líneas del archivo de log al arrancar."""
+        log_file = get_app_data_dir() / "survync.log"
+        if not log_file.is_file():
+            return
+        try:
+            lines = log_file.read_text(encoding="utf-8", errors="replace").splitlines()
+            recent = lines[-20:] if len(lines) > 20 else lines
+            self.log_panel.append(
+                '<span style="color:#444;">— previous session —</span>'
+            )
+            for line in recent:
+                self.log_panel.append(
+                    f'<span style="color:#555;">{line}</span>'
+                )
+            self.log_panel.append(
+                '<span style="color:#444;">— current session —</span>'
+            )
+        except OSError:
+            pass
+
+    # ------------------------------------------------------------------ labels
 
     def _update_version_labels(self) -> None:
         local_ver = self.config.last_known_version or "unknown"
@@ -182,67 +253,68 @@ class MainWindow(QMainWindow):
 
     def _update_profile_labels(self) -> None:
         if self.config.profile_path:
-            self.profile_label.setText(f"Profile: {self.config.profile_path}")
+            # solo el nombre de la carpeta, no la ruta completa
+            name = Path(self.config.profile_path).name
+            self.profile_label.setText(f"Profile: {name}")
         else:
             self.profile_label.setText("Profile: not selected")
 
+    # ------------------------------------------------------------------ profile
+
     def _auto_detect_profile(self) -> None:
-        """Try to auto-detect the Modrinth profile on first run."""
         if self.config.profile_path:
             path = Path(self.config.profile_path)
             if path.is_dir():
-                self._log(f"Using configured profile: {path}")
+                self._log(f"Using profile: {path.name}")
                 self._update_profile_labels()
                 return
-            self._log(f"Configured profile path not found: {path}")
+            self._log(f"Configured profile not found: {path}", "warn")
 
         profile = find_profile(self.config.profile_name)
         if profile:
             self.config.profile_path = str(profile)
             self.config.save()
-            self._log(f"Auto-detected profile: {profile}")
+            self._log(f"Auto-detected profile: {profile.name}", "success")
             self._update_profile_labels()
             warnings = validate_profile(profile)
-            for warning in warnings:
-                self._log(f"  Warning: {warning}")
+            for w in warnings:
+                self._log(f"Warning: {w}", "warn")
         else:
             self._log(
                 f"Could not auto-detect '{self.config.profile_name}' profile. "
-                "Prompting for the profile folder."
+                "Prompting for the profile folder.",
+                "warn",
             )
             self._prompt_for_profile_path()
 
     def _prompt_for_profile_path(self) -> None:
-        """Ask the user to select the Modrinth profile folder."""
         QMessageBox.information(
             self,
             "Select Modrinth Profile",
             "Survync could not find your Modrinth profile automatically. "
             "Please select the profile folder.",
         )
-        folder = QFileDialog.getExistingDirectory(
-            self,
-            "Select Modrinth Profile Folder",
-        )
+        folder = QFileDialog.getExistingDirectory(self, "Select Modrinth Profile Folder")
         if not folder:
-            self._log("No profile folder selected. You can choose one in Settings.")
+            self._log("No profile folder selected. You can choose one in Settings.", "warn")
             return
 
         profile = Path(folder)
         self.config.profile_path = str(profile)
         self.config.profile_name = profile.name
         self.config.save()
-        self._log(f"Selected profile: {profile}")
+        self._log(f"Selected profile: {profile.name}", "success")
         self._update_profile_labels()
 
-        warnings = validate_profile(profile)
-        for warning in warnings:
-            self._log(f"  Warning: {warning}")
+        for w in validate_profile(profile):
+            self._log(f"Warning: {w}", "warn")
+
+    # ------------------------------------------------------------------ update check
 
     def _check_for_updates(self) -> None:
         errors = self.config.validate()
         if "remote_base_url is not set" in errors:
-            self._log("Remote URL not configured - open Settings to set it.")
+            self._log("Remote URL not configured — open Settings.", "error")
             self._set_state(LauncherState.ERROR, "Remote URL not configured")
             return
 
@@ -254,71 +326,64 @@ class MainWindow(QMainWindow):
         worker.signals.error.connect(self._on_error)
         self.thread_pool.start(worker)
 
-    def _on_version_checked(
-        self, remote_version: RemoteVersion, needs_update: bool
-    ) -> None:
+    def _on_version_checked(self, remote_version: RemoteVersion, needs_update: bool) -> None:
         self._remote_version = remote_version
         self._update_version_labels()
 
         if needs_update:
             self._log(
                 f"Update available: {remote_version.pack_version} "
-                f"(current: {self.config.last_known_version or 'unknown'})"
+                f"(current: {self.config.last_known_version or 'unknown'})",
+                "warn",
             )
             if remote_version.release_notes:
-                self._log(f"  Release notes: {remote_version.release_notes}")
+                self._log(f"Notes: {remote_version.release_notes}")
+            self._update_sync_btn(up_to_date=False)
             self._set_state(LauncherState.READY, "Update available")
         else:
-            self._log("Profile is up to date.")
+            self._log("Already up to date.", "success")
+            self._update_sync_btn(up_to_date=True)
             self._set_state(LauncherState.READY)
 
-    def _on_play(self) -> None:
+    # ------------------------------------------------------------------ sync
+
+    def _on_sync(self) -> None:
         errors = self.config.validate()
         if errors:
-            self._log("Configuration errors:")
-            for error in errors:
-                self._log(f"  - {error}")
+            for e in errors:
+                self._log(e, "error")
             self._set_state(LauncherState.ERROR, errors[0])
             return
 
         if self._remote_version is None and self.config.remote_base_url:
-            self._log("Checking for updates before launch...")
+            self._log("Checking for updates...")
             self._set_state(LauncherState.CHECKING)
             worker = CheckUpdateWorker(self.config)
-            worker.signals.version_checked.connect(self._on_play_after_check)
-            worker.signals.error.connect(self._on_play_check_error)
+            worker.signals.version_checked.connect(self._on_check_then_sync)
+            worker.signals.error.connect(self._on_error)
             self.thread_pool.start(worker)
             return
 
-        if (
-            self._remote_version
-            and self._remote_version.pack_version != self.config.last_known_version
-        ):
-            self._start_sync()
-            return
+        self._start_sync()
 
-        self._launch()
-
-    def _on_play_after_check(
-        self, remote_version: RemoteVersion, needs_update: bool
-    ) -> None:
+    def _on_check_then_sync(self, remote_version: RemoteVersion, needs_update: bool) -> None:
         self._remote_version = remote_version
         self._update_version_labels()
 
         if needs_update:
-            self._log("Update needed - syncing before launch...")
-            self._start_sync(launch_after=True)
+            self._log(
+                f"Update available: {remote_version.pack_version} "
+                f"(current: {self.config.last_known_version or 'unknown'})",
+                "warn",
+            )
+            self._start_sync()
         else:
-            self._log("Up to date - launching.")
-            self._launch()
+            self._log("Already up to date. Nothing to sync.", "success")
+            self._update_sync_btn(up_to_date=True)
+            self._set_state(LauncherState.READY)
 
-    def _on_play_check_error(self, error: str) -> None:
-        self._log(f"Update check failed: {error}")
-        self._log("Launching with current files...")
-        self._launch()
-
-    def _start_sync(self, launch_after: bool = True) -> None:
-        self._launch_after_sync = launch_after
+    def _start_sync(self) -> None:
+        self._downloaded_bytes = 0
         self._set_state(LauncherState.UPDATING)
         self.progress_bar.setVisible(True)
         self.progress_bar.setValue(0)
@@ -337,18 +402,20 @@ class MainWindow(QMainWindow):
     def _on_sync_progress(self, current: int, total: int, filename: str) -> None:
         self.progress_bar.setMaximum(total)
         self.progress_bar.setValue(current)
-        self._set_state(LauncherState.UPDATING, f"{current}/{total}")
-        self._log(f"  [{current}/{total}] {filename}")
+        mb = self._downloaded_bytes / (1024 * 1024)
+        self._set_state(LauncherState.UPDATING, f"{current}/{total} — {mb:.1f} MB")
+        self._log(f"[{current}/{total}] {filename}")
 
     def _on_sync_complete(self, result: SyncResult) -> None:
         self.progress_bar.setVisible(False)
-        self._log("Sync complete:")
+        self._log("Sync complete:", "success")
         self._log(result.summary())
 
         if result.has_failures:
-            self._log("Some files failed to sync. Check the log for details.")
+            self._log("Some files failed to sync:", "error")
             for path, error in result.failed:
-                self._log(f"  FAILED: {path} - {error}")
+                self._log(f"  FAILED: {path} — {error}", "error")
+            self._update_sync_btn(up_to_date=False)
             self._set_state(LauncherState.ERROR, "Sync completed with errors")
             return
 
@@ -358,24 +425,24 @@ class MainWindow(QMainWindow):
             self.config.save()
             self._update_version_labels()
 
+        self._log("Done! You can now open Modrinth and play.", "success")
+        self._update_sync_btn(up_to_date=True)
         self._set_state(LauncherState.READY)
 
-        if getattr(self, "_launch_after_sync", False):
-            self._launch()
+    # ------------------------------------------------------------------ repair
 
     def _repair(self) -> None:
         errors = self.config.validate()
         if errors:
-            self._log("Configuration errors:")
-            for error in errors:
-                self._log(f"  - {error}")
+            for e in errors:
+                self._log(e, "error")
             self._set_state(LauncherState.ERROR, errors[0])
             return
 
         self._set_state(LauncherState.REPAIRING)
         self.progress_bar.setVisible(True)
         self.progress_bar.setValue(0)
-        self._log("Starting repair - re-validating all files...")
+        self._log("Starting repair — re-validating all files...", "warn")
 
         worker = RepairWorker(self.config)
         worker.signals.progress.connect(self._on_sync_progress)
@@ -385,39 +452,27 @@ class MainWindow(QMainWindow):
 
     def _on_repair_complete(self, result: SyncResult) -> None:
         self.progress_bar.setVisible(False)
-        self._log("Repair complete:")
+        self._log("Repair complete:", "success")
         self._log(result.summary())
 
         if result.has_failures:
+            self._log("Some files failed:", "error")
+            for path, error in result.failed:
+                self._log(f"  FAILED: {path} — {error}", "error")
             self._set_state(LauncherState.ERROR, "Repair completed with errors")
         else:
             self._set_state(LauncherState.READY)
 
-    def _launch(self) -> None:
-        self._set_state(LauncherState.LAUNCHING)
-        self._log(f"Launching profile '{self.config.profile_name}'...")
-
-        success = launch_profile(self.config.profile_name)
-        if success:
-            self._log("Launch initiated. You can close Survync.")
-            self._set_state(LauncherState.READY)
-        else:
-            self._log(
-                "Could not auto-launch. Please open the Modrinth App and "
-                f"start the '{self.config.profile_name}' profile manually."
-            )
-            self._set_state(
-                LauncherState.ERROR, "Auto-launch failed - open Modrinth manually"
-            )
+    # ------------------------------------------------------------------ settings / errors
 
     def _open_settings(self) -> None:
         dialog = SettingsDialog(self.config, parent=self)
         if dialog.exec():
-            self._log("Settings saved.")
+            self._log("Settings saved.", "success")
             self._update_version_labels()
             self._update_profile_labels()
 
     def _on_error(self, error: str) -> None:
         self.progress_bar.setVisible(False)
-        self._log(f"Error: {error}")
+        self._log(f"Error: {error}", "error")
         self._set_state(LauncherState.ERROR, error[:80])

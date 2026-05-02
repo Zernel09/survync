@@ -56,6 +56,15 @@ QPushButton#playButton:disabled {
     border-color: #333937;
     color: #8b8f8a;
 }
+QPushButton#playButton[upToDate="true"] {
+    background-color: #1e3a2f;
+    border-color: #2d6b4f;
+    color: #7bcca0;
+}
+QPushButton#playButton[upToDate="true"]:hover {
+    background-color: #244534;
+    border-color: #3a8060;
+}
 QLabel {
     color: #e7e5df;
 }
