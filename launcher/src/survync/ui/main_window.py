@@ -8,9 +8,9 @@ from pathlib import Path
 
 from PySide6.QtCore import Qt, QThreadPool
 from PySide6.QtWidgets import (
+    QFileDialog,
     QHBoxLayout,
     QLabel,
-    QFileDialog,
     QMainWindow,
     QMessageBox,
     QProgressBar,
