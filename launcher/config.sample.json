@@ -1,0 +1,37 @@
+{
+  "_comment": "Copy this file to %APPDATA%/Survync/config.json and edit the values below.",
+
+  "remote_base_url": "https://zernel09.github.io/survync/",
+
+  "profile_name": "survival",
+  "profile_path": "",
+
+  "modrinth_project_slug": null,
+  "modrinth_project_id": null,
+
+  "preserve_paths": [
+    "saves/",
+    "screenshots/",
+    "logs/",
+    "crash-reports/",
+    "options.txt",
+    "optionsof.txt",
+    "servers.dat",
+    "realms_persistence.json",
+    "usercache.json"
+  ],
+  "remove_orphans": false,
+  "sync_dirs": [
+    "mods/",
+    "config/",
+    "shaderpacks/",
+    "resourcepacks/",
+    "kubejs/",
+    "defaultconfigs/",
+    "scripts/",
+    "global_packs/"
+  ],
+
+  "check_updates_on_start": true,
+  "show_advanced_log": false
+}
