@@ -206,7 +206,10 @@ class MainWindow(QMainWindow):
     def _log(self, message: str, kind: str = "info") -> None:
         ts = datetime.now(timezone.utc).strftime("%H:%M:%S")
         color = _LOG_COLORS.get(kind, _LOG_COLORS["info"])
-        html = f'<span style="color:#666;">[{ts}]</span> <span style="color:{color};">{message}</span>'
+        html = (
+            f'<span style="color:#666;">[{ts}]</span> '
+            f'<span style="color:{color};">{message}</span>'
+        )
         self.log_panel.append(html)
         logger.info(message)
 
