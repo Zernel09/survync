@@ -1,10 +1,18 @@
 {
   "pack_name": "survival",
-  "pack_version": "2026.05.02.0330",
+  "pack_version": "2026.05.02.1843",
   "minecraft_version": "1.21.1",
   "loader_name": "neoforge",
   "loader_version": "21.1.228",
   "files": [
+    {
+      "relative_path": "mods/Almanac-1.21.1-2-neoforge-1.5.2.jar",
+      "file_name": "Almanac-1.21.1-2-neoforge-1.5.2.jar",
+      "sha256": "379893246c33aaa6dd8e4a8711e349cd6835e08c2bd5b8bd7b7e81be9822aacb",
+      "size": 25593,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/Almanac-1.21.1-2-neoforge-1.5.2.jar"
+    },
     {
       "relative_path": "mods/animal_feeding_trough-1.1.2+1.21-neoforge.jar",
       "file_name": "animal_feeding_trough-1.1.2+1.21-neoforge.jar",
@@ -518,6 +526,14 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/jamlib-neoforge-1.3.6+1.21.1.jar"
     },
     {
+      "relative_path": "mods/jei-1.21.1-neoforge-19.27.0.340.jar",
+      "file_name": "jei-1.21.1-neoforge-19.27.0.340.jar",
+      "sha256": "8aaf547432f1b4958239b036356b910692fe40f858c3073d996f56bbf7c99826",
+      "size": 1529391,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/jei-1.21.1-neoforge-19.27.0.340.jar"
+    },
+    {
       "relative_path": "mods/just-hammers-neoforge-21.1.4.jar",
       "file_name": "just-hammers-neoforge-21.1.4.jar",
       "sha256": "59487c8758fd762fcddc58e3b5e8a956de3f6a2115cd1c6f9a915939f5f985d8",
@@ -556,6 +572,14 @@
       "size": 2017417,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/mods/lambdynamiclights-4.8.8+1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/letmedespawn-1.21.x-neoforge-1.5.0.jar",
+      "file_name": "letmedespawn-1.21.x-neoforge-1.5.0.jar",
+      "sha256": "074ffdbe34bf97b7d15fa4db7cfff547578a9c2f547479128a43d184c4ca642a",
+      "size": 14911,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/letmedespawn-1.21.x-neoforge-1.5.0.jar"
     },
     {
       "relative_path": "mods/lionfish_versions.json",
@@ -670,6 +694,14 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/notenoughanimations-neoforge-1.12.2-mc1.21.1.jar"
     },
     {
+      "relative_path": "mods/packetfixer-neoforge-2.0.1-1.21-to-1.21.3.jar",
+      "file_name": "packetfixer-neoforge-2.0.1-1.21-to-1.21.3.jar",
+      "sha256": "9fe3599284b0901f473447ca07c9a20a27e6185342ae988049d4afb75323b765",
+      "size": 26114,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/packetfixer-neoforge-2.0.1-1.21-to-1.21.3.jar"
+    },
+    {
       "relative_path": "mods/particle_core-0.3.3+1.21+neoforge.jar",
       "file_name": "particle_core-0.3.3+1.21+neoforge.jar",
       "sha256": "38c05981d1dc8428c7ab1130b9ec7f05bca1b70f909aba9c454c9611702a8dda",
@@ -718,6 +750,14 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/rechiseled-1.2.4-neoforge-mc1.21.jar"
     },
     {
+      "relative_path": "mods/redirected-neoforge-1.0.0-1.21.1.jar",
+      "file_name": "redirected-neoforge-1.0.0-1.21.1.jar",
+      "sha256": "bdaf4c3399b7436d3be7d79729d87ed707a964420dc58720e13fb2f4960c8b9e",
+      "size": 217587,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/redirected-neoforge-1.0.0-1.21.1.jar"
+    },
+    {
       "relative_path": "mods/resourcefulconfig-neoforge-1.21-3.0.11.jar",
       "file_name": "resourcefulconfig-neoforge-1.21-3.0.11.jar",
       "sha256": "25b4f3502d25c535004acd4a9420272fff01d2f1e2df352239fec93fdab005d4",
@@ -748,6 +788,14 @@
       "size": 76369,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/mods/ritchiesprojectilelib-2.1.2+mc.1.21.1-neoforge.jar"
+    },
+    {
+      "relative_path": "mods/rrls-5.0.10+mc1.21.1-forge.jar",
+      "file_name": "rrls-5.0.10+mc1.21.1-forge.jar",
+      "sha256": "2e23b281f95ba0c55073026e0c16d207890d7785869ed975f62ca01edbc984e0",
+      "size": 180241,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/rrls-5.0.10+mc1.21.1-forge.jar"
     },
     {
       "relative_path": "mods/sable-neoforge-1.21.1-1.2.2.jar",
@@ -868,6 +916,14 @@
       "size": 119125,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/mods/treeharvester-1.21.1-9.1.jar"
+    },
+    {
+      "relative_path": "mods/txnilib-neoforge-1.0.24-1.21.1.jar",
+      "file_name": "txnilib-neoforge-1.0.24-1.21.1.jar",
+      "sha256": "411e811a6a53a63c2716dbf71cd1167e3a98d000b884458759d6192720be3e18",
+      "size": 6276522,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/txnilib-neoforge-1.0.24-1.21.1.jar"
     },
     {
       "relative_path": "mods/VisualWorkbench-v21.1.1-1.21.1-NeoForge.jar",
@@ -1120,8 +1176,8 @@
     {
       "relative_path": "config/chunky/tasks/minecraft/overworld.properties",
       "file_name": "overworld.properties",
-      "sha256": "c25a637fbc891e6a7b7494ead4da9a5c6b27df37f43835a5a32d527a7f4d35a9",
-      "size": 137,
+      "sha256": "06cb95657ca571519a3d7899f0f6d296ab68775a901154836e486c3892c6cc4f",
+      "size": 138,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/config/chunky/tasks/minecraft/overworld.properties"
     },
@@ -1904,7 +1960,7 @@
     {
       "relative_path": "config/iris.properties",
       "file_name": "iris.properties",
-      "sha256": "621c5c13fc1e43ecada0c5b72c2c2aae99a3685024682cbb6031806e561d5914",
+      "sha256": "2c71f1164b4943849f035b2abf2ea13da74d5b2d1bea4648275f0847520bf8ea",
       "size": 281,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/config/iris.properties"
@@ -2656,8 +2712,8 @@
     {
       "relative_path": "emi.json",
       "file_name": "emi.json",
-      "sha256": "cf1c58fc05b96d074358e5e9ea030e44dae8b2eb23692d66c6829185a1c09653",
-      "size": 6133,
+      "sha256": "f2a3f84c34d083bdf5f6252ded18a213c8adc719ffa5283f3bc2bad2ef5dc60a",
+      "size": 7909,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/emi.json"
     }
