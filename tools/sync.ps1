@@ -89,8 +89,10 @@ Get-ChildItem -LiteralPath $ProfileDir -File | Where-Object {
     Copy-Item -LiteralPath $_.FullName -Destination $FilesDir -Force
 }
 
-Write-Host "`n--- Local sync complete ---" -ForegroundColor Green
-Write-Host "Next:" -ForegroundColor Yellow
-Write-Host "git add site/"
-Write-Host "git commit -m 'Update modpack to v$PackVersion'"
-Write-Host "git push"
+Write-Host "`n--- Committing and pushing to repository ---" -ForegroundColor Cyan
+Push-Location $RepoRoot
+git add site/
+git commit -m "Update modpack to v$PackVersion"
+git push
+Pop-Location
+Write-Host "`n--- Sync completely finished! ---" -ForegroundColor Green
