@@ -13,6 +13,36 @@ import sys
 from pathlib import Path
 
 
+def get_git_hash() -> str:
+    """Obtiene el hash corto del commit actual de git."""
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "--short", "HEAD"],
+            capture_output=True,
+            text=True,
+            timeout=5,
+        )
+        if result.returncode == 0:
+            return result.stdout.strip()
+    except (OSError, subprocess.TimeoutExpired):
+        pass
+    return "unknown"
+
+
+def patch_version(init_path: Path, commit_hash: str) -> str:
+    """Reemplaza _BUILT_COMMIT en __init__.py con el hash actual.
+
+    Devuelve el contenido original para poder restaurarlo luego.
+    """
+    original = init_path.read_text(encoding="utf-8")
+    patched = original.replace(
+        '_BUILT_COMMIT = "unknown"',
+        f'_BUILT_COMMIT = "{commit_hash}"',
+    )
+    init_path.write_text(patched, encoding="utf-8")
+    return original
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build Survync executable")
     parser.add_argument(
@@ -33,21 +63,22 @@ def main() -> None:
     args = parser.parse_args()
 
     launcher_dir = Path(__file__).resolve().parent
+    init_path = launcher_dir / "src" / "survync" / "__init__.py"
 
     if args.clean:
         import shutil
-
         for d in ["build", "dist"]:
             p = launcher_dir / d
             if p.exists():
                 shutil.rmtree(p)
                 print(f"Cleaned: {p}")
 
-    cmd = [
-        sys.executable,
-        "-m",
-        "PyInstaller",
-    ]
+    # inyectar el hash del commit en __init__.py antes de compilar
+    commit_hash = get_git_hash()
+    print(f"Commit hash: {commit_hash}")
+    original_init = patch_version(init_path, commit_hash)
+
+    cmd = [sys.executable, "-m", "PyInstaller"]
 
     if args.onedir:
         data_sep = ";" if sys.platform.startswith("win") else ":"
@@ -64,21 +95,24 @@ def main() -> None:
         cmd.append(str(launcher_dir / "survync.spec"))
 
     print(f"Running: {' '.join(cmd)}")
-    result = subprocess.run(cmd, cwd=str(launcher_dir))
-    
+    try:
+        result = subprocess.run(cmd, cwd=str(launcher_dir))
+    finally:
+        # restaurar __init__.py al estado original sin importar si falla la build
+        init_path.write_text(original_init, encoding="utf-8")
+        print("Restored __init__.py")
+
     if result.returncode == 0 and args.zip:
         import shutil
         dist_dir = launcher_dir / "dist"
         zip_name = launcher_dir / "dist" / "Survync-Windows"
-        
+
         if (dist_dir / "Survync").is_dir():
-            # Zip the folder (onedir)
-            shutil.make_archive(str(zip_name), 'zip', str(dist_dir / "Survync"))
+            shutil.make_archive(str(zip_name), "zip", str(dist_dir / "Survync"))
             print(f"Created ZIP: {zip_name}.zip")
         elif (dist_dir / "Survync.exe").is_file():
-            # Zip the single exe
             import zipfile
-            with zipfile.ZipFile(f"{zip_name}.zip", 'w', zipfile.ZIP_DEFLATED) as z:
+            with zipfile.ZipFile(f"{zip_name}.zip", "w", zipfile.ZIP_DEFLATED) as z:
                 z.write(dist_dir / "Survync.exe", "Survync.exe")
             print(f"Created ZIP: {zip_name}.zip")
 
