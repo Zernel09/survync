@@ -173,9 +173,15 @@ def read_profile_metadata(profile_dir: Path) -> dict[str, Any]:
         try:
             conn = sqlite3.connect(str(db_path))
             cur = conn.cursor()
-            # Match by 'path' column (index 0 in the table)
+            # Modrinth stores the profile folder in the path column. Some
+            # installs preserve a different casing than the actual folder, so
+            # match case-insensitively.
             cur.execute(
-                "SELECT name, game_version, mod_loader, mod_loader_version FROM profiles WHERE path = ?",
+                """
+                SELECT name, game_version, mod_loader, mod_loader_version
+                FROM profiles
+                WHERE lower(path) = lower(?)
+                """,
                 (profile_id,),
             )
             row = cur.fetchone()

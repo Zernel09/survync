@@ -1,10 +1,10 @@
 {
   "pack_name": "survival",
   "pack_version": "1.0.0",
-  "minecraft_version": "1.20.4",
-  "loader_name": "fabric",
-  "loader_version": "0.15.0",
-  "generated_at": "2026-05-02T04:43:34.326080+00:00",
+  "minecraft_version": "1.21.1",
+  "loader_name": "neoforge",
+  "loader_version": "21.1.228",
+  "generated_at": "2026-05-02T06:03:53.633498+00:00",
   "manifest_url": "",
   "minimum_launcher_version": "0.1.0",
   "release_notes": ""
