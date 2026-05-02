@@ -17,10 +17,11 @@ import argparse
 import hashlib
 import json
 import os
+import sqlite3
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional
 
 # Directories to include in the manifest
 DEFAULT_INCLUDE_DIRS = [
@@ -145,13 +146,51 @@ def scan_profile(
     return files
 
 
-def read_profile_metadata(profile_dir: Path) -> dict:
-    """Try to read metadata from the profile."""
+def read_profile_metadata(profile_dir: Path) -> dict[str, Any]:
+    """Try to read metadata from the profile or Modrinth database."""
+    # 1. Try local files first (profile.json, modrinth.index.json)
     for name in ("profile.json", "modrinth.index.json"):
         meta_path = profile_dir / name
         if meta_path.is_file():
-            with open(meta_path, "r", encoding="utf-8") as f:
-                return json.load(f)
+            try:
+                with open(meta_path, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception:
+                continue
+
+    # 2. Try Modrinth App database
+    profile_id = profile_dir.name
+    db_path = None
+    if sys.platform == "win32":
+        db_path = Path(os.environ.get("APPDATA", "")) / "ModrinthApp" / "app.db"
+    elif sys.platform == "darwin":
+        db_path = Path.home() / "Library" / "Application Support" / "ModrinthApp" / "app.db"
+    else:
+        # Linux
+        db_path = Path.home() / ".config" / "ModrinthApp" / "app.db"
+
+    if db_path and db_path.exists():
+        try:
+            conn = sqlite3.connect(str(db_path))
+            cur = conn.cursor()
+            # Match by 'path' column (index 0 in the table)
+            cur.execute(
+                "SELECT name, game_version, mod_loader, mod_loader_version FROM profiles WHERE path = ?",
+                (profile_id,),
+            )
+            row = cur.fetchone()
+            conn.close()
+
+            if row:
+                return {
+                    "name": row[0],
+                    "game_version": row[1],
+                    "loader": row[2],
+                    "loader_version": row[3],
+                }
+        except Exception as e:
+            print(f"Warning: Could not read Modrinth database: {e}")
+
     return {}
 
 
@@ -178,16 +217,10 @@ def generate(
     if exclude_patterns is None:
         exclude_patterns = list(DEFAULT_EXCLUDE_PATTERNS)
 
-    # Try to read metadata from profile
-    metadata = read_profile_metadata(profile_dir)
-    if metadata:
-        pack_name = metadata.get("name", pack_name)
-        minecraft_version = metadata.get("game_version", minecraft_version)
-        loader_name = metadata.get("loader", loader_name)
-        loader_version = metadata.get("loader_version", loader_version)
-
     now = datetime.now(timezone.utc).isoformat()
-    manifest_url = f"{base_download_url.rstrip('/')}/manifest.json" if base_download_url else ""
+    manifest_url = (
+        f"{base_download_url.rstrip('/')}/manifest.json" if base_download_url else ""
+    )
 
     print(f"Scanning profile: {profile_dir}")
     print(f"Include dirs: {include_dirs}")
@@ -279,18 +312,18 @@ def main() -> None:
     )
     parser.add_argument(
         "--minecraft-version",
-        default="1.20.4",
-        help="Minecraft version (default: 1.20.4)",
+        default=None,
+        help="Minecraft version (overrides profile metadata)",
     )
     parser.add_argument(
         "--loader-name",
-        default="fabric",
-        help="Mod loader name (default: fabric)",
+        default=None,
+        help="Mod loader name (overrides profile metadata)",
     )
     parser.add_argument(
         "--loader-version",
-        default="0.15.0",
-        help="Mod loader version (default: 0.15.0)",
+        default=None,
+        help="Mod loader version (overrides profile metadata)",
     )
     parser.add_argument(
         "--base-download-url",
@@ -325,14 +358,32 @@ def main() -> None:
     if args.exclude_patterns:
         exclude.extend(args.exclude_patterns)
 
+    # Set final values based on precedence: CLI Arg > Metadata > Defaults
+    metadata = read_profile_metadata(args.profile_dir)
+
+    p_name = args.pack_name
+    mc_version = args.minecraft_version
+    l_name = args.loader_name
+    l_version = args.loader_version
+
+    # Merge with metadata if not provided via CLI
+    if p_name == "survival" and "name" in metadata:
+        p_name = metadata["name"]
+    if mc_version is None:
+        mc_version = metadata.get("game_version", "1.20.4")
+    if l_name is None:
+        l_name = metadata.get("loader", "fabric")
+    if l_version is None:
+        l_version = metadata.get("loader_version", "0.15.0")
+
     generate(
         profile_dir=args.profile_dir,
         output_dir=args.output_dir,
-        pack_name=args.pack_name,
+        pack_name=p_name,
         pack_version=args.pack_version,
-        minecraft_version=args.minecraft_version,
-        loader_name=args.loader_name,
-        loader_version=args.loader_version,
+        minecraft_version=mc_version,
+        loader_name=l_name,
+        loader_version=l_version,
         base_download_url=args.base_download_url,
         include_dirs=args.include_dirs,
         exclude_patterns=exclude,

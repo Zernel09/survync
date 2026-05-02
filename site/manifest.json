@@ -4,7 +4,2688 @@
   "minecraft_version": "1.20.4",
   "loader_name": "fabric",
   "loader_version": "0.15.0",
-  "files": [],
+  "files": [
+    {
+      "relative_path": "mods/animal_feeding_trough-1.1.2+1.21-neoforge.jar",
+      "file_name": "animal_feeding_trough-1.1.2+1.21-neoforge.jar",
+      "sha256": "236e7b7f789a08e5393c0b1570ffe4e77f4719cc818a0b41f0454850c1e5ffe2",
+      "size": 229880,
+      "source_type": "direct",
+      "download_url": "/files/mods/animal_feeding_trough-1.1.2+1.21-neoforge.jar"
+    },
+    {
+      "relative_path": "mods/another_furniture-neoforge-4.0.2.jar",
+      "file_name": "another_furniture-neoforge-4.0.2.jar",
+      "sha256": "c61a66c73bcc5147d9983dc72c485493a612d2dbc078fcb86e2024155e34b7dd",
+      "size": 2417424,
+      "source_type": "direct",
+      "download_url": "/files/mods/another_furniture-neoforge-4.0.2.jar"
+    },
+    {
+      "relative_path": "mods/appleskin-neoforge-mc1.21-3.0.9.jar",
+      "file_name": "appleskin-neoforge-mc1.21-3.0.9.jar",
+      "sha256": "38b48dd6231341c9f964ce6e42c57ec866c6cc8f72bec938390a59bafb3922df",
+      "size": 75804,
+      "source_type": "direct",
+      "download_url": "/files/mods/appleskin-neoforge-mc1.21-3.0.9.jar"
+    },
+    {
+      "relative_path": "mods/architectury-13.0.8-neoforge.jar",
+      "file_name": "architectury-13.0.8-neoforge.jar",
+      "sha256": "5ec578f814e8cca87aeffa6e424032e78d9ea5ea6b603dd834c2dc13c31141ee",
+      "size": 584004,
+      "source_type": "direct",
+      "download_url": "/files/mods/architectury-13.0.8-neoforge.jar"
+    },
+    {
+      "relative_path": "mods/artifacts-neoforge-13.2.1.jar",
+      "file_name": "artifacts-neoforge-13.2.1.jar",
+      "sha256": "4a8e1f4d5702937a707861e478829695e432286bcd9e58f5834d82c6d998eea8",
+      "size": 1030252,
+      "source_type": "direct",
+      "download_url": "/files/mods/artifacts-neoforge-13.2.1.jar"
+    },
+    {
+      "relative_path": "mods/BadOptimizations-2.4.1-1.21.1.jar",
+      "file_name": "BadOptimizations-2.4.1-1.21.1.jar",
+      "sha256": "22e2467892d3706f43d1cf2aa637785bb8601c20b0098a82ab956e6a8fc4d2ba",
+      "size": 283566,
+      "source_type": "direct",
+      "download_url": "/files/mods/BadOptimizations-2.4.1-1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/balm-neoforge-1.21.1-21.0.57.jar",
+      "file_name": "balm-neoforge-1.21.1-21.0.57.jar",
+      "sha256": "ab56a4edaaf7366e6aa5a7446cf4f0d939e844ab0fb0df9b27967916bff0425a",
+      "size": 701108,
+      "source_type": "direct",
+      "download_url": "/files/mods/balm-neoforge-1.21.1-21.0.57.jar"
+    },
+    {
+      "relative_path": "mods/block_factorys_bosses-2.0.12-neo-1.21.1.jar",
+      "file_name": "block_factorys_bosses-2.0.12-neo-1.21.1.jar",
+      "sha256": "6f2f0bf6fda4126cc41ab34f8e88c4dfc1f4b498ffc040a15bd501b8870a8b84",
+      "size": 20707172,
+      "source_type": "direct",
+      "download_url": "/files/mods/block_factorys_bosses-2.0.12-neo-1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/BOMD-NeoForge-1.21-1.3.2.jar",
+      "file_name": "BOMD-NeoForge-1.21-1.3.2.jar",
+      "sha256": "66cad715a52397352f04faff3a78c0352b68f3d1212651013d60d1854caa6ec6",
+      "size": 1951866,
+      "source_type": "direct",
+      "download_url": "/files/mods/BOMD-NeoForge-1.21-1.3.2.jar"
+    },
+    {
+      "relative_path": "mods/c2me-neoforge-mc1.21.1-0.3.0+alpha.0.91.jar",
+      "file_name": "c2me-neoforge-mc1.21.1-0.3.0+alpha.0.91.jar",
+      "sha256": "107ec5b3cca05a038ee21aa35e5c68880297c370e4a47d14998ecfa7270af369",
+      "size": 4508649,
+      "source_type": "direct",
+      "download_url": "/files/mods/c2me-neoforge-mc1.21.1-0.3.0+alpha.0.91.jar"
+    },
+    {
+      "relative_path": "mods/carryon-neoforge-1.21.1-2.2.4.4.jar",
+      "file_name": "carryon-neoforge-1.21.1-2.2.4.4.jar",
+      "sha256": "ad69537be8be8b433227792e43f8df7b4d3cef7e359255d471a44e776ad8dd57",
+      "size": 357489,
+      "source_type": "direct",
+      "download_url": "/files/mods/carryon-neoforge-1.21.1-2.2.4.4.jar"
+    },
+    {
+      "relative_path": "mods/CerbonsAPI-NeoForge-1.21-1.3.0.jar",
+      "file_name": "CerbonsAPI-NeoForge-1.21-1.3.0.jar",
+      "sha256": "5c750762b31ab79127df6f455351fe79793d8c2b41e1a0f94b335a5a1123534d",
+      "size": 250545,
+      "source_type": "direct",
+      "download_url": "/files/mods/CerbonsAPI-NeoForge-1.21-1.3.0.jar"
+    },
+    {
+      "relative_path": "mods/chat_heads-0.15.1-neoforge-1.21.jar",
+      "file_name": "chat_heads-0.15.1-neoforge-1.21.jar",
+      "sha256": "b1ed6a52efa3cb43e4c37e3982bc7b08116302511b8f675346f6aea6d3524e41",
+      "size": 89272,
+      "source_type": "direct",
+      "download_url": "/files/mods/chat_heads-0.15.1-neoforge-1.21.jar"
+    },
+    {
+      "relative_path": "mods/chunkloaders-1.2.8-neoforge-mc1.21.jar",
+      "file_name": "chunkloaders-1.2.8-neoforge-mc1.21.jar",
+      "sha256": "0b7fcb40382df30119a39e0d8ccf372d50d10d84b6a6d9465728f65dffef9cad",
+      "size": 143749,
+      "source_type": "direct",
+      "download_url": "/files/mods/chunkloaders-1.2.8-neoforge-mc1.21.jar"
+    },
+    {
+      "relative_path": "mods/Chunky-NeoForge-1.4.23.jar",
+      "file_name": "Chunky-NeoForge-1.4.23.jar",
+      "sha256": "d72f235cf1f56f2c374f52c00bdda5034524b28142305a84cfc123a3f92ad274",
+      "size": 340572,
+      "source_type": "direct",
+      "download_url": "/files/mods/Chunky-NeoForge-1.4.23.jar"
+    },
+    {
+      "relative_path": "mods/cloth-config-15.0.140-neoforge.jar",
+      "file_name": "cloth-config-15.0.140-neoforge.jar",
+      "sha256": "65e722e0d98431a07c45f8bdd8d529a217cc8c175fde1740248bd5c1b4f3c0d4",
+      "size": 1163890,
+      "source_type": "direct",
+      "download_url": "/files/mods/cloth-config-15.0.140-neoforge.jar"
+    },
+    {
+      "relative_path": "mods/collective-1.21.1-8.20.jar",
+      "file_name": "collective-1.21.1-8.20.jar",
+      "sha256": "cf192da39ba0d02a151a324b22c073a194dc177c789ec287a357152b7eedce9e",
+      "size": 942780,
+      "source_type": "direct",
+      "download_url": "/files/mods/collective-1.21.1-8.20.jar"
+    },
+    {
+      "relative_path": "mods/comforts-neoforge-9.0.5+1.21.1.jar",
+      "file_name": "comforts-neoforge-9.0.5+1.21.1.jar",
+      "sha256": "6b0fd35a1349107e08a45539adbde9683bb203febc43a3305f6fc4ac73e59615",
+      "size": 422658,
+      "source_type": "direct",
+      "download_url": "/files/mods/comforts-neoforge-9.0.5+1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/copycats-3.0.4+mc.1.21.1-neoforge.jar",
+      "file_name": "copycats-3.0.4+mc.1.21.1-neoforge.jar",
+      "sha256": "8480e2a62eaa625f75776831c1d8a9ef3d77d2d816fa2e67566c6ec25ba745d1",
+      "size": 1791747,
+      "source_type": "direct",
+      "download_url": "/files/mods/copycats-3.0.4+mc.1.21.1-neoforge.jar"
+    },
+    {
+      "relative_path": "mods/coroutil-neoforge-1.21.0-1.3.8.jar",
+      "file_name": "coroutil-neoforge-1.21.0-1.3.8.jar",
+      "sha256": "9b32bcf2c793d33b93b5d4739c0dc4b64231025c7dc5fe40732b66d7cf4b2826",
+      "size": 63981,
+      "source_type": "direct",
+      "download_url": "/files/mods/coroutil-neoforge-1.21.0-1.3.8.jar"
+    },
+    {
+      "relative_path": "mods/corpse-neoforge-1.21.1-1.1.13.jar",
+      "file_name": "corpse-neoforge-1.21.1-1.1.13.jar",
+      "sha256": "80d984f0a17d968220129cc58edd5c9f28a5f61a84ec67dcc41228a46dfa4bb1",
+      "size": 253694,
+      "source_type": "direct",
+      "download_url": "/files/mods/corpse-neoforge-1.21.1-1.1.13.jar"
+    },
+    {
+      "relative_path": "mods/create-1.21.1-6.0.10.jar",
+      "file_name": "create-1.21.1-6.0.10.jar",
+      "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
+      "size": 19123767,
+      "source_type": "direct",
+      "download_url": "/files/mods/create-1.21.1-6.0.10.jar"
+    },
+    {
+      "relative_path": "mods/create-aeronautics-bundled-1.21.1-1.2.1.jar",
+      "file_name": "create-aeronautics-bundled-1.21.1-1.2.1.jar",
+      "sha256": "5a8c6d168ec1b47ecee7f2e83a93accbca71544d2b14ca1ca1b1271855f26248",
+      "size": 33030286,
+      "source_type": "direct",
+      "download_url": "/files/mods/create-aeronautics-bundled-1.21.1-1.2.1.jar"
+    },
+    {
+      "relative_path": "mods/create-enchantment-industry-2.3.1.jar",
+      "file_name": "create-enchantment-industry-2.3.1.jar",
+      "sha256": "6bd60393cf582568a09aa38f82fe6ea6e5928659d7befc6b0ee9f46025179064",
+      "size": 684729,
+      "source_type": "direct",
+      "download_url": "/files/mods/create-enchantment-industry-2.3.1.jar"
+    },
+    {
+      "relative_path": "mods/create_copper_and_zinc-2.0.0-neoforge-1.21.1.jar",
+      "file_name": "create_copper_and_zinc-2.0.0-neoforge-1.21.1.jar",
+      "sha256": "1882e3102771ed2db4ba7f62c0b500d7a40e4d2c1823700c2fa55a75b77359f9",
+      "size": 98709,
+      "source_type": "direct",
+      "download_url": "/files/mods/create_copper_and_zinc-2.0.0-neoforge-1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/create_jetpack-forge-5.1.2.jar",
+      "file_name": "create_jetpack-forge-5.1.2.jar",
+      "sha256": "9fe5a681ea841ce9dc02e7132cd360e1c3e75314905b4ef1493e7548265d0985",
+      "size": 481239,
+      "source_type": "direct",
+      "download_url": "/files/mods/create_jetpack-forge-5.1.2.jar"
+    },
+    {
+      "relative_path": "mods/createaddition-1.5.10.jar",
+      "file_name": "createaddition-1.5.10.jar",
+      "sha256": "72653762c1014c33ce151858d1478573dbd74cbc23c74ffe1fb2d71fb73627ee",
+      "size": 1595173,
+      "source_type": "direct",
+      "download_url": "/files/mods/createaddition-1.5.10.jar"
+    },
+    {
+      "relative_path": "mods/createbigcannons-5.11.3+mc.1.21.1.jar",
+      "file_name": "createbigcannons-5.11.3+mc.1.21.1.jar",
+      "sha256": "16cb451c1673198131148cec8196bb6325b3eb85168172bd629c0b93261381df",
+      "size": 3715787,
+      "source_type": "direct",
+      "download_url": "/files/mods/createbigcannons-5.11.3+mc.1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/createdeco-2.1.3.jar",
+      "file_name": "createdeco-2.1.3.jar",
+      "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e",
+      "size": 3328498,
+      "source_type": "direct",
+      "download_url": "/files/mods/createdeco-2.1.3.jar"
+    },
+    {
+      "relative_path": "mods/CreateDragonsPlus-1.10.0b.jar",
+      "file_name": "CreateDragonsPlus-1.10.0b.jar",
+      "sha256": "8cc47a5ea04c8bbefd24ebca67d45e6a44f80925723cb2f82676d27b0a2a9d66",
+      "size": 756460,
+      "source_type": "direct",
+      "download_url": "/files/mods/CreateDragonsPlus-1.10.0b.jar"
+    },
+    {
+      "relative_path": "mods/CreeperOverhaul-neoforge-1.21.1-4.0.6.jar",
+      "file_name": "CreeperOverhaul-neoforge-1.21.1-4.0.6.jar",
+      "sha256": "ed83bea2826667fca80a6a8067f89fe7b97eb8b3213bbcb7f0f4e6a6898c0bc9",
+      "size": 1185088,
+      "source_type": "direct",
+      "download_url": "/files/mods/CreeperOverhaul-neoforge-1.21.1-4.0.6.jar"
+    },
+    {
+      "relative_path": "mods/cristellib-neoforge-1.21.1-3.0.3.jar",
+      "file_name": "cristellib-neoforge-1.21.1-3.0.3.jar",
+      "sha256": "f5ada4fe5a4a8ba9f8800a54f9ae6fe5a7a4d1156ada6567d11d45e3c3b02239",
+      "size": 539899,
+      "source_type": "direct",
+      "download_url": "/files/mods/cristellib-neoforge-1.21.1-3.0.3.jar"
+    },
+    {
+      "relative_path": "mods/crittersandcompanions-neoforge-1.21.1-2.3.4.jar",
+      "file_name": "crittersandcompanions-neoforge-1.21.1-2.3.4.jar",
+      "sha256": "4520de01496893d5cb80faaaeadf67b03481ebe769e11caffaa02bb12fe3bcd1",
+      "size": 1398478,
+      "source_type": "direct",
+      "download_url": "/files/mods/crittersandcompanions-neoforge-1.21.1-2.3.4.jar"
+    },
+    {
+      "relative_path": "mods/curios-neoforge-9.5.1+1.21.1.jar",
+      "file_name": "curios-neoforge-9.5.1+1.21.1.jar",
+      "sha256": "a45df2125c26219974aba7507ffc9afe7b83acc941a386af3faacb1cc0056fde",
+      "size": 410690,
+      "source_type": "direct",
+      "download_url": "/files/mods/curios-neoforge-9.5.1+1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/Design-n-Decor-1.21.1-2.1.0.jar",
+      "file_name": "Design-n-Decor-1.21.1-2.1.0.jar",
+      "sha256": "bcd8a6c50f7d94698da473a675222e6038d3af09b0560e70c3394f32f798114d",
+      "size": 3264862,
+      "source_type": "direct",
+      "download_url": "/files/mods/Design-n-Decor-1.21.1-2.1.0.jar"
+    },
+    {
+      "relative_path": "mods/DistantHorizons-3.0.2-b-1.21.1-fabric-neoforge.jar",
+      "file_name": "DistantHorizons-3.0.2-b-1.21.1-fabric-neoforge.jar",
+      "sha256": "ffe8da15ac4deedcf1eb306b0a49d6f5ba1a8385d0119bf1475e5c358f16f855",
+      "size": 30019727,
+      "source_type": "direct",
+      "download_url": "/files/mods/DistantHorizons-3.0.2-b-1.21.1-fabric-neoforge.jar"
+    },
+    {
+      "relative_path": "mods/dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar",
+      "file_name": "dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar",
+      "sha256": "78cb67c9faeff5d1cb4da48d41e48ecc47baddaaec0f792e6edc8207aee0ab8e",
+      "size": 220193,
+      "source_type": "direct",
+      "download_url": "/files/mods/dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar"
+    },
+    {
+      "relative_path": "mods/e4mc-neoforge-6.1.0.jar",
+      "file_name": "e4mc-neoforge-6.1.0.jar",
+      "sha256": "bcd4de862a0c8186c5fa29c3b48a3ad24f19446644cc64e9d4a7d2c4f848a339",
+      "size": 649434,
+      "source_type": "direct",
+      "download_url": "/files/mods/e4mc-neoforge-6.1.0.jar"
+    },
+    {
+      "relative_path": "mods/EasyAnvils-v21.1.0-1.21.1-NeoForge.jar",
+      "file_name": "EasyAnvils-v21.1.0-1.21.1-NeoForge.jar",
+      "sha256": "dcd0e562710a639b4fdd60a7500dc9404c6fbd1007215a088248ce1c57ccc6dc",
+      "size": 152297,
+      "source_type": "direct",
+      "download_url": "/files/mods/EasyAnvils-v21.1.0-1.21.1-NeoForge.jar"
+    },
+    {
+      "relative_path": "mods/EasyMagic-v21.1.4-1.21.1-NeoForge.jar",
+      "file_name": "EasyMagic-v21.1.4-1.21.1-NeoForge.jar",
+      "sha256": "e641a83dcd0dd1a66c545069a706349df94f5b64dc5a252944596439009a699f",
+      "size": 143992,
+      "source_type": "direct",
+      "download_url": "/files/mods/EasyMagic-v21.1.4-1.21.1-NeoForge.jar"
+    },
+    {
+      "relative_path": "mods/emi-1.1.22+1.21.1+neoforge.jar",
+      "file_name": "emi-1.1.22+1.21.1+neoforge.jar",
+      "sha256": "772cf3108900e86e336a42f73ec0dfc2f8d5168840285f4a71fda84ea98859a8",
+      "size": 1038248,
+      "source_type": "direct",
+      "download_url": "/files/mods/emi-1.1.22+1.21.1+neoforge.jar"
+    },
+    {
+      "relative_path": "mods/endermanoverhaul-neoforge-1.21.1-2.0.3.jar",
+      "file_name": "endermanoverhaul-neoforge-1.21.1-2.0.3.jar",
+      "sha256": "fe6c04dcfdbb8815058ebf1102d64cb4c86060a0a1b7350121e4a976d4a92248",
+      "size": 1330403,
+      "source_type": "direct",
+      "download_url": "/files/mods/endermanoverhaul-neoforge-1.21.1-2.0.3.jar"
+    },
+    {
+      "relative_path": "mods/endrem-neoforge-1.21.X-6.0.2.jar",
+      "file_name": "endrem-neoforge-1.21.X-6.0.2.jar",
+      "sha256": "f15cb30b32263410641c54ae6602a8bb8f00bc3cb57961c6b9941529cab0798d",
+      "size": 942510,
+      "source_type": "direct",
+      "download_url": "/files/mods/endrem-neoforge-1.21.X-6.0.2.jar"
+    },
+    {
+      "relative_path": "mods/enhancedbossbars-1.0.0.jar",
+      "file_name": "enhancedbossbars-1.0.0.jar",
+      "sha256": "c1bba0057f916d9d8226258e2f57324f32af85bf539219fc175fa0f1cd18372b",
+      "size": 252820,
+      "source_type": "direct",
+      "download_url": "/files/mods/enhancedbossbars-1.0.0.jar"
+    },
+    {
+      "relative_path": "mods/entity_model_features_1.21-neoforge-3.2.2.jar",
+      "file_name": "entity_model_features_1.21-neoforge-3.2.2.jar",
+      "sha256": "d3cccbd3445c7d00f5e7b6a7f6880aaa22aa4875f8bcba18d42f5665090e3042",
+      "size": 565641,
+      "source_type": "direct",
+      "download_url": "/files/mods/entity_model_features_1.21-neoforge-3.2.2.jar"
+    },
+    {
+      "relative_path": "mods/entity_texture_features_1.21-neoforge-7.1.jar",
+      "file_name": "entity_texture_features_1.21-neoforge-7.1.jar",
+      "sha256": "b2e396543c678b8378a2d5557a0cd3d24790364bff7e96edaf17921112d6176b",
+      "size": 752334,
+      "source_type": "direct",
+      "download_url": "/files/mods/entity_texture_features_1.21-neoforge-7.1.jar"
+    },
+    {
+      "relative_path": "mods/entityculling-neoforge-1.10.1-mc1.21.1.jar",
+      "file_name": "entityculling-neoforge-1.10.1-mc1.21.1.jar",
+      "sha256": "da2f7c43329b20d9627a6590f8048233c349d5efe78defe57b05eff120ded691",
+      "size": 1578350,
+      "source_type": "direct",
+      "download_url": "/files/mods/entityculling-neoforge-1.10.1-mc1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/epic-knights-1.21.1-neoforge-10.12.jar",
+      "file_name": "epic-knights-1.21.1-neoforge-10.12.jar",
+      "sha256": "7e6c953234056e34e76fadeb534a1d86501e2e1ca5ede5f10247b12742614cf0",
+      "size": 2606223,
+      "source_type": "direct",
+      "download_url": "/files/mods/epic-knights-1.21.1-neoforge-10.12.jar"
+    },
+    {
+      "relative_path": "mods/exposure-neoforge-1.21.1-1.9.16.jar",
+      "file_name": "exposure-neoforge-1.21.1-1.9.16.jar",
+      "sha256": "c4adfe346094cf4ce0008c98bf0d20d7c96b9291b3cd31ff2234495eaca2bb58",
+      "size": 2189912,
+      "source_type": "direct",
+      "download_url": "/files/mods/exposure-neoforge-1.21.1-1.9.16.jar"
+    },
+    {
+      "relative_path": "mods/fantasy_armor-neoforge-1.2.4-1.21.1.jar",
+      "file_name": "fantasy_armor-neoforge-1.2.4-1.21.1.jar",
+      "sha256": "4c4c6445ba2db91477db50dd6b8226beafe48a3430fffa6e0731e0ac937073a5",
+      "size": 537069,
+      "source_type": "direct",
+      "download_url": "/files/mods/fantasy_armor-neoforge-1.2.4-1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/FarmersDelight-1.21.1-1.3.1.jar",
+      "file_name": "FarmersDelight-1.21.1-1.3.1.jar",
+      "sha256": "f02ffbf597af17d481b930daeed4b5906d6a6fddb464d392f28f42560965f4f4",
+      "size": 3124506,
+      "source_type": "direct",
+      "download_url": "/files/mods/FarmersDelight-1.21.1-1.3.1.jar"
+    },
+    {
+      "relative_path": "mods/ferritecore-7.0.3-neoforge.jar",
+      "file_name": "ferritecore-7.0.3-neoforge.jar",
+      "sha256": "d87ea28262715ebff45b8a82d493e6b468e7a4521bc021df5d88302196d030a8",
+      "size": 121559,
+      "source_type": "direct",
+      "download_url": "/files/mods/ferritecore-7.0.3-neoforge.jar"
+    },
+    {
+      "relative_path": "mods/fusion-1.2.12-neoforge-mc1.21.1.jar",
+      "file_name": "fusion-1.2.12-neoforge-mc1.21.1.jar",
+      "sha256": "5961f78d85b7bd88205bc65c9f8182bc041646aa3579fa39810878d9b5b87c0c",
+      "size": 532912,
+      "source_type": "direct",
+      "download_url": "/files/mods/fusion-1.2.12-neoforge-mc1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/fzzy_config-0.7.6+1.21+neoforge.jar",
+      "file_name": "fzzy_config-0.7.6+1.21+neoforge.jar",
+      "sha256": "4e5cc1438087b0bc0276969e88b9ad0bdf2bcc60d6caf5fe79e18947d7a29050",
+      "size": 2369895,
+      "source_type": "direct",
+      "download_url": "/files/mods/fzzy_config-0.7.6+1.21+neoforge.jar"
+    },
+    {
+      "relative_path": "mods/geckolib-neoforge-1.21.1-4.8.4.jar",
+      "file_name": "geckolib-neoforge-1.21.1-4.8.4.jar",
+      "sha256": "a1b6ce25e8627aa7e748672eedb6b71af68e0993462313649c259f38e42bcac9",
+      "size": 622582,
+      "source_type": "direct",
+      "download_url": "/files/mods/geckolib-neoforge-1.21.1-4.8.4.jar"
+    },
+    {
+      "relative_path": "mods/Geophilic v3.4.6.mod.jar",
+      "file_name": "Geophilic v3.4.6.mod.jar",
+      "sha256": "6da4e3e8691d2a950685601af3a24269137496a5aa37ce423d070aa5f69f0da6",
+      "size": 751598,
+      "source_type": "direct",
+      "download_url": "/files/mods/Geophilic v3.4.6.mod.jar"
+    },
+    {
+      "relative_path": "mods/handcrafted-neoforge-1.21.1-4.0.3.jar",
+      "file_name": "handcrafted-neoforge-1.21.1-4.0.3.jar",
+      "sha256": "6f2a776fb28ed07d370899814e5e711fbeebe31396097d78a3b550439b364948",
+      "size": 7132842,
+      "source_type": "direct",
+      "download_url": "/files/mods/handcrafted-neoforge-1.21.1-4.0.3.jar"
+    },
+    {
+      "relative_path": "mods/Iceberg-1.21.1-neoforge-1.3.2.jar",
+      "file_name": "Iceberg-1.21.1-neoforge-1.3.2.jar",
+      "sha256": "0d620c975619b04110b94a73d5b42d252563ff59c1eae9d21ab2ee7e38460a3c",
+      "size": 213853,
+      "source_type": "direct",
+      "download_url": "/files/mods/Iceberg-1.21.1-neoforge-1.3.2.jar"
+    },
+    {
+      "relative_path": "mods/ImmediatelyFast-NeoForge-1.6.10+1.21.1.jar",
+      "file_name": "ImmediatelyFast-NeoForge-1.6.10+1.21.1.jar",
+      "sha256": "9fbb8dce1bb72feacdc3b75c6fcbf689865ad3793a19649443d76be20993ddd0",
+      "size": 368598,
+      "source_type": "direct",
+      "download_url": "/files/mods/ImmediatelyFast-NeoForge-1.6.10+1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/iris-neoforge-1.8.12+mc1.21.1.jar",
+      "file_name": "iris-neoforge-1.8.12+mc1.21.1.jar",
+      "sha256": "3e3f94d2d5cdcb8145c4385d521974aa2d8669b2cc212351f70cf06488182e83",
+      "size": 2438548,
+      "source_type": "direct",
+      "download_url": "/files/mods/iris-neoforge-1.8.12+mc1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar",
+      "file_name": "ironfurnaces-neoforge-1.21.1-4.3.2.jar",
+      "sha256": "97c0d7c323fda4aa852fdce69bf1250a40323bb9d34ef6c87790e07334d1c2de",
+      "size": 576866,
+      "source_type": "direct",
+      "download_url": "/files/mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar"
+    },
+    {
+      "relative_path": "mods/ItemBorders-1.21-neoforge-1.2.5.jar",
+      "file_name": "ItemBorders-1.21-neoforge-1.2.5.jar",
+      "sha256": "6ad3a4f3ea1c56fb8600db9cbdbe2de9c50b217f9981de134b44aab216da83b9",
+      "size": 23511,
+      "source_type": "direct",
+      "download_url": "/files/mods/ItemBorders-1.21-neoforge-1.2.5.jar"
+    },
+    {
+      "relative_path": "mods/Jade-1.21.1-NeoForge-15.10.5.jar",
+      "file_name": "Jade-1.21.1-NeoForge-15.10.5.jar",
+      "sha256": "067bb4b007e1d6f6b79f0afe99c91252aa825472b99a76d33a60d24442f9e92d",
+      "size": 725742,
+      "source_type": "direct",
+      "download_url": "/files/mods/Jade-1.21.1-NeoForge-15.10.5.jar"
+    },
+    {
+      "relative_path": "mods/jamlib-neoforge-1.3.6+1.21.1.jar",
+      "file_name": "jamlib-neoforge-1.3.6+1.21.1.jar",
+      "sha256": "911afdfe717a2375a651253e282ac9e769f8bead381d33c2167955c25eefe514",
+      "size": 188553,
+      "source_type": "direct",
+      "download_url": "/files/mods/jamlib-neoforge-1.3.6+1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/just-hammers-neoforge-21.1.4.jar",
+      "file_name": "just-hammers-neoforge-21.1.4.jar",
+      "sha256": "59487c8758fd762fcddc58e3b5e8a956de3f6a2115cd1c6f9a915939f5f985d8",
+      "size": 102133,
+      "source_type": "direct",
+      "download_url": "/files/mods/just-hammers-neoforge-21.1.4.jar"
+    },
+    {
+      "relative_path": "mods/justenoughbreeding-neoforge-1.21-1.21.1-1.6.2.jar",
+      "file_name": "justenoughbreeding-neoforge-1.21-1.21.1-1.6.2.jar",
+      "sha256": "4857ff49f674dac569495eb6cd4252cf5bb075c0c2566923b44be434c4c401d2",
+      "size": 134388,
+      "source_type": "direct",
+      "download_url": "/files/mods/justenoughbreeding-neoforge-1.21-1.21.1-1.6.2.jar"
+    },
+    {
+      "relative_path": "mods/kotlinforforge-5.11.0-all.jar",
+      "file_name": "kotlinforforge-5.11.0-all.jar",
+      "sha256": "ac827b62ce8fe71760208671b4a694e3ccd35049075f9406a751cffb5a5c9779",
+      "size": 6869790,
+      "source_type": "direct",
+      "download_url": "/files/mods/kotlinforforge-5.11.0-all.jar"
+    },
+    {
+      "relative_path": "mods/L_Ender's Cataclysm 1.21.1-3.27.jar",
+      "file_name": "L_Ender's Cataclysm 1.21.1-3.27.jar",
+      "sha256": "fa4e8abd15aa86333d6a5fe20b05c4fe423ac865da7319be7808d321bcb3930c",
+      "size": 73346519,
+      "source_type": "direct",
+      "download_url": "/files/mods/L_Ender's Cataclysm 1.21.1-3.27.jar"
+    },
+    {
+      "relative_path": "mods/lambdynamiclights-4.8.8+1.21.1.jar",
+      "file_name": "lambdynamiclights-4.8.8+1.21.1.jar",
+      "sha256": "5c41d55ad9306f8d0a8c1b0174d71a3e333026b08adb6883653cd91ab6c5bea0",
+      "size": 2017417,
+      "source_type": "direct",
+      "download_url": "/files/mods/lambdynamiclights-4.8.8+1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/lionfish_versions.json",
+      "file_name": "lionfish_versions.json",
+      "sha256": "245847c53c8ab5b01eb62c713f90ba9e40b6e0045260d7fe364fd85ad3ac7e55",
+      "size": 1640,
+      "source_type": "direct",
+      "download_url": "/files/mods/lionfish_versions.json"
+    },
+    {
+      "relative_path": "mods/lionfishapi-2.7-fix-fix.jar",
+      "file_name": "lionfishapi-2.7-fix-fix.jar",
+      "sha256": "0b01c90fc1f7d707d7bd11674de227e21e0879d4f600ba890f3d0a80356379c8",
+      "size": 141535,
+      "source_type": "direct",
+      "download_url": "/files/mods/lionfishapi-2.7-fix-fix.jar"
+    },
+    {
+      "relative_path": "mods/lithium-neoforge-0.15.3+mc1.21.1.jar",
+      "file_name": "lithium-neoforge-0.15.3+mc1.21.1.jar",
+      "sha256": "a6548862bd13ff8eea6747cf61df50c8374a16a22d067614e414ed600eee6d83",
+      "size": 774148,
+      "source_type": "direct",
+      "download_url": "/files/mods/lithium-neoforge-0.15.3+mc1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/mcw-doors-1.1.5-mc1.21.1neoforge.jar",
+      "file_name": "mcw-doors-1.1.5-mc1.21.1neoforge.jar",
+      "sha256": "87261e309f5e10c9910169d5acbba613cab3a2d2270698b0bd47e657a45b0518",
+      "size": 1190404,
+      "source_type": "direct",
+      "download_url": "/files/mods/mcw-doors-1.1.5-mc1.21.1neoforge.jar"
+    },
+    {
+      "relative_path": "mods/modernfix-neoforge-5.27.4+mc1.21.1.jar",
+      "file_name": "modernfix-neoforge-5.27.4+mc1.21.1.jar",
+      "sha256": "eb3b0bee79078ca0f9d39b20a8edd847384c287179478f99065c7d1eb95f4033",
+      "size": 562051,
+      "source_type": "direct",
+      "download_url": "/files/mods/modernfix-neoforge-5.27.4+mc1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/moogs_structures-neoforge-1.21.1-2.0.2.jar",
+      "file_name": "moogs_structures-neoforge-1.21.1-2.0.2.jar",
+      "sha256": "b2a9168da6374cc04b64e3ad20c1d0b69c0a083198cce66bc9fca86643e3ae78",
+      "size": 251391,
+      "source_type": "direct",
+      "download_url": "/files/mods/moogs_structures-neoforge-1.21.1-2.0.2.jar"
+    },
+    {
+      "relative_path": "mods/MoogsEndStructures-1.21-2.0.1.jar",
+      "file_name": "MoogsEndStructures-1.21-2.0.1.jar",
+      "sha256": "3c6818cb4ca78d783f16b013b1f80c41cc6899ecc4091365fdd3926583c6202a",
+      "size": 2458587,
+      "source_type": "direct",
+      "download_url": "/files/mods/MoogsEndStructures-1.21-2.0.1.jar"
+    },
+    {
+      "relative_path": "mods/MoogsNetherStructures-1.21-2.0.31.jar",
+      "file_name": "MoogsNetherStructures-1.21-2.0.31.jar",
+      "sha256": "72c2daafe897d680a8c1433d6e73bf6d3f39d96b7d15fdcb90de52d06c5936a4",
+      "size": 1469454,
+      "source_type": "direct",
+      "download_url": "/files/mods/MoogsNetherStructures-1.21-2.0.31.jar"
+    },
+    {
+      "relative_path": "mods/moonlight-1.21-2.29.33-neoforge.jar",
+      "file_name": "moonlight-1.21-2.29.33-neoforge.jar",
+      "sha256": "47759081ab26271fed829f17abe1a8aa8ac1a17a111acb3b9255749e35e00f7a",
+      "size": 1596760,
+      "source_type": "direct",
+      "download_url": "/files/mods/moonlight-1.21-2.29.33-neoforge.jar"
+    },
+    {
+      "relative_path": "mods/moreculling-neoforge-1.21.1-1.0.7.jar",
+      "file_name": "moreculling-neoforge-1.21.1-1.0.7.jar",
+      "sha256": "80e4716a3da53c920ce6e8d122332edc65b91c9f7e4d94bedacac9f35fe32aa0",
+      "size": 344279,
+      "source_type": "direct",
+      "download_url": "/files/mods/moreculling-neoforge-1.21.1-1.0.7.jar"
+    },
+    {
+      "relative_path": "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "file_name": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "sha256": "68e6f4201c5de97b77929a7215c9552495696ca6a3bf3ae4eacc34e135f6cc8b",
+      "size": 73938,
+      "source_type": "direct",
+      "download_url": "/files/mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar"
+    },
+    {
+      "relative_path": "mods/mowziesmobs-1.21.1-1.8.2.jar",
+      "file_name": "mowziesmobs-1.21.1-1.8.2.jar",
+      "sha256": "b8e7e39fb6430326de7fbb193db56588ee8bd04d0054527924fe588f37131e4f",
+      "size": 36042925,
+      "source_type": "direct",
+      "download_url": "/files/mods/mowziesmobs-1.21.1-1.8.2.jar"
+    },
+    {
+      "relative_path": "mods/naturalist-1.0.2-neoforge-1.21.1.jar",
+      "file_name": "naturalist-1.0.2-neoforge-1.21.1.jar",
+      "sha256": "04616a9f136c7a8fd6f9f75e83be80af33bc54924b3ca16b0f33d19273c25e95",
+      "size": 5028168,
+      "source_type": "direct",
+      "download_url": "/files/mods/naturalist-1.0.2-neoforge-1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/notenoughanimations-neoforge-1.12.2-mc1.21.1.jar",
+      "file_name": "notenoughanimations-neoforge-1.12.2-mc1.21.1.jar",
+      "sha256": "ec941215d8b14ccf2927e5c80304511d6340d6025fec7212fcdb3fb2ef00a61c",
+      "size": 1933309,
+      "source_type": "direct",
+      "download_url": "/files/mods/notenoughanimations-neoforge-1.12.2-mc1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/particle_core-0.3.3+1.21+neoforge.jar",
+      "file_name": "particle_core-0.3.3+1.21+neoforge.jar",
+      "sha256": "38c05981d1dc8428c7ab1130b9ec7f05bca1b70f909aba9c454c9611702a8dda",
+      "size": 138375,
+      "source_type": "direct",
+      "download_url": "/files/mods/particle_core-0.3.3+1.21+neoforge.jar"
+    },
+    {
+      "relative_path": "mods/particlerain-4.0.0-beta.9+1.21.1-neoforge.jar",
+      "file_name": "particlerain-4.0.0-beta.9+1.21.1-neoforge.jar",
+      "sha256": "dd886cfd14c6cf1d23aec5d40871fd4b8794e65bc4153a74619e418a1b3165ba",
+      "size": 602187,
+      "source_type": "direct",
+      "download_url": "/files/mods/particlerain-4.0.0-beta.9+1.21.1-neoforge.jar"
+    },
+    {
+      "relative_path": "mods/PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+      "file_name": "PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+      "sha256": "b49535698de9c7b5a879c8ec99175771d87d5261d5cc4c6152ba1fa51fc5676a",
+      "size": 97094,
+      "source_type": "direct",
+      "download_url": "/files/mods/PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar"
+    },
+    {
+      "relative_path": "mods/Prism-1.21.1-neoforge-1.0.11.jar",
+      "file_name": "Prism-1.21.1-neoforge-1.0.11.jar",
+      "sha256": "b6a1e585416c48d7d9fa53fc12c67122ad1f3a6965202b51d4e2c643ffca61c2",
+      "size": 62031,
+      "source_type": "direct",
+      "download_url": "/files/mods/Prism-1.21.1-neoforge-1.0.11.jar"
+    },
+    {
+      "relative_path": "mods/PuzzlesLib-v21.1.39-1.21.1-NeoForge.jar",
+      "file_name": "PuzzlesLib-v21.1.39-1.21.1-NeoForge.jar",
+      "sha256": "305c828c171a5b52867b56686665b525bcf286018496ece81f376806794ba914",
+      "size": 1080389,
+      "source_type": "direct",
+      "download_url": "/files/mods/PuzzlesLib-v21.1.39-1.21.1-NeoForge.jar"
+    },
+    {
+      "relative_path": "mods/rechiseled-1.2.4-neoforge-mc1.21.jar",
+      "file_name": "rechiseled-1.2.4-neoforge-mc1.21.jar",
+      "sha256": "3316acf7af3a250fd0f2fa5c39540ee4e81c21f7ead29c4107d6a95f47642dd2",
+      "size": 11488067,
+      "source_type": "direct",
+      "download_url": "/files/mods/rechiseled-1.2.4-neoforge-mc1.21.jar"
+    },
+    {
+      "relative_path": "mods/resourcefulconfig-neoforge-1.21-3.0.11.jar",
+      "file_name": "resourcefulconfig-neoforge-1.21-3.0.11.jar",
+      "sha256": "25b4f3502d25c535004acd4a9420272fff01d2f1e2df352239fec93fdab005d4",
+      "size": 341009,
+      "source_type": "direct",
+      "download_url": "/files/mods/resourcefulconfig-neoforge-1.21-3.0.11.jar"
+    },
+    {
+      "relative_path": "mods/resourcefullib-neoforge-1.21-3.0.12.jar",
+      "file_name": "resourcefullib-neoforge-1.21-3.0.12.jar",
+      "sha256": "5e36f2c69de008dc5795f730c84ab767688f15c810944b585485349a0c911261",
+      "size": 484332,
+      "source_type": "direct",
+      "download_url": "/files/mods/resourcefullib-neoforge-1.21-3.0.12.jar"
+    },
+    {
+      "relative_path": "mods/rightclickharvest-neoforge-4.6.1+1.21.1.jar",
+      "file_name": "rightclickharvest-neoforge-4.6.1+1.21.1.jar",
+      "sha256": "b5d597ed361964ba9530a848fe8987715f40af2390dfa1a6adb70a2a74076d52",
+      "size": 287634,
+      "source_type": "direct",
+      "download_url": "/files/mods/rightclickharvest-neoforge-4.6.1+1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/ritchiesprojectilelib-2.1.2+mc.1.21.1-neoforge.jar",
+      "file_name": "ritchiesprojectilelib-2.1.2+mc.1.21.1-neoforge.jar",
+      "sha256": "cc509060833736fb650aa4c36b1ce33a7eeeb9ca6e9f8e80a7c951c9e7487b24",
+      "size": 76369,
+      "source_type": "direct",
+      "download_url": "/files/mods/ritchiesprojectilelib-2.1.2+mc.1.21.1-neoforge.jar"
+    },
+    {
+      "relative_path": "mods/sable-neoforge-1.21.1-1.2.2.jar",
+      "file_name": "sable-neoforge-1.21.1-1.2.2.jar",
+      "sha256": "15fb660a0d368204b37f3967bfcc48137397b7174ca2945c5635cc4539c755f8",
+      "size": 12719293,
+      "source_type": "direct",
+      "download_url": "/files/mods/sable-neoforge-1.21.1-1.2.2.jar"
+    },
+    {
+      "relative_path": "mods/servercore-neoforge-1.5.10+1.21.1.jar",
+      "file_name": "servercore-neoforge-1.5.10+1.21.1.jar",
+      "sha256": "8f1575e774782ca82f7b68ad074568c05bb919d818519a7d2b0d10022779f3d6",
+      "size": 1429522,
+      "source_type": "direct",
+      "download_url": "/files/mods/servercore-neoforge-1.5.10+1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/shulkerboxtooltip-neoforge-5.1.9+1.21.1.jar",
+      "file_name": "shulkerboxtooltip-neoforge-5.1.9+1.21.1.jar",
+      "sha256": "36c6ab0fd4b6e684e2d554c67d783067dced9906cfd2b75cae56dd9ede53407a",
+      "size": 381204,
+      "source_type": "direct",
+      "download_url": "/files/mods/shulkerboxtooltip-neoforge-5.1.9+1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/skinlayers3d-neoforge-1.11.1-mc1.21.1.jar",
+      "file_name": "skinlayers3d-neoforge-1.11.1-mc1.21.1.jar",
+      "sha256": "c825d6acd41a983217f410c6d51c6557e3afc35131f6da0aa6dcd07e67cfa52c",
+      "size": 1974380,
+      "source_type": "direct",
+      "download_url": "/files/mods/skinlayers3d-neoforge-1.11.1-mc1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/sliceanddice-forge-4.2.4.jar",
+      "file_name": "sliceanddice-forge-4.2.4.jar",
+      "sha256": "c3bd743a73eed3de14f6be5221fe68655cfeed0749f8f467f2ce2012ed1416bd",
+      "size": 406699,
+      "source_type": "direct",
+      "download_url": "/files/mods/sliceanddice-forge-4.2.4.jar"
+    },
+    {
+      "relative_path": "mods/sodium-neoforge-0.6.13+mc1.21.1.jar",
+      "file_name": "sodium-neoforge-0.6.13+mc1.21.1.jar",
+      "sha256": "7acd7af2ef75ec883a6872c17494ead65e38025151eb08a1d60e36d34377f403",
+      "size": 1162994,
+      "source_type": "direct",
+      "download_url": "/files/mods/sodium-neoforge-0.6.13+mc1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/sound-physics-remastered-neoforge-1.21.1-1.5.1.jar",
+      "file_name": "sound-physics-remastered-neoforge-1.21.1-1.5.1.jar",
+      "sha256": "bddc71ecd4f074a101eb3785599d13c69e64025e1029aa0fd0a28fcf9bccf2ea",
+      "size": 202454,
+      "source_type": "direct",
+      "download_url": "/files/mods/sound-physics-remastered-neoforge-1.21.1-1.5.1.jar"
+    },
+    {
+      "relative_path": "mods/supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+      "file_name": "supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+      "sha256": "d2ba7b839a2268e4e223457e813d11aa2476c3bf708a7bba691d8fc851778a4b",
+      "size": 207514,
+      "source_type": "direct",
+      "download_url": "/files/mods/supermartijn642configlib-1.1.8-neoforge-mc1.21.jar"
+    },
+    {
+      "relative_path": "mods/supermartijn642corelib-1.1.21-neoforge-mc1.21.jar",
+      "file_name": "supermartijn642corelib-1.1.21-neoforge-mc1.21.jar",
+      "sha256": "d22b6dfea6922cb534adb9f8c5d43e4a3c27c864e512951df801cb1435a4d4d8",
+      "size": 558371,
+      "source_type": "direct",
+      "download_url": "/files/mods/supermartijn642corelib-1.1.21-neoforge-mc1.21.jar"
+    },
+    {
+      "relative_path": "mods/supplementaries-1.21-3.5.34-neoforge.jar",
+      "file_name": "supplementaries-1.21-3.5.34-neoforge.jar",
+      "sha256": "3e82252fcd89b090786e1640f8cf8fac76e3e35f30465849944e7b89ca2f433b",
+      "size": 13366044,
+      "source_type": "direct",
+      "download_url": "/files/mods/supplementaries-1.21-3.5.34-neoforge.jar"
+    },
+    {
+      "relative_path": "mods/t_and_t-neoforge-fabric-1.13.7+1.21.1.jar",
+      "file_name": "t_and_t-neoforge-fabric-1.13.7+1.21.1.jar",
+      "sha256": "925d61a8cee8ca013bac15cda2fcfbdf647eb1cde50c414c18298ea3a627c640",
+      "size": 3641681,
+      "source_type": "direct",
+      "download_url": "/files/mods/t_and_t-neoforge-fabric-1.13.7+1.21.1.jar"
+    },
+    {
+      "relative_path": "mods/trade-cycling-neoforge-1.21.1-1.0.18.jar",
+      "file_name": "trade-cycling-neoforge-1.21.1-1.0.18.jar",
+      "sha256": "dc1dc7ddcff62689e6d02212dbae33e54ecd906242bd8c2700be25e63aa93bba",
+      "size": 85732,
+      "source_type": "direct",
+      "download_url": "/files/mods/trade-cycling-neoforge-1.21.1-1.0.18.jar"
+    },
+    {
+      "relative_path": "mods/trading_floor-3.0.16.jar",
+      "file_name": "trading_floor-3.0.16.jar",
+      "sha256": "f0aacddb1f8f191f13b79c603e52bd49a6d1cb918078d8a3bdcb2621c88b8d40",
+      "size": 214343,
+      "source_type": "direct",
+      "download_url": "/files/mods/trading_floor-3.0.16.jar"
+    },
+    {
+      "relative_path": "mods/travelersbackpack-neoforge-1.21.1-10.1.34.jar",
+      "file_name": "travelersbackpack-neoforge-1.21.1-10.1.34.jar",
+      "sha256": "3371817ad2880d49edc4b34036b3cbe65515f07b0beffcbedeedf244f083c9d1",
+      "size": 1352912,
+      "source_type": "direct",
+      "download_url": "/files/mods/travelersbackpack-neoforge-1.21.1-10.1.34.jar"
+    },
+    {
+      "relative_path": "mods/treeharvester-1.21.1-9.1.jar",
+      "file_name": "treeharvester-1.21.1-9.1.jar",
+      "sha256": "28b26730c92be0ed8d937c2b6cbf5c4bc754ac3fce015bc590d91352361c5f69",
+      "size": 119125,
+      "source_type": "direct",
+      "download_url": "/files/mods/treeharvester-1.21.1-9.1.jar"
+    },
+    {
+      "relative_path": "mods/VisualWorkbench-v21.1.1-1.21.1-NeoForge.jar",
+      "file_name": "VisualWorkbench-v21.1.1-1.21.1-NeoForge.jar",
+      "sha256": "a5bb002229e30a44237282371cff48baf6e889bc69b5753e70323e1d41c0616d",
+      "size": 81945,
+      "source_type": "direct",
+      "download_url": "/files/mods/VisualWorkbench-v21.1.1-1.21.1-NeoForge.jar"
+    },
+    {
+      "relative_path": "mods/waystones-neoforge-1.21.1-21.1.30.jar",
+      "file_name": "waystones-neoforge-1.21.1-21.1.30.jar",
+      "sha256": "9b4ccf9e5811ecdebdb0acbf3f3ee3f525df0ab9c1fe9ae3e3ee7c9f52288099",
+      "size": 877356,
+      "source_type": "direct",
+      "download_url": "/files/mods/waystones-neoforge-1.21.1-21.1.30.jar"
+    },
+    {
+      "relative_path": "mods/xaerominimap-neoforge-1.21.1-25.3.10.jar",
+      "file_name": "xaerominimap-neoforge-1.21.1-25.3.10.jar",
+      "sha256": "b28dd669e17d70be126b887845646ade10f2c9a2aed15a0750e7cc1c760e653d",
+      "size": 2137784,
+      "source_type": "direct",
+      "download_url": "/files/mods/xaerominimap-neoforge-1.21.1-25.3.10.jar"
+    },
+    {
+      "relative_path": "mods/xaeroworldmap-neoforge-1.21.1-1.40.11.jar",
+      "file_name": "xaeroworldmap-neoforge-1.21.1-1.40.11.jar",
+      "sha256": "a00363399c1672e5bfa399889d128f5ba60f42200ee97312038924df6cbebcb6",
+      "size": 1386001,
+      "source_type": "direct",
+      "download_url": "/files/mods/xaeroworldmap-neoforge-1.21.1-1.40.11.jar"
+    },
+    {
+      "relative_path": "mods/YungsApi-1.21.1-NeoForge-5.1.6.jar",
+      "file_name": "YungsApi-1.21.1-NeoForge-5.1.6.jar",
+      "sha256": "08e1d21690d3213a4c62de6b6cf79f3527afb2e72e0cad0e1848d46eb8f682ca",
+      "size": 388678,
+      "source_type": "direct",
+      "download_url": "/files/mods/YungsApi-1.21.1-NeoForge-5.1.6.jar"
+    },
+    {
+      "relative_path": "mods/YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+      "file_name": "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+      "sha256": "8005f1ea798d09fc05dad07a21ed1f393a523a718197cdbd37b1ce6d9a17e4a4",
+      "size": 398130,
+      "source_type": "direct",
+      "download_url": "/files/mods/YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar"
+    },
+    {
+      "relative_path": "mods/YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
+      "file_name": "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
+      "sha256": "5450a64a7036237f449496837e08f3e5b3aa1d7974a10df43944172def75d8ff",
+      "size": 609639,
+      "source_type": "direct",
+      "download_url": "/files/mods/YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar"
+    },
+    {
+      "relative_path": "mods/zombieawareness-neoforge-1.21.0-1.13.2.jar",
+      "file_name": "zombieawareness-neoforge-1.21.0-1.13.2.jar",
+      "sha256": "8152f9fa4c0c3cdb6541ac46d852902617e80ccd121cfa43412c0b56045b40ae",
+      "size": 304511,
+      "source_type": "direct",
+      "download_url": "/files/mods/zombieawareness-neoforge-1.21.0-1.13.2.jar"
+    },
+    {
+      "relative_path": "config/aeronautics-server.toml",
+      "file_name": "aeronautics-server.toml",
+      "sha256": "a9302b0253e494e7d80f0a2785bf4514b0b67da85796437ca032482db62be514",
+      "size": 3066,
+      "source_type": "direct",
+      "download_url": "/files/config/aeronautics-server.toml"
+    },
+    {
+      "relative_path": "config/appleskin-client.toml",
+      "file_name": "appleskin-client.toml",
+      "sha256": "7127a276c7305371397053cd8d0833e6825c828850626e4067b9fed1430ed217",
+      "size": 1376,
+      "source_type": "direct",
+      "download_url": "/files/config/appleskin-client.toml"
+    },
+    {
+      "relative_path": "config/artifacts/client.toml",
+      "file_name": "client.toml",
+      "sha256": "3921700655db2af439702410ce0f4771955fa426b8b184ccb569721063da2a70",
+      "size": 819,
+      "source_type": "direct",
+      "download_url": "/files/config/artifacts/client.toml"
+    },
+    {
+      "relative_path": "config/artifacts/general.toml",
+      "file_name": "general.toml",
+      "sha256": "b73793e634d1a441c12ed1c3d02ec074b2f19a24766512f78ff0b9d83cf9768b",
+      "size": 2326,
+      "source_type": "direct",
+      "download_url": "/files/config/artifacts/general.toml"
+    },
+    {
+      "relative_path": "config/artifacts/items.toml",
+      "file_name": "items.toml",
+      "sha256": "4ad2b5325a9ddd32792b0cca532ab88914ae0c85aef8f5f56db8f5e75609bc28",
+      "size": 20051,
+      "source_type": "direct",
+      "download_url": "/files/config/artifacts/items.toml"
+    },
+    {
+      "relative_path": "config/badoptimizations.txt",
+      "file_name": "badoptimizations.txt",
+      "sha256": "cae5ba66971b2f61e0b523c5aeb8b8d4fa806f0bea8a1709860e4fea94426ac9",
+      "size": 3458,
+      "source_type": "direct",
+      "download_url": "/files/config/badoptimizations.txt"
+    },
+    {
+      "relative_path": "config/betterendisland-neoforge-1_21.toml",
+      "file_name": "betterendisland-neoforge-1_21.toml",
+      "sha256": "ffe069fd52a22a7967f4d012382dca670f585635cb721c2190f0595969b662af",
+      "size": 943,
+      "source_type": "direct",
+      "download_url": "/files/config/betterendisland-neoforge-1_21.toml"
+    },
+    {
+      "relative_path": "config/betterfortresses/neoforge-1_21/itemframes.json",
+      "file_name": "itemframes.json",
+      "sha256": "6474769db5c7046e17be6ebffec464a29cef772dbc5c8b425e5ac980cb7f071b",
+      "size": 1161,
+      "source_type": "direct",
+      "download_url": "/files/config/betterfortresses/neoforge-1_21/itemframes.json"
+    },
+    {
+      "relative_path": "config/betterfortresses/neoforge-1_21/README.txt",
+      "file_name": "README.txt",
+      "sha256": "1175dbf9cd2e7c91b1c852a51e3c0203c68484917e877465b283e2370ad62864",
+      "size": 1339,
+      "source_type": "direct",
+      "download_url": "/files/config/betterfortresses/neoforge-1_21/README.txt"
+    },
+    {
+      "relative_path": "config/betterfortresses/README.txt",
+      "file_name": "README.txt",
+      "sha256": "5643f5af88b445a96f2c6ea167b97cc640059eda5c849ed3c7b8d5023ab51a86",
+      "size": 867,
+      "source_type": "direct",
+      "download_url": "/files/config/betterfortresses/README.txt"
+    },
+    {
+      "relative_path": "config/betterfortresses-neoforge-1_21.toml",
+      "file_name": "betterfortresses-neoforge-1_21.toml",
+      "sha256": "0bef433c8253f63704694528c33dc854f2b28da084d420a61c43fd62d6e5301b",
+      "size": 425,
+      "source_type": "direct",
+      "download_url": "/files/config/betterfortresses-neoforge-1_21.toml"
+    },
+    {
+      "relative_path": "config/bosses_of_mass_destruction.json5",
+      "file_name": "bosses_of_mass_destruction.json5",
+      "sha256": "7564bd719243a64b1d00424eb4602b85415e578905de5a9587f5f10ff2427d1f",
+      "size": 1475,
+      "source_type": "direct",
+      "download_url": "/files/config/bosses_of_mass_destruction.json5"
+    },
+    {
+      "relative_path": "config/bosses_rise_config.client.toml",
+      "file_name": "bosses_rise_config.client.toml",
+      "sha256": "01798d134f654511347da8111ffa58a9aae6e58940d20079c6fca140288bba2f",
+      "size": 2509,
+      "source_type": "direct",
+      "download_url": "/files/config/bosses_rise_config.client.toml"
+    },
+    {
+      "relative_path": "config/bosses_rise_config.toml",
+      "file_name": "bosses_rise_config.toml",
+      "sha256": "18bb9749f794217affd192d1f16761e40b701bb7772ed00ae73bd419b3d9daaa",
+      "size": 768,
+      "source_type": "direct",
+      "download_url": "/files/config/bosses_rise_config.toml"
+    },
+    {
+      "relative_path": "config/c2me.toml",
+      "file_name": "c2me.toml",
+      "sha256": "a097252f5ed2e78d9c95576bdfc77fb801a4cf68261cd7c2e59bcc066a0a1b74",
+      "size": 9364,
+      "source_type": "direct",
+      "download_url": "/files/config/c2me.toml"
+    },
+    {
+      "relative_path": "config/carryon-client.toml",
+      "file_name": "carryon-client.toml",
+      "sha256": "865a366143df5f4d92941058c823ea48deb8445f6444b45e870331b16a444f0f",
+      "size": 588,
+      "source_type": "direct",
+      "download_url": "/files/config/carryon-client.toml"
+    },
+    {
+      "relative_path": "config/carryon-common-1.toml.bak",
+      "file_name": "carryon-common-1.toml.bak",
+      "sha256": "79429991d9637f5f7668be0b98c26c9cdc8e18b70e86def8df93c291115e4bf0",
+      "size": 8537,
+      "source_type": "direct",
+      "download_url": "/files/config/carryon-common-1.toml.bak"
+    },
+    {
+      "relative_path": "config/carryon-common.toml",
+      "file_name": "carryon-common.toml",
+      "sha256": "f83b9dbf8680053afeb18d595ae2f156375ca2ce0dd0d79dc55853484e5f4aed",
+      "size": 8513,
+      "source_type": "direct",
+      "download_url": "/files/config/carryon-common.toml"
+    },
+    {
+      "relative_path": "config/cataclysm-client.toml",
+      "file_name": "cataclysm-client.toml",
+      "sha256": "d0d46d14ad1317e3c4a113818f01fa8f8cf40546a882c649992d1a8f43583d7a",
+      "size": 477,
+      "source_type": "direct",
+      "download_url": "/files/config/cataclysm-client.toml"
+    },
+    {
+      "relative_path": "config/cataclysm-common.toml",
+      "file_name": "cataclysm-common.toml",
+      "sha256": "61926b9ce81d6d44ac25e367b67e5642235fa026e6dddd6be54e0c2965570cc7",
+      "size": 30664,
+      "source_type": "direct",
+      "download_url": "/files/config/cataclysm-common.toml"
+    },
+    {
+      "relative_path": "config/chat_heads.json5",
+      "file_name": "chat_heads.json5",
+      "sha256": "e198750061411cf7fca624e38b894ca104ca2cf2c2940da0409ce4240dcc2503",
+      "size": 229,
+      "source_type": "direct",
+      "download_url": "/files/config/chat_heads.json5"
+    },
+    {
+      "relative_path": "config/chunkloaders-common.toml",
+      "file_name": "chunkloaders-common.toml",
+      "sha256": "dd00a4e183f14243bc8c6904e53eaefd986a4a61fc69c33a851cbde3109fa279",
+      "size": 1606,
+      "source_type": "direct",
+      "download_url": "/files/config/chunkloaders-common.toml"
+    },
+    {
+      "relative_path": "config/chunky/config.json",
+      "file_name": "config.json",
+      "sha256": "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8",
+      "size": 146,
+      "source_type": "direct",
+      "download_url": "/files/config/chunky/config.json"
+    },
+    {
+      "relative_path": "config/chunky/tasks/minecraft/overworld.properties",
+      "file_name": "overworld.properties",
+      "sha256": "c25a637fbc891e6a7b7494ead4da9a5c6b27df37f43835a5a32d527a7f4d35a9",
+      "size": 137,
+      "source_type": "direct",
+      "download_url": "/files/config/chunky/tasks/minecraft/overworld.properties"
+    },
+    {
+      "relative_path": "config/collective.json5",
+      "file_name": "collective.json5",
+      "sha256": "1bd89e753b05ca51f7260596b5e8e8d53b6510eb39eb05c315a2e4f0d789461b",
+      "size": 999,
+      "source_type": "direct",
+      "download_url": "/files/config/collective.json5"
+    },
+    {
+      "relative_path": "config/comforts-common.toml",
+      "file_name": "comforts-common.toml",
+      "sha256": "1f21c10bfce9cd25aea641046a79df88867f68ba8ba3838a5e1662521f9f06a2",
+      "size": 189,
+      "source_type": "direct",
+      "download_url": "/files/config/comforts-common.toml"
+    },
+    {
+      "relative_path": "config/comforts-server.toml",
+      "file_name": "comforts-server.toml",
+      "sha256": "f6df47d3f1002fde8d9e59c8068acbc39e976b3392e8fd528dc9b38b2856c5a0",
+      "size": 1852,
+      "source_type": "direct",
+      "download_url": "/files/config/comforts-server.toml"
+    },
+    {
+      "relative_path": "config/copycats-client.toml",
+      "file_name": "copycats-client.toml",
+      "sha256": "381f51308cca7e8aaa1aebb9253a6be686f74ebc70d4da39dd7750d2ca2e9598",
+      "size": 340,
+      "source_type": "direct",
+      "download_url": "/files/config/copycats-client.toml"
+    },
+    {
+      "relative_path": "config/copycats-common.toml",
+      "file_name": "copycats-common.toml",
+      "sha256": "4554d0df9a25e4f58c07df938806bb435fa2556263b60537bcd8f3f3cd28f1c3",
+      "size": 2165,
+      "source_type": "direct",
+      "download_url": "/files/config/copycats-common.toml"
+    },
+    {
+      "relative_path": "config/copycats-server.toml",
+      "file_name": "copycats-server.toml",
+      "sha256": "3a2e328d298b0ef379673beffa566eda2d92b4f1d0e00425573b59f0ea66e646",
+      "size": 363,
+      "source_type": "direct",
+      "download_url": "/files/config/copycats-server.toml"
+    },
+    {
+      "relative_path": "config/CoroUtil/General.toml",
+      "file_name": "General.toml",
+      "sha256": "6d46bdc090d4bb9bdfb660be4ca94075dc08e09d5fed84108eba92a422a23c49",
+      "size": 129,
+      "source_type": "direct",
+      "download_url": "/files/config/CoroUtil/General.toml"
+    },
+    {
+      "relative_path": "config/corpse-server.toml",
+      "file_name": "corpse-server.toml",
+      "sha256": "806dc2002f95b1bcd16dec843051abc513576a1986ea1931d8c2cc82aef201c7",
+      "size": 1092,
+      "source_type": "direct",
+      "download_url": "/files/config/corpse-server.toml"
+    },
+    {
+      "relative_path": "config/create-client.toml",
+      "file_name": "create-client.toml",
+      "sha256": "cce3eab1a290cc1f0eada00031f0577f661f883aee3438cf1139283c65d1f319",
+      "size": 4795,
+      "source_type": "direct",
+      "download_url": "/files/config/create-client.toml"
+    },
+    {
+      "relative_path": "config/create-common.toml",
+      "file_name": "create-common.toml",
+      "sha256": "2e77b1d93b40ce3f381ad7eb2a9e6d7148de917518be5c2616939a4369c4b140",
+      "size": 153,
+      "source_type": "direct",
+      "download_url": "/files/config/create-common.toml"
+    },
+    {
+      "relative_path": "config/create-server.toml",
+      "file_name": "create-server.toml",
+      "sha256": "36216a05f3ed63106ba587c8c24ed6315385829e7f3dae695dcf545aba41a270",
+      "size": 16890,
+      "source_type": "direct",
+      "download_url": "/files/config/create-server.toml"
+    },
+    {
+      "relative_path": "config/create_dragons_plus-client.toml",
+      "file_name": "create_dragons_plus-client.toml",
+      "sha256": "cf30f0e99ef65fe80e80481bf9aaafefdbbf97adb84c0c3611ac2d9ca3cf8a28",
+      "size": 302,
+      "source_type": "direct",
+      "download_url": "/files/config/create_dragons_plus-client.toml"
+    },
+    {
+      "relative_path": "config/create_dragons_plus-common.toml",
+      "file_name": "create_dragons_plus-common.toml",
+      "sha256": "a8922820cd44bd06733e0cf2693f15397b7bab77a6b3b2640dae4536af8e3a0d",
+      "size": 1454,
+      "source_type": "direct",
+      "download_url": "/files/config/create_dragons_plus-common.toml"
+    },
+    {
+      "relative_path": "config/create_dragons_plus-server.toml",
+      "file_name": "create_dragons_plus-server.toml",
+      "sha256": "06c232854b6d18ea18bd9bbbed7a0317c0113aad12734066a46a1d9d28278520",
+      "size": 353,
+      "source_type": "direct",
+      "download_url": "/files/config/create_dragons_plus-server.toml"
+    },
+    {
+      "relative_path": "config/create_dragons_plus-simulated-extension-common.toml",
+      "file_name": "create_dragons_plus-simulated-extension-common.toml",
+      "sha256": "09545cf2404cec0fed061c48874676d3708d1f877fe55c1ff813af8cd8b8798c",
+      "size": 528,
+      "source_type": "direct",
+      "download_url": "/files/config/create_dragons_plus-simulated-extension-common.toml"
+    },
+    {
+      "relative_path": "config/create_dragons_plus-simulated-extension-server.toml",
+      "file_name": "create_dragons_plus-simulated-extension-server.toml",
+      "sha256": "4107acb79adfe12fc707af7d523157e702eaafbdf248280db97af9aea3aa802a",
+      "size": 2447,
+      "source_type": "direct",
+      "download_url": "/files/config/create_dragons_plus-simulated-extension-server.toml"
+    },
+    {
+      "relative_path": "config/create_enchantment_industry-client.toml",
+      "file_name": "create_enchantment_industry-client.toml",
+      "sha256": "f1c6a25f81ec0f112e431b9064088e641c37b33a1aa16eed2bc4d03884c2b39c",
+      "size": 155,
+      "source_type": "direct",
+      "download_url": "/files/config/create_enchantment_industry-client.toml"
+    },
+    {
+      "relative_path": "config/create_enchantment_industry-server.toml",
+      "file_name": "create_enchantment_industry-server.toml",
+      "sha256": "9323b62dc2da8afd4311fbf7b28bffe1ad6b5b4770fca42ada11815e8091d9f7",
+      "size": 6462,
+      "source_type": "direct",
+      "download_url": "/files/config/create_enchantment_industry-server.toml"
+    },
+    {
+      "relative_path": "config/create_jetpack-client.toml",
+      "file_name": "create_jetpack-client.toml",
+      "sha256": "89094f05746ba946d303ca7fd7888094c34165b4af507317e081b6c9b5f7ecc3",
+      "size": 334,
+      "source_type": "direct",
+      "download_url": "/files/config/create_jetpack-client.toml"
+    },
+    {
+      "relative_path": "config/create_jetpack-common.toml",
+      "file_name": "create_jetpack-common.toml",
+      "sha256": "1177996d40fc3be7b7716d2594874ac48b64d890ac82a88b41c88aff89a02567",
+      "size": 578,
+      "source_type": "direct",
+      "download_url": "/files/config/create_jetpack-common.toml"
+    },
+    {
+      "relative_path": "config/createaddition-common.toml",
+      "file_name": "createaddition-common.toml",
+      "sha256": "0441e89a64a3730006d3dde2e1fe81a25f9af4fcb1fd08c9f956b00e56c50650",
+      "size": 5285,
+      "source_type": "direct",
+      "download_url": "/files/config/createaddition-common.toml"
+    },
+    {
+      "relative_path": "config/createbigcannons-client.toml",
+      "file_name": "createbigcannons-client.toml",
+      "sha256": "dd1fabf921549ecaf23fc0cdb5eee8ab766c963671693dc29e5402bb2b4baf83",
+      "size": 3717,
+      "source_type": "direct",
+      "download_url": "/files/config/createbigcannons-client.toml"
+    },
+    {
+      "relative_path": "config/createbigcannons-server.toml",
+      "file_name": "createbigcannons-server.toml",
+      "sha256": "ffa79d44e4dc4407cebb841058b5fde911566fd5c0d0b8869f1374e254eb98ca",
+      "size": 10204,
+      "source_type": "direct",
+      "download_url": "/files/config/createbigcannons-server.toml"
+    },
+    {
+      "relative_path": "config/creeperoverhaul.jsonc",
+      "file_name": "creeperoverhaul.jsonc",
+      "sha256": "d8088bd461dd7666552c4174bac6549e55112728e07aa3addd0e32a805c230fc",
+      "size": 1913,
+      "source_type": "direct",
+      "download_url": "/files/config/creeperoverhaul.jsonc"
+    },
+    {
+      "relative_path": "config/crepperoverhaul-client.jsonc",
+      "file_name": "crepperoverhaul-client.jsonc",
+      "sha256": "8ebd8ce17fd98dc18dde0d3271b9237fbc98d9664647940308c9a4d7804dc200",
+      "size": 389,
+      "source_type": "direct",
+      "download_url": "/files/config/crepperoverhaul-client.jsonc"
+    },
+    {
+      "relative_path": "config/cristellib/auto_config_settings.json5",
+      "file_name": "auto_config_settings.json5",
+      "sha256": "799173b66094a241753f41af672ddf22921ca206cb88f1966d31960c89c3f99a",
+      "size": 895,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/auto_config_settings.json5"
+    },
+    {
+      "relative_path": "config/cristellib/betterfortresses/structure_toggle_config.json5",
+      "file_name": "structure_toggle_config.json5",
+      "sha256": "476e7c1f8d373b4ade74bbe411df17e65cd23371df0331195d3343d2a1add770",
+      "size": 85,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/betterfortresses/structure_toggle_config.json5"
+    },
+    {
+      "relative_path": "config/cristellib/block_factorys_bosses/structure_placement_config.json5",
+      "file_name": "structure_placement_config.json5",
+      "sha256": "c03be0c22bb5c7bb2bfe0f2a0281359d8123f261bf1fc10665f96997ca6c9595",
+      "size": 373,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/block_factorys_bosses/structure_placement_config.json5"
+    },
+    {
+      "relative_path": "config/cristellib/block_factorys_bosses/structure_toggle_config.json5",
+      "file_name": "structure_toggle_config.json5",
+      "sha256": "0186330f9aee9635a299be6b341557fa0ba3a6cc18d0fa376e7496ce7debf817",
+      "size": 241,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/block_factorys_bosses/structure_toggle_config.json5"
+    },
+    {
+      "relative_path": "config/cristellib/bosses_of_mass_destruction/structure_placement_config.json5",
+      "file_name": "structure_placement_config.json5",
+      "sha256": "e5161a40f230f7e8fbdaa1034a94013d2bf975fccc13cdd7bdd862b7891447a2",
+      "size": 361,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/bosses_of_mass_destruction/structure_placement_config.json5"
+    },
+    {
+      "relative_path": "config/cristellib/bosses_of_mass_destruction/structure_toggle_config.json5",
+      "file_name": "structure_toggle_config.json5",
+      "sha256": "634ac444ee2ae7b6b603d657e1fc169c02f9a3a83bc3b78f47bc27b0dbd6dd84",
+      "size": 239,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/bosses_of_mass_destruction/structure_toggle_config.json5"
+    },
+    {
+      "relative_path": "config/cristellib/built_in_packs.json5",
+      "file_name": "built_in_packs.json5",
+      "sha256": "f1be3df3751749fc4f475c886553f4b6b998c1a9f68f7ec33ddebe6909bffb14",
+      "size": 419,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/built_in_packs.json5"
+    },
+    {
+      "relative_path": "config/cristellib/cataclysm/structure_placement_config.json5",
+      "file_name": "structure_placement_config.json5",
+      "sha256": "f0085cda5e971134bcbf7793bca21f78e10d68aeacc7316313cc6e763ddea4ef",
+      "size": 953,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/cataclysm/structure_placement_config.json5"
+    },
+    {
+      "relative_path": "config/cristellib/cataclysm/structure_toggle_config.json5",
+      "file_name": "structure_toggle_config.json5",
+      "sha256": "44b14269e2f7628382cf11744ebd736a124c9c04d51df208aa1c16490e674e91",
+      "size": 707,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/cataclysm/structure_toggle_config.json5"
+    },
+    {
+      "relative_path": "config/cristellib/mes/structure_toggle_config.json5",
+      "file_name": "structure_toggle_config.json5",
+      "sha256": "573b4003c98bb3fc299300a03c5f6f475fba942067b05e5916b6f458f427ca47",
+      "size": 1371,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/mes/structure_toggle_config.json5"
+    },
+    {
+      "relative_path": "config/cristellib/mns/structure_toggle_config.json5",
+      "file_name": "structure_toggle_config.json5",
+      "sha256": "20a6fc06d023a06248e2943e895f10c2238cfd0508e71df9d0bba87bdc19553f",
+      "size": 2537,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/mns/structure_toggle_config.json5"
+    },
+    {
+      "relative_path": "config/cristellib/mowziesmobs/structure_placement_config.json5",
+      "file_name": "structure_placement_config.json5",
+      "sha256": "39d0dbee12f7ad3788cf2c7dfed6208f158b353b6b58af61b91eee6d7aaf8817",
+      "size": 369,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/mowziesmobs/structure_placement_config.json5"
+    },
+    {
+      "relative_path": "config/cristellib/mowziesmobs/structure_toggle_config.json5",
+      "file_name": "structure_toggle_config.json5",
+      "sha256": "ed19259693f2a542b7732909fde8be6a820b5ba0148a20012d7e3ce3e9adb21b",
+      "size": 246,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/mowziesmobs/structure_toggle_config.json5"
+    },
+    {
+      "relative_path": "config/cristellib/supplementaries/structure_placement_config.json5",
+      "file_name": "structure_placement_config.json5",
+      "sha256": "1175d80fb7e6cd18430c09e50b32c2a888202f2d51368741441dd8e0e1ea05b4",
+      "size": 125,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/supplementaries/structure_placement_config.json5"
+    },
+    {
+      "relative_path": "config/cristellib/supplementaries/structure_toggle_config.json5",
+      "file_name": "structure_toggle_config.json5",
+      "sha256": "1715fab1db080ca0bd264dce0cb2f8de8218d6e2989d085b0a3cb72b0f8c6225",
+      "size": 125,
+      "source_type": "direct",
+      "download_url": "/files/config/cristellib/supplementaries/structure_toggle_config.json5"
+    },
+    {
+      "relative_path": "config/crittersandcompanions-common.toml",
+      "file_name": "crittersandcompanions-common.toml",
+      "sha256": "aeeb856edf79e4bcd57772448f5aa1a3c6328c80ca6809efdd827382e9befa67",
+      "size": 501,
+      "source_type": "direct",
+      "download_url": "/files/config/crittersandcompanions-common.toml"
+    },
+    {
+      "relative_path": "config/curios-client.toml",
+      "file_name": "curios-client.toml",
+      "sha256": "8af475d222d452c40b548db89c8956f3e4d1e2aaf729464e3065f029936b3e0d",
+      "size": 766,
+      "source_type": "direct",
+      "download_url": "/files/config/curios-client.toml"
+    },
+    {
+      "relative_path": "config/curios-common.toml",
+      "file_name": "curios-common.toml",
+      "sha256": "9f00a6b9904cf63a36c0c72f8346642962d538aaa78b59943b9de60dda82e6d0",
+      "size": 159,
+      "source_type": "direct",
+      "download_url": "/files/config/curios-common.toml"
+    },
+    {
+      "relative_path": "config/curios-server.toml",
+      "file_name": "curios-server.toml",
+      "sha256": "1a3bee95a96f082b8e97cccbce30c1efe1352b616c78e06d5884fd4475668add",
+      "size": 483,
+      "source_type": "direct",
+      "download_url": "/files/config/curios-server.toml"
+    },
+    {
+      "relative_path": "config/DistantHorizons.toml",
+      "file_name": "DistantHorizons.toml",
+      "sha256": "ee727b41b33912ca27e7d7d26e208659817ee1aaaede221ba85b5456a83d7fc8",
+      "size": 32651,
+      "source_type": "direct",
+      "download_url": "/files/config/DistantHorizons.toml"
+    },
+    {
+      "relative_path": "config/dndecor-server.toml",
+      "file_name": "dndecor-server.toml",
+      "sha256": "faccba5a94a73907ea094de5145e20fc19219fa761d67aa1688287f40ab2e0c1",
+      "size": 3716,
+      "source_type": "direct",
+      "download_url": "/files/config/dndecor-server.toml"
+    },
+    {
+      "relative_path": "config/dynamic_fps.json",
+      "file_name": "dynamic_fps.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "size": 3,
+      "source_type": "direct",
+      "download_url": "/files/config/dynamic_fps.json"
+    },
+    {
+      "relative_path": "config/e4mc/e4mc.toml",
+      "file_name": "e4mc.toml",
+      "sha256": "3967d3b931472a818bdb8430414c324f40f2441132fafc029fef95f89507cc8e",
+      "size": 1120,
+      "source_type": "direct",
+      "download_url": "/files/config/e4mc/e4mc.toml"
+    },
+    {
+      "relative_path": "config/easyanvils-client.toml",
+      "file_name": "easyanvils-client.toml",
+      "sha256": "e7f75aee2a53eee492917c12e6ee3f7f69808877e59e6b2e8024408e961d8754",
+      "size": 221,
+      "source_type": "direct",
+      "download_url": "/files/config/easyanvils-client.toml"
+    },
+    {
+      "relative_path": "config/easyanvils-common.toml",
+      "file_name": "easyanvils-common.toml",
+      "sha256": "f447750708cb0c1773477734490a287ec21161610edac38cf7551ce486702b83",
+      "size": 423,
+      "source_type": "direct",
+      "download_url": "/files/config/easyanvils-common.toml"
+    },
+    {
+      "relative_path": "config/easyanvils-server.toml",
+      "file_name": "easyanvils-server.toml",
+      "sha256": "a5ccc7c1080a0f8a33d45ebb941b38dc607597ade1d128cba504a9cc1a873766",
+      "size": 3977,
+      "source_type": "direct",
+      "download_url": "/files/config/easyanvils-server.toml"
+    },
+    {
+      "relative_path": "config/easymagic-client.toml",
+      "file_name": "easymagic-client.toml",
+      "sha256": "2ad457c78882a34057f2fb5748398e9614a7fb5e491e8a868534de40cd2c1c6d",
+      "size": 1171,
+      "source_type": "direct",
+      "download_url": "/files/config/easymagic-client.toml"
+    },
+    {
+      "relative_path": "config/easymagic-common.toml",
+      "file_name": "easymagic-common.toml",
+      "sha256": "7a98b95d82e470d071fd0f51d97f4fceb59f7de4af3129e9447f7241f8cac700",
+      "size": 368,
+      "source_type": "direct",
+      "download_url": "/files/config/easymagic-common.toml"
+    },
+    {
+      "relative_path": "config/easymagic-server.toml",
+      "file_name": "easymagic-server.toml",
+      "sha256": "b2860a71cdc35a6f3cee847622a7085c35d3691f26ca7b4c84098e14bc4369dc",
+      "size": 2315,
+      "source_type": "direct",
+      "download_url": "/files/config/easymagic-server.toml"
+    },
+    {
+      "relative_path": "config/emi.css",
+      "file_name": "emi.css",
+      "sha256": "652e0e236276d5d913cb258af0bdeb8d0678131c562825d69a38c731d4dd19f4",
+      "size": 10186,
+      "source_type": "direct",
+      "download_url": "/files/config/emi.css"
+    },
+    {
+      "relative_path": "config/endermanoverhaul-client.jsonc",
+      "file_name": "endermanoverhaul-client.jsonc",
+      "sha256": "7fcc9808465cc6ac8f57426b568516f7ad9ba3197be8f3692ead91253f8bef7a",
+      "size": 473,
+      "source_type": "direct",
+      "download_url": "/files/config/endermanoverhaul-client.jsonc"
+    },
+    {
+      "relative_path": "config/endermanoverhaul.jsonc",
+      "file_name": "endermanoverhaul.jsonc",
+      "sha256": "e5cfdbe74d5411a4be3d51d27fe2bae8593dea6697819d0db3247acc9d1281f9",
+      "size": 1050,
+      "source_type": "direct",
+      "download_url": "/files/config/endermanoverhaul.jsonc"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/endrem.json",
+      "file_name": "endrem.json",
+      "sha256": "5a8e5f5fa575402b8c9d415833a7acc1858e124729ae81fdfa305a602cb4c180",
+      "size": 223,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/endrem.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/black_eye.json",
+      "file_name": "black_eye.json",
+      "sha256": "0ce694b7842011f30705cbadc1140a105e15eabe5983dd62605d82e57fefd201",
+      "size": 177,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/black_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/cold_eye.json",
+      "file_name": "cold_eye.json",
+      "sha256": "c4c4ab0d7606039bd261d43dd2f1800ba846e61dc8e9961b8ac4358cfabea768",
+      "size": 166,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/cold_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/corrupted_eye.json",
+      "file_name": "corrupted_eye.json",
+      "sha256": "121aeee0689da901f5f79589ef7382b94c04bdefc0a87ea0ffebeac467dfbdf2",
+      "size": 183,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/corrupted_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/cryptic_eye.json",
+      "file_name": "cryptic_eye.json",
+      "sha256": "ef23863e4d876d0aa07af8d57f5d561b90ca72ef47441321fee2afdcf6202624",
+      "size": 111,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/cryptic_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/cursed_eye.json",
+      "file_name": "cursed_eye.json",
+      "sha256": "25b39227a4ef5f485544a0824baa72a8f676bd7ded445769bb538c6adc901ebd",
+      "size": 180,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/cursed_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/evil_eye.json",
+      "file_name": "evil_eye.json",
+      "sha256": "f5c592ff7652da20f93acc2137675a1cee29b4ecb905f56e9b35dadebd396e65",
+      "size": 108,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/evil_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/exotic_eye.json",
+      "file_name": "exotic_eye.json",
+      "sha256": "b2bc84a480810af68e8c555b366fff36ecb67e6eeda2782210eb38d15c957353",
+      "size": 110,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/exotic_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/guardian_eye.json",
+      "file_name": "guardian_eye.json",
+      "sha256": "a1c9380a91f328df917aad9bb1e4e605f2ca5695be7b8207cf581b8e03d63a63",
+      "size": 180,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/guardian_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/lost_eye.json",
+      "file_name": "lost_eye.json",
+      "sha256": "791e725cce8319f03a71d7f6e534145dd698c4c0faea56a80d6be8090b1c7d76",
+      "size": 184,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/lost_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/magical_eye.json",
+      "file_name": "magical_eye.json",
+      "sha256": "1249d8322568693f552dc08271969dd24a357f53368820bc620f49abdc22dcf0",
+      "size": 163,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/magical_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/nether_eye.json",
+      "file_name": "nether_eye.json",
+      "sha256": "87e971a20021e5d64bc210f452979d6a0b61475b3304d327a2a6f1410d3d8aaf",
+      "size": 172,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/nether_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/old_eye.json",
+      "file_name": "old_eye.json",
+      "sha256": "9a8869b45d8c8ad5bd39de49351dee6b035670e3bf09ddf2573d6960d449b05e",
+      "size": 173,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/old_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/rogue_eye.json",
+      "file_name": "rogue_eye.json",
+      "sha256": "9bee3caeca1603cf33a8e1cbaee2ea9f0b422e1ce7ac0a3126c8647b2a8e24e8",
+      "size": 171,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/rogue_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/undead_eye.json",
+      "file_name": "undead_eye.json",
+      "sha256": "a9a571a279c7c20672d48aa7fb2546c461868cf1b80962e1367409f104c63ee8",
+      "size": 110,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/undead_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/witch_eye.json",
+      "file_name": "witch_eye.json",
+      "sha256": "41de53ad16ce01009a92b3d9f96e35aeac8a68a3de588d8fd9374b33f343a088",
+      "size": 111,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/witch_eye.json"
+    },
+    {
+      "relative_path": "config/EndRemastered-NeoForge/Eyes/wither_eye.json",
+      "file_name": "wither_eye.json",
+      "sha256": "86499d5affe90f36aac3df626303ac797e44fd1f08719d3041f5be4174e458c7",
+      "size": 162,
+      "source_type": "direct",
+      "download_url": "/files/config/EndRemastered-NeoForge/Eyes/wither_eye.json"
+    },
+    {
+      "relative_path": "config/entity_model_features.json",
+      "file_name": "entity_model_features.json",
+      "sha256": "c633e3370aa256a71ab45aec68683a2ec4b29b6c5c2dfd430f9788a854ccf920",
+      "size": 1207,
+      "source_type": "direct",
+      "download_url": "/files/config/entity_model_features.json"
+    },
+    {
+      "relative_path": "config/entity_texture_features.json",
+      "file_name": "entity_texture_features.json",
+      "sha256": "d8d72a9ac49bbe45921f1ace5a22c30b65802c5e70829343cf7acfd25f79b8dc",
+      "size": 1421,
+      "source_type": "direct",
+      "download_url": "/files/config/entity_texture_features.json"
+    },
+    {
+      "relative_path": "config/entityculling.json",
+      "file_name": "entityculling.json",
+      "sha256": "ceb5b3624c3269bef037b2914da8ab0d1c368abdd466156292a5d82db8803b0e",
+      "size": 1897,
+      "source_type": "direct",
+      "download_url": "/files/config/entityculling.json"
+    },
+    {
+      "relative_path": "config/epicknights/armor.json5",
+      "file_name": "armor.json5",
+      "sha256": "0ff17ebd10c2d1b1b21fa8f6e5667eed9c08b226f60805bc586e2bb06f058961",
+      "size": 12687,
+      "source_type": "direct",
+      "download_url": "/files/config/epicknights/armor.json5"
+    },
+    {
+      "relative_path": "config/epicknights/general.json5",
+      "file_name": "general.json5",
+      "sha256": "d3dec561a9b4985cb6407bc18bc1d8507e5bd7e6e916de32a0bdae0e8b2998ba",
+      "size": 1915,
+      "source_type": "direct",
+      "download_url": "/files/config/epicknights/general.json5"
+    },
+    {
+      "relative_path": "config/epicknights/mobs_equipment.json5",
+      "file_name": "mobs_equipment.json5",
+      "sha256": "35bf1bc34160e9a890814f08e0e9a69c3d7e21bf6991ace6548ef759e4cd8524",
+      "size": 1991,
+      "source_type": "direct",
+      "download_url": "/files/config/epicknights/mobs_equipment.json5"
+    },
+    {
+      "relative_path": "config/epicknights/shields.json5",
+      "file_name": "shields.json5",
+      "sha256": "ece9f2ec662c26d829d7439c0138717d9fe83dc606d055b64dab37799f209f3e",
+      "size": 1781,
+      "source_type": "direct",
+      "download_url": "/files/config/epicknights/shields.json5"
+    },
+    {
+      "relative_path": "config/epicknights/weapons.json5",
+      "file_name": "weapons.json5",
+      "sha256": "134eca5eafff0ffe0d52cf8774dd02fb247a6e2f6ca617f0acac396c9565ebd6",
+      "size": 9918,
+      "source_type": "direct",
+      "download_url": "/files/config/epicknights/weapons.json5"
+    },
+    {
+      "relative_path": "config/etf_warnings.json",
+      "file_name": "etf_warnings.json",
+      "sha256": "a5ba22e63061c1fb67f0f895f17681351eaeccc225faef966c29ee630593275e",
+      "size": 28,
+      "source_type": "direct",
+      "download_url": "/files/config/etf_warnings.json"
+    },
+    {
+      "relative_path": "config/exposure-client.toml",
+      "file_name": "exposure-client.toml",
+      "sha256": "cd8c2d6ef4dd823580b0e735f3f0049d5be109928520ec7e1d72f8668a16afef",
+      "size": 7689,
+      "source_type": "direct",
+      "download_url": "/files/config/exposure-client.toml"
+    },
+    {
+      "relative_path": "config/exposure-common.toml",
+      "file_name": "exposure-common.toml",
+      "sha256": "f437a2bff2337eecc996f8d0d17d348403eae070045dfbd37065c6fcb79ce6ce",
+      "size": 351,
+      "source_type": "direct",
+      "download_url": "/files/config/exposure-common.toml"
+    },
+    {
+      "relative_path": "config/exposure-server.toml",
+      "file_name": "exposure-server.toml",
+      "sha256": "a4e7d2d6bac537024dda0a613d6edfbb114cb4971e692e010cf5a43cb743e675",
+      "size": 5376,
+      "source_type": "direct",
+      "download_url": "/files/config/exposure-server.toml"
+    },
+    {
+      "relative_path": "config/fantasy_armor-armor_attributes.toml",
+      "file_name": "fantasy_armor-armor_attributes.toml",
+      "sha256": "502c9d8ab114fa928f786a21bf4b0280d7769602da5e339eb277fed4101be2b4",
+      "size": 93416,
+      "source_type": "direct",
+      "download_url": "/files/config/fantasy_armor-armor_attributes.toml"
+    },
+    {
+      "relative_path": "config/fantasy_armor-armor_effects.toml",
+      "file_name": "fantasy_armor-armor_effects.toml",
+      "sha256": "0d0e114703794e76e13dbe851f24a0696d48c2594b457140834c586dbaa36298",
+      "size": 2962,
+      "source_type": "direct",
+      "download_url": "/files/config/fantasy_armor-armor_effects.toml"
+    },
+    {
+      "relative_path": "config/fantasy_armor-common.toml",
+      "file_name": "fantasy_armor-common.toml",
+      "sha256": "d35ba711d247d77ca71be85599b1e68b61a9c4f1248e101bfc7564629869e6f8",
+      "size": 739,
+      "source_type": "direct",
+      "download_url": "/files/config/fantasy_armor-common.toml"
+    },
+    {
+      "relative_path": "config/farmersdelight-client.toml",
+      "file_name": "farmersdelight-client.toml",
+      "sha256": "a8cdc0376674d522d92d977cac5800d00c6f70ea62ea83dea59595fb232b8e3e",
+      "size": 476,
+      "source_type": "direct",
+      "download_url": "/files/config/farmersdelight-client.toml"
+    },
+    {
+      "relative_path": "config/farmersdelight-common.toml",
+      "file_name": "farmersdelight-common.toml",
+      "sha256": "0cc639f1ce8ab5e63f754ab41be3ab09398fd149de6d0b5edc476034e3ed8b06",
+      "size": 3817,
+      "source_type": "direct",
+      "download_url": "/files/config/farmersdelight-common.toml"
+    },
+    {
+      "relative_path": "config/ferritecore-mixin.toml",
+      "file_name": "ferritecore-mixin.toml",
+      "sha256": "1356f9d52b2dcb2afa5a593e53c286d9c1c3778a6f8b1cf761953b185b7dce78",
+      "size": 1603,
+      "source_type": "direct",
+      "download_url": "/files/config/ferritecore-mixin.toml"
+    },
+    {
+      "relative_path": "config/flywheel-client.toml",
+      "file_name": "flywheel-client.toml",
+      "sha256": "e145e330d557f01a5f7bd39bcd9cd7438a44a9d6c1718b7141bb27f8f09953cb",
+      "size": 636,
+      "source_type": "direct",
+      "download_url": "/files/config/flywheel-client.toml"
+    },
+    {
+      "relative_path": "config/fml.toml",
+      "file_name": "fml.toml",
+      "sha256": "cc59fb1039726fda3ab1eb69b06d9b9aebb7496604ea579cfb735bc5377e7825",
+      "size": 1550,
+      "source_type": "direct",
+      "download_url": "/files/config/fml.toml"
+    },
+    {
+      "relative_path": "config/fzzy_config/keybinds.toml",
+      "file_name": "keybinds.toml",
+      "sha256": "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f",
+      "size": 6403,
+      "source_type": "direct",
+      "download_url": "/files/config/fzzy_config/keybinds.toml"
+    },
+    {
+      "relative_path": "config/immediatelyfast.json",
+      "file_name": "immediatelyfast.json",
+      "sha256": "a6c9d147a51c9e432c5c74c00285cfc5ba8b6fa4a0c6686051a7168b158d0d7a",
+      "size": 1114,
+      "source_type": "direct",
+      "download_url": "/files/config/immediatelyfast.json"
+    },
+    {
+      "relative_path": "config/iris-excluded.json",
+      "file_name": "iris-excluded.json",
+      "sha256": "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb",
+      "size": 31,
+      "source_type": "direct",
+      "download_url": "/files/config/iris-excluded.json"
+    },
+    {
+      "relative_path": "config/iris.properties",
+      "file_name": "iris.properties",
+      "sha256": "621c5c13fc1e43ecada0c5b72c2c2aae99a3685024682cbb6031806e561d5914",
+      "size": 281,
+      "source_type": "direct",
+      "download_url": "/files/config/iris.properties"
+    },
+    {
+      "relative_path": "config/ironfurnaces-common.toml",
+      "file_name": "ironfurnaces-common.toml",
+      "sha256": "bfb348e145fd39f5b53f94d034a6baf4bed2added70097f5ce507324adee6c3e",
+      "size": 7220,
+      "source_type": "direct",
+      "download_url": "/files/config/ironfurnaces-common.toml"
+    },
+    {
+      "relative_path": "config/itemborders.toml",
+      "file_name": "itemborders.toml",
+      "sha256": "530b8b818fb7efbe0ed8fbc8dbaaa0861c75853d99368bf07ed7a490a6cbf1d0",
+      "size": 4709,
+      "source_type": "direct",
+      "download_url": "/files/config/itemborders.toml"
+    },
+    {
+      "relative_path": "config/jade/hide-blocks.json",
+      "file_name": "hide-blocks.json",
+      "sha256": "309df4ae96864c19eae41b646d58497c85a73b1fc3c584e772ef4d5822794baa",
+      "size": 149,
+      "source_type": "direct",
+      "download_url": "/files/config/jade/hide-blocks.json"
+    },
+    {
+      "relative_path": "config/jade/hide-entities.json",
+      "file_name": "hide-entities.json",
+      "sha256": "3741bb54a4535fb5a00fb0ee1f4386f3dd17834aebdf9e89c21fcd3307109709",
+      "size": 243,
+      "source_type": "direct",
+      "download_url": "/files/config/jade/hide-entities.json"
+    },
+    {
+      "relative_path": "config/jade/jade.json",
+      "file_name": "jade.json",
+      "sha256": "5754114a0a663b321793a61f741bafa70c2a6dd649657260cdc096600763ad94",
+      "size": 1090,
+      "source_type": "direct",
+      "download_url": "/files/config/jade/jade.json"
+    },
+    {
+      "relative_path": "config/jade/plugins.json",
+      "file_name": "plugins.json",
+      "sha256": "de9c758772545e082fd029da370a53e8cacd7da433f61ede8d536a2cc3665d91",
+      "size": 2208,
+      "source_type": "direct",
+      "download_url": "/files/config/jade/plugins.json"
+    },
+    {
+      "relative_path": "config/jade/sort-order.json",
+      "file_name": "sort-order.json",
+      "sha256": "c0b7112a34b3845cb26be0a5615ff53a212dc88f40138846592c8a463af5a647",
+      "size": 2292,
+      "source_type": "direct",
+      "download_url": "/files/config/jade/sort-order.json"
+    },
+    {
+      "relative_path": "config/jamlib/known_suspicious_jars.txt",
+      "file_name": "known_suspicious_jars.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "source_type": "direct",
+      "download_url": "/files/config/jamlib/known_suspicious_jars.txt"
+    },
+    {
+      "relative_path": "config/justhammers.json",
+      "file_name": "justhammers.json",
+      "sha256": "8beb976cccdb18afdf50b327cbfc109aef189a17be5b9989310353d4573edd57",
+      "size": 567,
+      "source_type": "direct",
+      "download_url": "/files/config/justhammers.json"
+    },
+    {
+      "relative_path": "config/lambdynlights.toml",
+      "file_name": "lambdynlights.toml",
+      "sha256": "92d4d2aad3c0d6214ac1a7836a1491dca1f1db09eaaf585c80559c1ef9fc78f0",
+      "size": 14272,
+      "source_type": "direct",
+      "download_url": "/files/config/lambdynlights.toml"
+    },
+    {
+      "relative_path": "config/lithium.properties",
+      "file_name": "lithium.properties",
+      "sha256": "6cf6f83720071fd1657c8e79b357caf68d40f410ae123e5f922483eb1d1d25be",
+      "size": 267,
+      "source_type": "direct",
+      "download_url": "/files/config/lithium.properties"
+    },
+    {
+      "relative_path": "config/modernfix-common.toml",
+      "file_name": "modernfix-common.toml",
+      "sha256": "72ca2bcea2a9946a3a54842f14eff6f7b47d8fc96ef497c1b56406643b153fd7",
+      "size": 105,
+      "source_type": "direct",
+      "download_url": "/files/config/modernfix-common.toml"
+    },
+    {
+      "relative_path": "config/modernfix-mixins.properties",
+      "file_name": "modernfix-mixins.properties",
+      "sha256": "f7684457ca67d68a8df81e6f63b2f1bc6e3d9e3633ef60eef45c55d9c50d026a",
+      "size": 5429,
+      "source_type": "direct",
+      "download_url": "/files/config/modernfix-mixins.properties"
+    },
+    {
+      "relative_path": "config/moonlight-client.toml",
+      "file_name": "moonlight-client.toml",
+      "sha256": "3f252fefef0345f9aa8a8d3b7eff02f045b8bf565329eeba9ec50c7989a63457",
+      "size": 1283,
+      "source_type": "direct",
+      "download_url": "/files/config/moonlight-client.toml"
+    },
+    {
+      "relative_path": "config/moonlight-common.toml",
+      "file_name": "moonlight-common.toml",
+      "sha256": "a6d5e783dc1469e925d4cf62f17a94ee2dff4ff025d9ed9e61b129581019cdf3",
+      "size": 960,
+      "source_type": "direct",
+      "download_url": "/files/config/moonlight-common.toml"
+    },
+    {
+      "relative_path": "config/moreculling.toml",
+      "file_name": "moreculling.toml",
+      "sha256": "db63bd41fae1b92828f13b34b93215549ca167ccf44a4c09d050fe559fa203a5",
+      "size": 540,
+      "source_type": "direct",
+      "download_url": "/files/config/moreculling.toml"
+    },
+    {
+      "relative_path": "config/MouseTweaks.cfg",
+      "file_name": "MouseTweaks.cfg",
+      "sha256": "4069ce1a439d8c37453c1b1e9f2037e0942674c7e48723a39b37eab245792ad4",
+      "size": 135,
+      "source_type": "direct",
+      "download_url": "/files/config/MouseTweaks.cfg"
+    },
+    {
+      "relative_path": "config/mowziesmobs-client.toml",
+      "file_name": "mowziesmobs-client.toml",
+      "sha256": "06947297f3c51ce24601dca44f19e89bc2aac5c0aadc2cb40eb30ade4f2194c5",
+      "size": 980,
+      "source_type": "direct",
+      "download_url": "/files/config/mowziesmobs-client.toml"
+    },
+    {
+      "relative_path": "config/mowziesmobs-common.toml",
+      "file_name": "mowziesmobs-common.toml",
+      "sha256": "0bb285aebae71e1711258b0e80c49e9e23ea68b9c86386d192f2c9274aceff1e",
+      "size": 37854,
+      "source_type": "direct",
+      "download_url": "/files/config/mowziesmobs-common.toml"
+    },
+    {
+      "relative_path": "config/naturalist-server.toml",
+      "file_name": "naturalist-server.toml",
+      "sha256": "6005917de3861bc3ab70a5fcb5f6917f1eba9968e7f90d95df690382dbfc81c2",
+      "size": 625,
+      "source_type": "direct",
+      "download_url": "/files/config/naturalist-server.toml"
+    },
+    {
+      "relative_path": "config/neoforge-client.toml",
+      "file_name": "neoforge-client.toml",
+      "sha256": "d58d93e2c429410d0abf25507d1679f732e1023b03bb52414348efcf5cf3ddb0",
+      "size": 578,
+      "source_type": "direct",
+      "download_url": "/files/config/neoforge-client.toml"
+    },
+    {
+      "relative_path": "config/neoforge-common.toml",
+      "file_name": "neoforge-common.toml",
+      "sha256": "fe878a2717a145cd890621eac5b3be1e1fd656f7ff9abc6e8d53f670d37474c4",
+      "size": 772,
+      "source_type": "direct",
+      "download_url": "/files/config/neoforge-common.toml"
+    },
+    {
+      "relative_path": "config/neoforge-server.toml",
+      "file_name": "neoforge-server.toml",
+      "sha256": "b1e3b38d612295f8d9dfa0fbdb538a992b7a1a3b7a766c491b4e9fdf3823396f",
+      "size": 1177,
+      "source_type": "direct",
+      "download_url": "/files/config/neoforge-server.toml"
+    },
+    {
+      "relative_path": "config/notenoughanimations.json",
+      "file_name": "notenoughanimations.json",
+      "sha256": "45121987f8bbbb948bd5096ffb02b1361c762b3e34836b3f9097a9a4ef7222d4",
+      "size": 3357,
+      "source_type": "direct",
+      "download_url": "/files/config/notenoughanimations.json"
+    },
+    {
+      "relative_path": "config/offroad-server.toml",
+      "file_name": "offroad-server.toml",
+      "sha256": "d5f0ed8390618c769d9cb40a77df04779b7bbe636343b753c1ed6f92d325ae2b",
+      "size": 1167,
+      "source_type": "direct",
+      "download_url": "/files/config/offroad-server.toml"
+    },
+    {
+      "relative_path": "config/particle_core_config.toml",
+      "file_name": "particle_core_config.toml",
+      "sha256": "9f21aae26ba31a4fd9bab85c4bb4e37d10ac408aff9feed91ad6acdf1e269634",
+      "size": 306,
+      "source_type": "direct",
+      "download_url": "/files/config/particle_core_config.toml"
+    },
+    {
+      "relative_path": "config/particle_core_disabled_optimizations_v2.json",
+      "file_name": "particle_core_disabled_optimizations_v2.json",
+      "sha256": "7189bb61c58cb1030b8ee486e66abf694d257192248b9b3ac4978df2b1366f7d",
+      "size": 1558,
+      "source_type": "direct",
+      "download_url": "/files/config/particle_core_disabled_optimizations_v2.json"
+    },
+    {
+      "relative_path": "config/particlerain/config.json",
+      "file_name": "config.json",
+      "sha256": "04dafd84ae4771ee93f924f2a766f6e7cad52d79f94c4b9f23d02422a8df7541",
+      "size": 1163,
+      "source_type": "direct",
+      "download_url": "/files/config/particlerain/config.json"
+    },
+    {
+      "relative_path": "config/pickupnotifier/pickupnotifier-client.toml",
+      "file_name": "pickupnotifier-client.toml",
+      "sha256": "079be54b7b6059b2864b3ed140dc1e20219589f6afba32dc4ff203c981ea6a4e",
+      "size": 3614,
+      "source_type": "direct",
+      "download_url": "/files/config/pickupnotifier/pickupnotifier-client.toml"
+    },
+    {
+      "relative_path": "config/pickupnotifier/pickupnotifier-server.toml",
+      "file_name": "pickupnotifier-server.toml",
+      "sha256": "f307605d2e9622fcb9290a02a28c37febfe87676faebe600899c339c1f9453e4",
+      "size": 505,
+      "source_type": "direct",
+      "download_url": "/files/config/pickupnotifier/pickupnotifier-server.toml"
+    },
+    {
+      "relative_path": "config/ponder-client.toml",
+      "file_name": "ponder-client.toml",
+      "sha256": "55affffe67e84dfe11e590769e235aee999b77f9484a3adf7ee8247a9f3d35ba",
+      "size": 635,
+      "source_type": "direct",
+      "download_url": "/files/config/ponder-client.toml"
+    },
+    {
+      "relative_path": "config/resourceful-config-web.json",
+      "file_name": "resourceful-config-web.json",
+      "sha256": "431c1cb1646a8b7a26293b2b7968bfb5012ad3544e468db3c1454d07a22c5c11",
+      "size": 196,
+      "source_type": "direct",
+      "download_url": "/files/config/resourceful-config-web.json"
+    },
+    {
+      "relative_path": "config/rightclickharvest.json5",
+      "file_name": "rightclickharvest.json5",
+      "sha256": "6eb5169563472ae96184c94e9f42ff7d76fdba403ed3190ffb308e817ea0a21e",
+      "size": 609,
+      "source_type": "direct",
+      "download_url": "/files/config/rightclickharvest.json5"
+    },
+    {
+      "relative_path": "config/ritchiesprojectilelib-server.toml",
+      "file_name": "ritchiesprojectilelib-server.toml",
+      "sha256": "793c05c7f9975032f536f7b9702a4f892b8beb31e641af1f12ee9c96aed4d013",
+      "size": 710,
+      "source_type": "direct",
+      "download_url": "/files/config/ritchiesprojectilelib-server.toml"
+    },
+    {
+      "relative_path": "config/sable-client.toml",
+      "file_name": "sable-client.toml",
+      "sha256": "0abc8a8f2ce730e440521d4d3d2cb45ec475e9d5a0e01e17e74cfbd63a0bd26b",
+      "size": 680,
+      "source_type": "direct",
+      "download_url": "/files/config/sable-client.toml"
+    },
+    {
+      "relative_path": "config/sable-common.toml",
+      "file_name": "sable-common.toml",
+      "sha256": "ff85fe8e0e93691961200fb4c8e910b44a99c6832a17d2ad564ed39ec3073713",
+      "size": 1843,
+      "source_type": "direct",
+      "download_url": "/files/config/sable-common.toml"
+    },
+    {
+      "relative_path": "config/servercore/config.yml",
+      "file_name": "config.yml",
+      "sha256": "6404d9e4203f3edf593600e468a9d01b65065b153fa4620aa2cc4f38c163b442",
+      "size": 11413,
+      "source_type": "direct",
+      "download_url": "/files/config/servercore/config.yml"
+    },
+    {
+      "relative_path": "config/servercore/optimizations.yml",
+      "file_name": "optimizations.yml",
+      "sha256": "c772edf46b15fa5105e861be301bc738aa4d3da6db45814ddc428e3d53ce6186",
+      "size": 1391,
+      "source_type": "direct",
+      "download_url": "/files/config/servercore/optimizations.yml"
+    },
+    {
+      "relative_path": "config/simulated-client.toml",
+      "file_name": "simulated-client.toml",
+      "sha256": "ae2634e6d32c7fb2e3cfe195f0d5c3a4bd2a1e073890d0abcc982065b41e8219",
+      "size": 646,
+      "source_type": "direct",
+      "download_url": "/files/config/simulated-client.toml"
+    },
+    {
+      "relative_path": "config/simulated-server.toml",
+      "file_name": "simulated-server.toml",
+      "sha256": "43f69b72502cfeb43e4b8584a1a8955120fcd25b31217ce199525127fd76e587",
+      "size": 6987,
+      "source_type": "direct",
+      "download_url": "/files/config/simulated-server.toml"
+    },
+    {
+      "relative_path": "config/skinlayers.json",
+      "file_name": "skinlayers.json",
+      "sha256": "45162f45aa2db525a0edc483959f35b6d958ba2e54066a4f87e7f3c3f0f99166",
+      "size": 497,
+      "source_type": "direct",
+      "download_url": "/files/config/skinlayers.json"
+    },
+    {
+      "relative_path": "config/sliceanddice-client.toml",
+      "file_name": "sliceanddice-client.toml",
+      "sha256": "3a5b0f383352483c0afb34cad7800ab7757b70d0028e6edbdb4c67b1762b829d",
+      "size": 29,
+      "source_type": "direct",
+      "download_url": "/files/config/sliceanddice-client.toml"
+    },
+    {
+      "relative_path": "config/sliceanddice-common.toml",
+      "file_name": "sliceanddice-common.toml",
+      "sha256": "8c17330d9f9804cd1540b0f442c7f7b7d1dbd3ccb3e22f6c4af222753ffd49ac",
+      "size": 475,
+      "source_type": "direct",
+      "download_url": "/files/config/sliceanddice-common.toml"
+    },
+    {
+      "relative_path": "config/sodium-fingerprint.json",
+      "file_name": "sodium-fingerprint.json",
+      "sha256": "a7bf9fad277bb52c511ea140be1f7a40d31ceee43face32dbae535dbbd2ba162",
+      "size": 427,
+      "source_type": "direct",
+      "download_url": "/files/config/sodium-fingerprint.json"
+    },
+    {
+      "relative_path": "config/sodium-mixins.properties",
+      "file_name": "sodium-mixins.properties",
+      "sha256": "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01",
+      "size": 258,
+      "source_type": "direct",
+      "download_url": "/files/config/sodium-mixins.properties"
+    },
+    {
+      "relative_path": "config/sodium-options.json",
+      "file_name": "sodium-options.json",
+      "sha256": "bb368a26014bac2c075edd5425827b66e0641e875a9fc936f8192ddbea505799",
+      "size": 686,
+      "source_type": "direct",
+      "download_url": "/files/config/sodium-options.json"
+    },
+    {
+      "relative_path": "config/sound_physics_remastered/occlusion.properties",
+      "file_name": "occlusion.properties",
+      "sha256": "ebbac45fbb3ca01487b85ffee9601b213b71896e6606fb297bcb0f3ac9c30ffb",
+      "size": 4831,
+      "source_type": "direct",
+      "download_url": "/files/config/sound_physics_remastered/occlusion.properties"
+    },
+    {
+      "relative_path": "config/sound_physics_remastered/reflectivity.properties",
+      "file_name": "reflectivity.properties",
+      "sha256": "e26b00784bb6239988759ed1a64551b9f301dc33c5a855d91e976ee4bf40ac8a",
+      "size": 4713,
+      "source_type": "direct",
+      "download_url": "/files/config/sound_physics_remastered/reflectivity.properties"
+    },
+    {
+      "relative_path": "config/sound_physics_remastered/sound_rates.properties",
+      "file_name": "sound_rates.properties",
+      "sha256": "28e15a5606aa1785aa50ad9e02df7b00bef365d764a202bc267be37407b6b11e",
+      "size": 102504,
+      "source_type": "direct",
+      "download_url": "/files/config/sound_physics_remastered/sound_rates.properties"
+    },
+    {
+      "relative_path": "config/sound_physics_remastered/soundphysics.properties",
+      "file_name": "soundphysics.properties",
+      "sha256": "d29dede3f214ee4b1aa03314f92c3f973c21ee6e26d173eba3d01a2083237b6d",
+      "size": 5104,
+      "source_type": "direct",
+      "download_url": "/files/config/sound_physics_remastered/soundphysics.properties"
+    },
+    {
+      "relative_path": "config/supplementaries-client.toml",
+      "file_name": "supplementaries-client.toml",
+      "sha256": "67add5078a9a0b871994a69e817754587ed41b923581b20c5770b92d4ee5e87b",
+      "size": 9292,
+      "source_type": "direct",
+      "download_url": "/files/config/supplementaries-client.toml"
+    },
+    {
+      "relative_path": "config/supplementaries-common.toml",
+      "file_name": "supplementaries-common.toml",
+      "sha256": "76509eed51fb4284bf2d7a76c6c54bd33467d3bb416c907cedbc5a89186fa567",
+      "size": 27752,
+      "source_type": "direct",
+      "download_url": "/files/config/supplementaries-common.toml"
+    },
+    {
+      "relative_path": "config/towns_and_towers/structure_enable_or_disable_new.json5",
+      "file_name": "structure_enable_or_disable_new.json5",
+      "sha256": "7c70e7df82d014a87dcb2defcf45d9654a22362283c7efe1f81f3b3c04290709",
+      "size": 3051,
+      "source_type": "direct",
+      "download_url": "/files/config/towns_and_towers/structure_enable_or_disable_new.json5"
+    },
+    {
+      "relative_path": "config/towns_and_towers/structure_rarity_new.json5",
+      "file_name": "structure_rarity_new.json5",
+      "sha256": "fe4ca0974aca38b27c94e3f1dc092f1688b54f27d9eaa728d61c6ccae4ca1313",
+      "size": 1520,
+      "source_type": "direct",
+      "download_url": "/files/config/towns_and_towers/structure_rarity_new.json5"
+    },
+    {
+      "relative_path": "config/trade_cycling-client.toml",
+      "file_name": "trade_cycling-client.toml",
+      "sha256": "b1f7ad749bc197d88af203010ef49252a3492ccf13ca80020eb8a76d5740b590",
+      "size": 129,
+      "source_type": "direct",
+      "download_url": "/files/config/trade_cycling-client.toml"
+    },
+    {
+      "relative_path": "config/trading_floor-server.toml",
+      "file_name": "trading_floor-server.toml",
+      "sha256": "ddd752e3e1214f68a42729d13f6bcaed68073fa9fba23a8afcda5d8c98de1548",
+      "size": 599,
+      "source_type": "direct",
+      "download_url": "/files/config/trading_floor-server.toml"
+    },
+    {
+      "relative_path": "config/transition.json",
+      "file_name": "transition.json",
+      "sha256": "6c0060c7301372bbc414f86a139b383e34fb620f0621badd71bb19efc3f26767",
+      "size": 62,
+      "source_type": "direct",
+      "download_url": "/files/config/transition.json"
+    },
+    {
+      "relative_path": "config/travelersbackpack-client.toml",
+      "file_name": "travelersbackpack-client.toml",
+      "sha256": "cd1bd3af16d2f93b16db571d21b5db5d2ac0a7e4637f2c5068dbf184c672838d",
+      "size": 1612,
+      "source_type": "direct",
+      "download_url": "/files/config/travelersbackpack-client.toml"
+    },
+    {
+      "relative_path": "config/travelersbackpack-common.toml",
+      "file_name": "travelersbackpack-common.toml",
+      "sha256": "37ce5a56214bb9ca267ea3a4bdeee69da309afbbd6f74866efdd6e987a709ce3",
+      "size": 197,
+      "source_type": "direct",
+      "download_url": "/files/config/travelersbackpack-common.toml"
+    },
+    {
+      "relative_path": "config/travelersbackpack-server.toml",
+      "file_name": "travelersbackpack-server.toml",
+      "sha256": "581c8fd9c887c27f2916a1928c83a8e998315b0a8ac0fe93941344ea8b5649f2",
+      "size": 11603,
+      "source_type": "direct",
+      "download_url": "/files/config/travelersbackpack-server.toml"
+    },
+    {
+      "relative_path": "config/treeharvester/harvestable_axe_blacklist.txt",
+      "file_name": "harvestable_axe_blacklist.txt",
+      "sha256": "4adef0cbe9f16e0312586c3d2be8e31aa02708fd16ad5b7665a888213f61c6ed",
+      "size": 440,
+      "source_type": "direct",
+      "download_url": "/files/config/treeharvester/harvestable_axe_blacklist.txt"
+    },
+    {
+      "relative_path": "config/treeharvester.json5",
+      "file_name": "treeharvester.json5",
+      "sha256": "054f4986f028da58e0a5e0bb2e61f18e69a0309ceeef73bbcb98c4563c30328e",
+      "size": 2687,
+      "source_type": "direct",
+      "download_url": "/files/config/treeharvester.json5"
+    },
+    {
+      "relative_path": "config/trender.json",
+      "file_name": "trender.json",
+      "sha256": "0a282f3623f7f9443a1d10b5768865f69e58b74e000dcfb4f40399626b7a6124",
+      "size": 47,
+      "source_type": "direct",
+      "download_url": "/files/config/trender.json"
+    },
+    {
+      "relative_path": "config/vanilla_structures/placement_structure_config.json5",
+      "file_name": "placement_structure_config.json5",
+      "sha256": "1f069468e438ae66f65ee41732603c895741b063add626a9e56ef7d0040ac4e6",
+      "size": 1690,
+      "source_type": "direct",
+      "download_url": "/files/config/vanilla_structures/placement_structure_config.json5"
+    },
+    {
+      "relative_path": "config/vanilla_structures/toggle_structure_config.json5",
+      "file_name": "toggle_structure_config.json5",
+      "sha256": "c4fb220488de3c1afc569f4b8a89d8e97f8b5504eeb59d9700b491f29718d2f9",
+      "size": 1423,
+      "source_type": "direct",
+      "download_url": "/files/config/vanilla_structures/toggle_structure_config.json5"
+    },
+    {
+      "relative_path": "config/visualworkbench-client.toml",
+      "file_name": "visualworkbench-client.toml",
+      "sha256": "d4618e607b629668b7f10e8641667c2104799627546173a142f45317f773b7d3",
+      "size": 459,
+      "source_type": "direct",
+      "download_url": "/files/config/visualworkbench-client.toml"
+    },
+    {
+      "relative_path": "config/visualworkbench-common.toml",
+      "file_name": "visualworkbench-common.toml",
+      "sha256": "118dee28250b68612c3e4b4913a11f39a55ddf56be30b4eee6306bcf4d27713c",
+      "size": 350,
+      "source_type": "direct",
+      "download_url": "/files/config/visualworkbench-common.toml"
+    },
+    {
+      "relative_path": "config/watut-item-arm-adjustments.json",
+      "file_name": "watut-item-arm-adjustments.json",
+      "sha256": "543e09f71cda1d97d238ac4150e43e50868cf781027c88d68fc714f261d88982",
+      "size": 3367,
+      "source_type": "direct",
+      "download_url": "/files/config/watut-item-arm-adjustments.json"
+    },
+    {
+      "relative_path": "config/waystones-common.toml",
+      "file_name": "waystones-common.toml",
+      "sha256": "f7864c7c27c378cafa13b4dfe0008e01d3b6aae442d4bf28cd851635b5e7a969",
+      "size": 6236,
+      "source_type": "direct",
+      "download_url": "/files/config/waystones-common.toml"
+    },
+    {
+      "relative_path": "config/xaero/lib/client.cfg",
+      "file_name": "client.cfg",
+      "sha256": "43ed9dbfa5b4d6f0f3d2e8c2ced17ad298164b22c68ff11d415257a39b074336",
+      "size": 26,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/lib/client.cfg"
+    },
+    {
+      "relative_path": "config/xaero/lib/common.cfg",
+      "file_name": "common.cfg",
+      "sha256": "98f698d96a6d21d830a455b4ad045b70516fa63c298021742d8499e7f0366cd2",
+      "size": 236,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/lib/common.cfg"
+    },
+    {
+      "relative_path": "config/xaero/lib/profiles/default.cfg",
+      "file_name": "default.cfg",
+      "sha256": "34ae854b17d896d7cb853bdc28c27231a3947e91cb9f0991f372846ee3c2a907",
+      "size": 121,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/lib/profiles/default.cfg"
+    },
+    {
+      "relative_path": "config/xaero/lib/server_profiles/default.cfg",
+      "file_name": "default.cfg",
+      "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
+      "size": 75,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/lib/server_profiles/default.cfg"
+    },
+    {
+      "relative_path": "config/xaero/minimap/client.cfg",
+      "file_name": "client.cfg",
+      "sha256": "c0915eff5d1a7905cd1038d646eb9086fd1a29e2f637d53535e4da161de17b9f",
+      "size": 235,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/minimap/client.cfg"
+    },
+    {
+      "relative_path": "config/xaero/minimap/common.cfg",
+      "file_name": "common.cfg",
+      "sha256": "2b49df024c03a369c62a303c72755e7fedeb4f4653ff53a12fd37bd83ccd4ed0",
+      "size": 147,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/minimap/common.cfg"
+    },
+    {
+      "relative_path": "config/xaero/minimap/default_radar_categories_client.json",
+      "file_name": "default_radar_categories_client.json",
+      "sha256": "b8ddf54611a9ab8c53177fc0d062321e9e731192b65b9e50d0fcb38a86a91696",
+      "size": 5531,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/minimap/default_radar_categories_client.json"
+    },
+    {
+      "relative_path": "config/xaero/minimap/default_radar_categories_server.json",
+      "file_name": "default_radar_categories_server.json",
+      "sha256": "a4c652cafa7dea324e5f5cf3b1df46a84e54b6d4f877195857bce55a559c1cfd",
+      "size": 4597,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/minimap/default_radar_categories_server.json"
+    },
+    {
+      "relative_path": "config/xaero/minimap/profiles/default.cfg",
+      "file_name": "default.cfg",
+      "sha256": "cd0f5c07b6be47c715189f615057a5fa5ed6b341e8c40bdb959bced012712d8d",
+      "size": 3569,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/minimap/profiles/default.cfg"
+    },
+    {
+      "relative_path": "config/xaero/minimap/server_profiles/default.cfg",
+      "file_name": "default.cfg",
+      "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
+      "size": 75,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/minimap/server_profiles/default.cfg"
+    },
+    {
+      "relative_path": "config/xaero/world-map/client.cfg",
+      "file_name": "client.cfg",
+      "sha256": "deece0fe0d29f2203a9699143a6209c451e91d7ecb799489c328b0d0fa31a90d",
+      "size": 466,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/world-map/client.cfg"
+    },
+    {
+      "relative_path": "config/xaero/world-map/common.cfg",
+      "file_name": "common.cfg",
+      "sha256": "0c229eb0daf85bd09af51f21eeeb99497a3bd50a825d5ab1ca695fb21bf6cf9d",
+      "size": 141,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/world-map/common.cfg"
+    },
+    {
+      "relative_path": "config/xaero/world-map/profiles/default.cfg",
+      "file_name": "default.cfg",
+      "sha256": "7b24c882801bcc7f0a8aedc625d419f661fa490fa0e9d5ebe39599a1ce2dcbd5",
+      "size": 1379,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/world-map/profiles/default.cfg"
+    },
+    {
+      "relative_path": "config/xaero/world-map/server_profiles/default.cfg",
+      "file_name": "default.cfg",
+      "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
+      "size": 75,
+      "source_type": "direct",
+      "download_url": "/files/config/xaero/world-map/server_profiles/default.cfg"
+    },
+    {
+      "relative_path": "config/xaerohud.txt",
+      "file_name": "xaerohud.txt",
+      "sha256": "58c9270f258d0b224bb7d0f7c927544d5fbe5f1b8027c820e1e14ecbf48fb88c",
+      "size": 123,
+      "source_type": "direct",
+      "download_url": "/files/config/xaerohud.txt"
+    },
+    {
+      "relative_path": "config/xaeropatreon.txt",
+      "file_name": "xaeropatreon.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "source_type": "direct",
+      "download_url": "/files/config/xaeropatreon.txt"
+    },
+    {
+      "relative_path": "config/zombieawareness/ClientConfig.toml",
+      "file_name": "ClientConfig.toml",
+      "sha256": "2ef2ab0620164ec282aa3f9890e3dd9e851fae6d95d9297372aa0592fd060446",
+      "size": 107,
+      "source_type": "direct",
+      "download_url": "/files/config/zombieawareness/ClientConfig.toml"
+    },
+    {
+      "relative_path": "config/zombieawareness/Features.toml",
+      "file_name": "Features.toml",
+      "sha256": "90cf8d5eb6e693804d73981eca0f8250b603735eaee9dac2767a5a089f3cf2dd",
+      "size": 1654,
+      "source_type": "direct",
+      "download_url": "/files/config/zombieawareness/Features.toml"
+    },
+    {
+      "relative_path": "config/zombieawareness/General.toml",
+      "file_name": "General.toml",
+      "sha256": "92f2535f7ede0a91dc657b6165f31eab2f71038e7967949f9e18179ecd6d3e09",
+      "size": 3315,
+      "source_type": "direct",
+      "download_url": "/files/config/zombieawareness/General.toml"
+    },
+    {
+      "relative_path": "config/zombieawareness/MobLists.toml",
+      "file_name": "MobLists.toml",
+      "sha256": "b68866270c078d98b80d42eb02992b0a8e88a74b68dce23bc89f2a51305bd861",
+      "size": 1300,
+      "source_type": "direct",
+      "download_url": "/files/config/zombieawareness/MobLists.toml"
+    },
+    {
+      "relative_path": "config/zombieawareness/PlayerRulesAndLists.toml",
+      "file_name": "PlayerRulesAndLists.toml",
+      "sha256": "bd60f14054777a8ff406e6033adf965f861c3faa347826f0022532eeabb23c09",
+      "size": 408,
+      "source_type": "direct",
+      "download_url": "/files/config/zombieawareness/PlayerRulesAndLists.toml"
+    },
+    {
+      "relative_path": "shaderpacks/BSL_v10.1.3.zip",
+      "file_name": "BSL_v10.1.3.zip",
+      "sha256": "185774628b5259c36255183fc1adeb0f64f89235f7ea2c826fa327d1112687a8",
+      "size": 1127026,
+      "source_type": "direct",
+      "download_url": "/files/shaderpacks/BSL_v10.1.3.zip"
+    },
+    {
+      "relative_path": "shaderpacks/ComplementaryReimagined_r5.7.1.zip",
+      "file_name": "ComplementaryReimagined_r5.7.1.zip",
+      "sha256": "24a20634a7832d422d3cd5023be16829f26840e25c69404dd418306ea79f63f0",
+      "size": 522970,
+      "source_type": "direct",
+      "download_url": "/files/shaderpacks/ComplementaryReimagined_r5.7.1.zip"
+    },
+    {
+      "relative_path": "shaderpacks/photon_v1.3b.zip",
+      "file_name": "photon_v1.3b.zip",
+      "sha256": "120897768eaa8cb1f14a3e98f88dff009ae3204ee3b96904a4fe8586edfc1ead",
+      "size": 3800987,
+      "source_type": "direct",
+      "download_url": "/files/shaderpacks/photon_v1.3b.zip"
+    },
+    {
+      "relative_path": "banned-players.json",
+      "file_name": "banned-players.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size": 2,
+      "source_type": "direct",
+      "download_url": "/files/banned-players.json"
+    },
+    {
+      "relative_path": "emi.json",
+      "file_name": "emi.json",
+      "sha256": "cf1c58fc05b96d074358e5e9ea030e44dae8b2eb23692d66c6829185a1c09653",
+      "size": 6133,
+      "source_type": "direct",
+      "download_url": "/files/emi.json"
+    },
+    {
+      "relative_path": "ponders_watched.json",
+      "file_name": "ponders_watched.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size": 2,
+      "source_type": "direct",
+      "download_url": "/files/ponders_watched.json"
+    },
+    {
+      "relative_path": "usernamecache.json",
+      "file_name": "usernamecache.json",
+      "sha256": "40e59c8dea62791730d8ef5447dd4e4eec77fb5e31ade1b464222ca741fd1adc",
+      "size": 219,
+      "source_type": "direct",
+      "download_url": "/files/usernamecache.json"
+    }
+  ],
   "preserve_paths": [
     "saves/",
     "screenshots/",
