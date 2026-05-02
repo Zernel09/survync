@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "survync"
 version = "0.1.0"
 description = "Minecraft modpack launcher and updater for Modrinth profiles"
-readme = "README.md"
+readme = {text = "Survync is a Windows-first Minecraft modpack launcher and updater for Modrinth profiles.", content-type = "text/markdown"}
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [

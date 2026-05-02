@@ -1,47 +1,92 @@
-# Survync Modpack Sync Script
-# Este script automatiza la generación del manifest y la copia de archivos al sitio estático.
+param(
+    [string]$ProfileDir = "C:\Users\tanit\AppData\Roaming\ModrinthApp\profiles\NeoForge 1.21.1",
+    [string]$SiteDir = "",
+    [string]$PackVersion = "1.0.1",
+    [string]$BaseUrl = "https://zernel09.github.io/survync/",
+    [string[]]$IncludeDirs = @(
+        "mods",
+        "config",
+        "shaderpacks",
+        "resourcepacks",
+        "kubejs",
+        "defaultconfigs",
+        "scripts",
+        "global_packs"
+    )
+)
 
-$ProfileDir = "C:\Users\tanit\AppData\Roaming\ModrinthApp\profiles\NeoForge 1.21.1"
-$SiteDir = ".\site"
-$FilesDir = "$SiteDir\files"
-$PackVersion = "1.0.1" # Incrementá esto para que el launcher detecte el cambio
-$BaseUrl = "https://zernel09.github.io/survync/" # Cambiá esto si tu URL es distinta
+$ErrorActionPreference = "Stop"
 
-Write-Host "--- Generando Manifests (v$PackVersion) ---" -ForegroundColor Cyan
-python tools/generate_manifest.py --profile-dir "$ProfileDir" --pack-version "$PackVersion" --base-download-url "$BaseUrl"
+$RepoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
+if ([string]::IsNullOrWhiteSpace($SiteDir)) {
+    $SiteDir = Join-Path $RepoRoot "site"
+} elseif (-not [System.IO.Path]::IsPathRooted($SiteDir)) {
+    $SiteDir = Join-Path $RepoRoot $SiteDir
+}
+
+$FilesDir = Join-Path $SiteDir "files"
+
+if (!(Test-Path -LiteralPath $ProfileDir -PathType Container)) {
+    throw "Profile directory does not exist: $ProfileDir"
+}
+
+Write-Host "--- Generating manifests (v$PackVersion) ---" -ForegroundColor Cyan
+& python (Join-Path $RepoRoot "tools\generate_manifest.py") `
+    --profile-dir "$ProfileDir" `
+    --output-dir "$SiteDir" `
+    --pack-version "$PackVersion" `
+    --base-download-url "$BaseUrl" `
+    --include-dirs $IncludeDirs
 
 if ($LASTEXITCODE -ne 0) {
-    Write-Host "Error generando el manifest. Abortando." -ForegroundColor Red
-    exit $LASTEXITCODE
+    throw "Manifest generation failed with exit code $LASTEXITCODE"
 }
 
-Write-Host "`n--- Preparando carpeta de archivos ---" -ForegroundColor Cyan
-if (!(Test-Path "$FilesDir")) {
-    New-Item -ItemType Directory -Path "$FilesDir" -Force
-}
+Write-Host "`n--- Preparing static file directory ---" -ForegroundColor Cyan
+New-Item -ItemType Directory -Path $FilesDir -Force | Out-Null
 
-Write-Host "`n--- Copiando archivos del modpack ---" -ForegroundColor Cyan
-# Directorios incluidos por defecto en generate_manifest.py
-$Dirs = @("mods", "config", "shaderpacks", "resourcepacks", "kubejs", "defaultconfigs", "scripts", "global_packs")
+Write-Host "`n--- Copying modpack files ---" -ForegroundColor Cyan
+foreach ($dir in $IncludeDirs) {
+    $source = Join-Path $ProfileDir $dir
+    $dest = Join-Path $FilesDir $dir
 
-foreach ($dir in $Dirs) {
-    if (Test-Path "$ProfileDir\$dir") {
-        Write-Host "Sincronizando $dir..."
-        # /MIR despeja archivos que ya no existen en el perfil (limpieza de huérfanos en el sitio)
-        robocopy "$ProfileDir\$dir" "$FilesDir\$dir" /MIR /NDL /NFL /NJH /NJS /R:3 /W:5
+    if (Test-Path -LiteralPath $source -PathType Container) {
+        Write-Host "Syncing $dir..."
+        & robocopy "$source" "$dest" /MIR /NDL /NFL /NJH /NJS /R:3 /W:5
+        if ($LASTEXITCODE -ge 8) {
+            throw "robocopy failed for $dir with exit code $LASTEXITCODE"
+        }
     }
 }
 
-# Copiar archivos de configuración en la raíz
-Write-Host "Copiando archivos de configuración raíz..."
-Get-ChildItem "$ProfileDir" -File | Where-Object { $_.Extension -match "toml|json|yml|yaml|cfg|properties" } | ForEach-Object {
-    if ($_.Name -notmatch "modrinth.index.json|profile.json") {
-        Copy-Item $_.FullName -Destination "$FilesDir\" -Force
-    }
+Write-Host "Copying top-level config files..."
+$RootExtensions = @(".json", ".toml", ".yml", ".yaml", ".cfg", ".properties")
+$RootExcludes = @(
+    "modrinth.index.json",
+    "profile.json",
+    "options.txt",
+    "optionsof.txt",
+    "servers.dat",
+    "realms_persistence.json",
+    "banned-players.json",
+    "ponders_watched.json",
+    "usercache.json",
+    "usernamecache.json"
+)
+
+Get-ChildItem -LiteralPath $FilesDir -File | Where-Object {
+    $RootExtensions -contains $_.Extension.ToLowerInvariant()
+} | Remove-Item -Force
+
+Get-ChildItem -LiteralPath $ProfileDir -File | Where-Object {
+    ($RootExtensions -contains $_.Extension.ToLowerInvariant()) -and
+    ($RootExcludes -notcontains $_.Name)
+} | ForEach-Object {
+    Copy-Item -LiteralPath $_.FullName -Destination $FilesDir -Force
 }
 
-Write-Host "`n--- ¡Sincronización local completada! ---" -ForegroundColor Green
-Write-Host "Para subir los cambios, ejecutá:" -ForegroundColor Yellow
+Write-Host "`n--- Local sync complete ---" -ForegroundColor Green
+Write-Host "Next:" -ForegroundColor Yellow
 Write-Host "git add site/"
 Write-Host "git commit -m 'Update modpack to v$PackVersion'"
 Write-Host "git push"

@@ -55,7 +55,15 @@ jobs:
           pip install -e ".[dev]"
 
       - name: Build executable
-        run: python -m PyInstaller survync.spec
+        run: python build.py --clean
+
+      - name: Verify executable
+        shell: pwsh
+        run: |
+          if (!(Test-Path "dist/Survync.exe")) {
+            Get-ChildItem -Recurse dist | Format-Table -AutoSize
+            throw "dist/Survync.exe was not created"
+          }
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4

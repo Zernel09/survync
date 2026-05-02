@@ -36,6 +36,7 @@ DEFAULT_SYNC_DIRS = [
 ]
 
 APP_NAME = "Survync"
+DEFAULT_REMOTE_BASE_URL = "https://zernel09.github.io/survync/"
 
 
 def get_app_data_dir() -> Path:
@@ -59,7 +60,7 @@ class LauncherConfig:
     """Launcher configuration stored locally."""
 
     # Remote server settings
-    remote_base_url: str = ""
+    remote_base_url: str = DEFAULT_REMOTE_BASE_URL
 
     # Profile settings
     profile_name: str = "survival"

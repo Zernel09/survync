@@ -44,11 +44,12 @@ def main() -> None:
     ]
 
     if args.onedir:
+        data_sep = ";" if sys.platform.startswith("win") else ":"
         cmd.extend([
             "--name", "Survync",
             "--onedir",
             "--windowed",
-            "--add-data", "assets:assets",
+            "--add-data", f"assets{data_sep}assets",
             "--paths", "src",
             "src/survync/__main__.py",
         ])

@@ -3,13 +3,13 @@
 import tempfile
 from pathlib import Path
 
-from survync.config import LauncherConfig
+from survync.config import DEFAULT_REMOTE_BASE_URL, LauncherConfig
 
 
 def test_config_defaults():
     config = LauncherConfig()
     assert config.profile_name == "survival"
-    assert config.remote_base_url == ""
+    assert config.remote_base_url == DEFAULT_REMOTE_BASE_URL
     assert config.remove_orphans is False
     assert "saves/" in config.preserve_paths
 
@@ -32,7 +32,7 @@ def test_config_save_and_load():
 
 
 def test_config_validate_missing_url():
-    config = LauncherConfig()
+    config = LauncherConfig(remote_base_url="")
     errors = config.validate()
     assert any("remote_base_url" in e for e in errors)
 

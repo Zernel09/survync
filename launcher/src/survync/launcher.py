@@ -6,6 +6,7 @@ import logging
 import os
 import subprocess
 from pathlib import Path
+from urllib.parse import quote
 
 logger = logging.getLogger(__name__)
 
@@ -79,7 +80,7 @@ def launch_profile(
 
     # Strategy 1: Try Modrinth deep link (modrinth://profile/<name>)
     if os.name == "nt":
-        deep_link = f"modrinth://profile/{profile_name}"
+        deep_link = f"modrinth://profile/{quote(profile_name)}"
         try:
             logger.info("Attempting deep link launch: %s", deep_link)
             os.startfile(deep_link)  # type: ignore[attr-defined]
@@ -87,7 +88,8 @@ def launch_profile(
         except OSError as exc:
             logger.warning("Deep link launch failed: %s", exc)
 
-    # Strategy 2: Try CLI launch
+    # Strategy 2: Open the Modrinth App. This is only a fallback; it does not
+    # guarantee that the selected profile was started.
     if modrinth_app_path and modrinth_app_path.is_file():
         try:
             logger.info("Launching Modrinth App: %s", modrinth_app_path)
@@ -101,7 +103,7 @@ def launch_profile(
                     [str(modrinth_app_path)],
                     start_new_session=True,
                 )
-            return True
+            return False
         except OSError as exc:
             logger.error("Failed to launch Modrinth App: %s", exc)
 
@@ -110,7 +112,7 @@ def launch_profile(
         try:
             os.startfile("modrinth://")  # type: ignore[attr-defined]
             logger.info("Opened Modrinth App via protocol handler")
-            return True
+            return False
         except OSError:
             pass
 

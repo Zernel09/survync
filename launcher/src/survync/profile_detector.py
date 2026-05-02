@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import sqlite3
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
@@ -93,6 +94,39 @@ def read_profile_metadata(profile_path: Path) -> dict:
                 return data
             except (json.JSONDecodeError, OSError) as exc:
                 logger.warning("Failed to read %s: %s", meta_path, exc)
+
+    db_path: Path | None = None
+    if os.name == "nt":
+        appdata = os.environ.get("APPDATA", "")
+        if appdata:
+            db_path = Path(appdata) / "ModrinthApp" / "app.db"
+    else:
+        db_path = Path.home() / ".config" / "ModrinthApp" / "app.db"
+
+    if db_path and db_path.is_file():
+        try:
+            conn = sqlite3.connect(str(db_path))
+            cur = conn.cursor()
+            cur.execute(
+                """
+                SELECT name, game_version, mod_loader, mod_loader_version
+                FROM profiles
+                WHERE lower(path) = lower(?)
+                """,
+                (profile_path.name,),
+            )
+            row = cur.fetchone()
+            conn.close()
+            if row:
+                logger.info("Read profile metadata from Modrinth database")
+                return {
+                    "name": row[0],
+                    "game_version": row[1],
+                    "loader": row[2],
+                    "loader_version": row[3],
+                }
+        except sqlite3.Error as exc:
+            logger.warning("Failed to read Modrinth database metadata: %s", exc)
 
     return {}
 

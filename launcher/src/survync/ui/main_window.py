@@ -10,7 +10,9 @@ from PySide6.QtCore import Qt, QThreadPool
 from PySide6.QtWidgets import (
     QHBoxLayout,
     QLabel,
+    QFileDialog,
     QMainWindow,
+    QMessageBox,
     QProgressBar,
     QPushButton,
     QTextEdit,
@@ -171,8 +173,35 @@ class MainWindow(QMainWindow):
         else:
             self._log(
                 f"Could not auto-detect '{self.config.profile_name}' profile. "
-                "Please set the profile path in Settings."
+                "Prompting for the profile folder."
             )
+            self._prompt_for_profile_path()
+
+    def _prompt_for_profile_path(self) -> None:
+        """Ask the user to select the Modrinth profile folder."""
+        QMessageBox.information(
+            self,
+            "Select Modrinth Profile",
+            "Survync could not find your Modrinth profile automatically. "
+            "Please select the profile folder.",
+        )
+        folder = QFileDialog.getExistingDirectory(
+            self,
+            "Select Modrinth Profile Folder",
+        )
+        if not folder:
+            self._log("No profile folder selected. You can choose one in Settings.")
+            return
+
+        profile = Path(folder)
+        self.config.profile_path = str(profile)
+        self.config.profile_name = profile.name
+        self.config.save()
+        self._log(f"Selected profile: {profile}")
+
+        warnings = validate_profile(profile)
+        for w in warnings:
+            self._log(f"  Warning: {w}")
 
     # ── Check for updates ──────────────────────────────────────────
 
