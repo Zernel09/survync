@@ -1,7 +1,7 @@
 param(
     [string]$ProfileDir = "C:\Users\tanit\AppData\Roaming\ModrinthApp\profiles\NeoForge 1.21.1",
     [string]$SiteDir = "",
-    [string]$PackVersion = "1.0.1",
+    [string]$PackVersion = "",
     [string]$BaseUrl = "https://zernel09.github.io/survync/",
     [string[]]$IncludeDirs = @(
         "mods",
@@ -28,6 +28,10 @@ $FilesDir = Join-Path $SiteDir "files"
 
 if (!(Test-Path -LiteralPath $ProfileDir -PathType Container)) {
     throw "Profile directory does not exist: $ProfileDir"
+}
+
+if ([string]::IsNullOrWhiteSpace($PackVersion)) {
+    $PackVersion = Get-Date -Format "yyyy.MM.dd.HHmm"
 }
 
 Write-Host "--- Generating manifests (v$PackVersion) ---" -ForegroundColor Cyan

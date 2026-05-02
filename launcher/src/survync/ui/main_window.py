@@ -9,6 +9,7 @@ from pathlib import Path
 from PySide6.QtCore import Qt, QThreadPool
 from PySide6.QtWidgets import (
     QFileDialog,
+    QFrame,
     QHBoxLayout,
     QLabel,
     QMainWindow,
@@ -43,7 +44,7 @@ class MainWindow(QMainWindow):
         self._state = LauncherState.READY
 
         self.setWindowTitle(f"Survync v{__version__}")
-        self.setMinimumSize(520, 560)
+        self.setMinimumSize(620, 640)
         self.setStyleSheet(DARK_THEME)
 
         self._build_ui()
@@ -56,46 +57,63 @@ class MainWindow(QMainWindow):
         central = QWidget()
         self.setCentralWidget(central)
         layout = QVBoxLayout(central)
-        layout.setContentsMargins(24, 20, 24, 20)
-        layout.setSpacing(12)
+        layout.setContentsMargins(28, 24, 28, 22)
+        layout.setSpacing(14)
 
-        # Title
         title = QLabel("Survync")
         title.setObjectName("titleLabel")
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(title)
 
-        # Version info row
+        subtitle = QLabel("Survival profile updater")
+        subtitle.setObjectName("subtitleLabel")
+        subtitle.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        layout.addWidget(subtitle)
+
+        summary = QFrame()
+        summary.setObjectName("summaryPanel")
+        summary_layout = QVBoxLayout(summary)
+        summary_layout.setContentsMargins(18, 14, 18, 14)
+        summary_layout.setSpacing(8)
+
         version_row = QHBoxLayout()
-        self.local_version_label = QLabel("Local: —")
-        self.local_version_label.setObjectName("versionLabel")
-        self.remote_version_label = QLabel("Remote: —")
-        self.remote_version_label.setObjectName("versionLabel")
+        self.local_version_label = QLabel("Local: unknown")
+        self.local_version_label.setObjectName("metricLabel")
+        self.remote_version_label = QLabel("Remote: unknown")
+        self.remote_version_label.setObjectName("metricLabel")
         version_row.addWidget(self.local_version_label)
         version_row.addStretch()
         version_row.addWidget(self.remote_version_label)
-        layout.addLayout(version_row)
+        summary_layout.addLayout(version_row)
 
-        # Status label
+        self.profile_label = QLabel("Profile: not selected")
+        self.profile_label.setObjectName("detailLabel")
+        summary_layout.addWidget(self.profile_label)
+
+        self.minecraft_label = QLabel("Minecraft: unknown")
+        self.minecraft_label.setObjectName("detailLabel")
+        summary_layout.addWidget(self.minecraft_label)
+
+        layout.addWidget(summary)
+
         self.status_label = QLabel("Ready")
         self.status_label.setObjectName("statusLabel")
         self.status_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(self.status_label)
 
-        # Progress bar
         self.progress_bar = QProgressBar()
         self.progress_bar.setVisible(False)
         self.progress_bar.setTextVisible(True)
         layout.addWidget(self.progress_bar)
 
-        # Play button
         self.play_btn = QPushButton("Play")
         self.play_btn.setObjectName("playButton")
         self.play_btn.clicked.connect(self._on_play)
         layout.addWidget(self.play_btn, alignment=Qt.AlignmentFlag.AlignCenter)
 
-        # Action buttons row
         btn_row = QHBoxLayout()
+        btn_row.setSpacing(10)
+
         self.check_btn = QPushButton("Check Updates")
         self.check_btn.clicked.connect(self._check_for_updates)
         btn_row.addWidget(self.check_btn)
@@ -110,25 +128,28 @@ class MainWindow(QMainWindow):
 
         layout.addLayout(btn_row)
 
-        # Log panel
+        log_title = QLabel("Activity")
+        log_title.setObjectName("sectionLabel")
+        layout.addWidget(log_title)
+
         self.log_panel = QTextEdit()
         self.log_panel.setReadOnly(True)
-        self.log_panel.setMaximumHeight(180)
+        self.log_panel.setMaximumHeight(210)
         layout.addWidget(self.log_panel)
 
-        # Footer
         footer = QLabel(f"Survync v{__version__}")
-        footer.setObjectName("versionLabel")
+        footer.setObjectName("detailLabel")
         footer.setAlignment(Qt.AlignmentFlag.AlignRight)
         layout.addWidget(footer)
 
         self._update_version_labels()
+        self._update_profile_labels()
 
     def _set_state(self, state: LauncherState, detail: str = "") -> None:
         self._state = state
         text = state.value
         if detail:
-            text = f"{state.value} — {detail}"
+            text = f"{state.value} - {detail}"
         self.status_label.setText(text)
 
         busy = state not in (LauncherState.READY, LauncherState.ERROR)
@@ -142,15 +163,28 @@ class MainWindow(QMainWindow):
         logger.info(message)
 
     def _update_version_labels(self) -> None:
-        local_ver = self.config.last_known_version or "—"
+        local_ver = self.config.last_known_version or "unknown"
         self.local_version_label.setText(f"Local: {local_ver}")
 
         if self._remote_version:
             self.remote_version_label.setText(
                 f"Remote: {self._remote_version.pack_version}"
             )
+            self.minecraft_label.setText(
+                "Minecraft: "
+                f"{self._remote_version.minecraft_version} / "
+                f"{self._remote_version.loader_name} "
+                f"{self._remote_version.loader_version}"
+            )
         else:
-            self.remote_version_label.setText("Remote: —")
+            self.remote_version_label.setText("Remote: unknown")
+            self.minecraft_label.setText("Minecraft: unknown")
+
+    def _update_profile_labels(self) -> None:
+        if self.config.profile_path:
+            self.profile_label.setText(f"Profile: {self.config.profile_path}")
+        else:
+            self.profile_label.setText("Profile: not selected")
 
     def _auto_detect_profile(self) -> None:
         """Try to auto-detect the Modrinth profile on first run."""
@@ -158,18 +192,19 @@ class MainWindow(QMainWindow):
             path = Path(self.config.profile_path)
             if path.is_dir():
                 self._log(f"Using configured profile: {path}")
+                self._update_profile_labels()
                 return
-            else:
-                self._log(f"Configured profile path not found: {path}")
+            self._log(f"Configured profile path not found: {path}")
 
         profile = find_profile(self.config.profile_name)
         if profile:
             self.config.profile_path = str(profile)
             self.config.save()
             self._log(f"Auto-detected profile: {profile}")
+            self._update_profile_labels()
             warnings = validate_profile(profile)
-            for w in warnings:
-                self._log(f"  Warning: {w}")
+            for warning in warnings:
+                self._log(f"  Warning: {warning}")
         else:
             self._log(
                 f"Could not auto-detect '{self.config.profile_name}' profile. "
@@ -198,17 +233,16 @@ class MainWindow(QMainWindow):
         self.config.profile_name = profile.name
         self.config.save()
         self._log(f"Selected profile: {profile}")
+        self._update_profile_labels()
 
         warnings = validate_profile(profile)
-        for w in warnings:
-            self._log(f"  Warning: {w}")
-
-    # ── Check for updates ──────────────────────────────────────────
+        for warning in warnings:
+            self._log(f"  Warning: {warning}")
 
     def _check_for_updates(self) -> None:
         errors = self.config.validate()
         if "remote_base_url is not set" in errors:
-            self._log("Remote URL not configured — open Settings to set it.")
+            self._log("Remote URL not configured - open Settings to set it.")
             self._set_state(LauncherState.ERROR, "Remote URL not configured")
             return
 
@@ -229,27 +263,24 @@ class MainWindow(QMainWindow):
         if needs_update:
             self._log(
                 f"Update available: {remote_version.pack_version} "
-                f"(current: {self.config.last_known_version or 'none'})"
+                f"(current: {self.config.last_known_version or 'unknown'})"
             )
             if remote_version.release_notes:
                 self._log(f"  Release notes: {remote_version.release_notes}")
-            self._set_state(LauncherState.READY, "Update available!")
+            self._set_state(LauncherState.READY, "Update available")
         else:
-            self._log("You are up to date.")
+            self._log("Profile is up to date.")
             self._set_state(LauncherState.READY)
-
-    # ── Play ───────────────────────────────────────────────────────
 
     def _on_play(self) -> None:
         errors = self.config.validate()
         if errors:
             self._log("Configuration errors:")
-            for e in errors:
-                self._log(f"  - {e}")
+            for error in errors:
+                self._log(f"  - {error}")
             self._set_state(LauncherState.ERROR, errors[0])
             return
 
-        # If we haven't checked yet, check first
         if self._remote_version is None and self.config.remote_base_url:
             self._log("Checking for updates before launch...")
             self._set_state(LauncherState.CHECKING)
@@ -259,7 +290,6 @@ class MainWindow(QMainWindow):
             self.thread_pool.start(worker)
             return
 
-        # If update is needed, sync first
         if (
             self._remote_version
             and self._remote_version.pack_version != self.config.last_known_version
@@ -276,18 +306,16 @@ class MainWindow(QMainWindow):
         self._update_version_labels()
 
         if needs_update:
-            self._log("Update needed — syncing before launch...")
+            self._log("Update needed - syncing before launch...")
             self._start_sync(launch_after=True)
         else:
-            self._log("Up to date — launching.")
+            self._log("Up to date - launching.")
             self._launch()
 
     def _on_play_check_error(self, error: str) -> None:
         self._log(f"Update check failed: {error}")
         self._log("Launching with current files...")
         self._launch()
-
-    # ── Sync ───────────────────────────────────────────────────────
 
     def _start_sync(self, launch_after: bool = True) -> None:
         self._launch_after_sync = launch_after
@@ -319,12 +347,11 @@ class MainWindow(QMainWindow):
 
         if result.has_failures:
             self._log("Some files failed to sync. Check the log for details.")
-            for path, err in result.failed:
-                self._log(f"  FAILED: {path} — {err}")
+            for path, error in result.failed:
+                self._log(f"  FAILED: {path} - {error}")
             self._set_state(LauncherState.ERROR, "Sync completed with errors")
             return
 
-        # Update last known version
         if self._remote_version:
             self.config.last_known_version = self._remote_version.pack_version
             self.config.last_sync_time = datetime.now(timezone.utc).isoformat()
@@ -336,21 +363,19 @@ class MainWindow(QMainWindow):
         if getattr(self, "_launch_after_sync", False):
             self._launch()
 
-    # ── Repair ─────────────────────────────────────────────────────
-
     def _repair(self) -> None:
         errors = self.config.validate()
         if errors:
             self._log("Configuration errors:")
-            for e in errors:
-                self._log(f"  - {e}")
+            for error in errors:
+                self._log(f"  - {error}")
             self._set_state(LauncherState.ERROR, errors[0])
             return
 
         self._set_state(LauncherState.REPAIRING)
         self.progress_bar.setVisible(True)
         self.progress_bar.setValue(0)
-        self._log("Starting repair — re-validating all files...")
+        self._log("Starting repair - re-validating all files...")
 
         worker = RepairWorker(self.config)
         worker.signals.progress.connect(self._on_sync_progress)
@@ -368,8 +393,6 @@ class MainWindow(QMainWindow):
         else:
             self._set_state(LauncherState.READY)
 
-    # ── Launch ─────────────────────────────────────────────────────
-
     def _launch(self) -> None:
         self._set_state(LauncherState.LAUNCHING)
         self._log(f"Launching profile '{self.config.profile_name}'...")
@@ -384,18 +407,15 @@ class MainWindow(QMainWindow):
                 f"start the '{self.config.profile_name}' profile manually."
             )
             self._set_state(
-                LauncherState.ERROR, "Auto-launch failed — open Modrinth manually"
+                LauncherState.ERROR, "Auto-launch failed - open Modrinth manually"
             )
-
-    # ── Settings ───────────────────────────────────────────────────
 
     def _open_settings(self) -> None:
         dialog = SettingsDialog(self.config, parent=self)
         if dialog.exec():
             self._log("Settings saved.")
             self._update_version_labels()
-
-    # ── Error handling ─────────────────────────────────────────────
+            self._update_profile_labels()
 
     def _on_error(self, error: str) -> None:
         self.progress_bar.setVisible(False)

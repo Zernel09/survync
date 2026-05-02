@@ -93,11 +93,10 @@ For this repo, the easiest release path is:
 ```powershell
 .\tools\sync.ps1 `
   -ProfileDir "C:\Users\tanit\AppData\Roaming\ModrinthApp\profiles\NeoForge 1.21.1" `
-  -PackVersion "1.0.1" `
   -BaseUrl "https://zernel09.github.io/survync/"
 
 git add site/ tools/ launcher/ .github/ README.md
-git commit -m "Update modpack to v1.0.1"
+git commit -m "Update modpack"
 git push
 ```
 
@@ -113,7 +112,7 @@ The script accepts:
 | --- | --- |
 | `-ProfileDir` | Your local NeoForge profile path |
 | `-SiteDir` | `site/` |
-| `-PackVersion` | `1.0.1` |
+| `-PackVersion` | Current timestamp, for example `2026.05.02.1530` |
 | `-BaseUrl` | `https://zernel09.github.io/survync/` |
 | `-IncludeDirs` | mods, config, shaderpacks, resourcepacks, kubejs, defaultconfigs, scripts, global_packs |
 
@@ -124,7 +123,6 @@ You can still generate only the JSON files:
 ```powershell
 python tools\generate_manifest.py `
   --profile-dir "C:\Users\YOU\AppData\Roaming\ModrinthApp\profiles\YOUR_PROFILE" `
-  --pack-version "1.0.1" `
   --base-download-url "https://zernel09.github.io/survync/"
 ```
 
@@ -219,9 +217,9 @@ launcher what to download; the files must exist at those URLs.
 
 **Files not updating**
 
-Increment `PackVersion` when running `sync.ps1`. The launcher checks
-`pack_version` first, then downloads the manifest only when the version changed.
-Use Repair to force full validation.
+By default, `sync.ps1` uses the current timestamp as `PackVersion`. The launcher
+checks `pack_version` first, then downloads the manifest only when the version
+changed. Use Repair to force full validation.
 
 **Hash mismatch**
 

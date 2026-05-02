@@ -203,11 +203,16 @@ def read_profile_metadata(profile_dir: Path) -> dict[str, Any]:
     return {}
 
 
+def default_pack_version(now: datetime) -> str:
+    """Return a sortable timestamp version for pack releases."""
+    return now.strftime("%Y.%m.%d.%H%M")
+
+
 def generate(
     profile_dir: Path,
     output_dir: Path,
     pack_name: str = "survival",
-    pack_version: str = "1.0.0",
+    pack_version: str | None = None,
     minecraft_version: str = "1.20.4",
     loader_name: str = "fabric",
     loader_version: str = "0.15.0",
@@ -226,7 +231,10 @@ def generate(
     if exclude_patterns is None:
         exclude_patterns = list(DEFAULT_EXCLUDE_PATTERNS)
 
-    now = datetime.now(timezone.utc).isoformat()
+    generated_at = datetime.now(timezone.utc)
+    now = generated_at.isoformat()
+    if pack_version is None:
+        pack_version = default_pack_version(generated_at)
     manifest_url = (
         f"{base_download_url.rstrip('/')}/manifest.json" if base_download_url else ""
     )
@@ -316,8 +324,8 @@ def main() -> None:
     )
     parser.add_argument(
         "--pack-version",
-        default="1.0.0",
-        help="Pack version string (default: 1.0.0)",
+        default=None,
+        help="Pack version string (default: UTC timestamp like 2026.05.02.1530)",
     )
     parser.add_argument(
         "--minecraft-version",
