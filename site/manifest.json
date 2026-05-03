@@ -1,6 +1,6 @@
 {
   "pack_name": "survival",
-  "pack_version": "2026.05.02.1843",
+  "pack_version": "2026.05.02.2214",
   "minecraft_version": "1.21.1",
   "loader_name": "neoforge",
   "loader_version": "21.1.228",
@@ -70,12 +70,12 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/balm-neoforge-1.21.1-21.0.57.jar"
     },
     {
-      "relative_path": "mods/block_factorys_bosses-2.0.12-neo-1.21.1.jar",
-      "file_name": "block_factorys_bosses-2.0.12-neo-1.21.1.jar",
-      "sha256": "6f2f0bf6fda4126cc41ab34f8e88c4dfc1f4b498ffc040a15bd501b8870a8b84",
-      "size": 20707172,
+      "relative_path": "mods/block_factorys_bosses-2.1.0-neo-1.21.1.jar",
+      "file_name": "block_factorys_bosses-2.1.0-neo-1.21.1.jar",
+      "sha256": "10efa3ad6dc5751d53048c9df261c473dd8899fd1beb7501190d2ed1083e3181",
+      "size": 24056592,
       "source_type": "direct",
-      "download_url": "https://zernel09.github.io/survync/files/mods/block_factorys_bosses-2.0.12-neo-1.21.1.jar"
+      "download_url": "https://zernel09.github.io/survync/files/mods/block_factorys_bosses-2.1.0-neo-1.21.1.jar"
     },
     {
       "relative_path": "mods/BOMD-NeoForge-1.21-1.3.2.jar",
@@ -142,12 +142,12 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/cloth-config-15.0.140-neoforge.jar"
     },
     {
-      "relative_path": "mods/collective-1.21.1-8.20.jar",
-      "file_name": "collective-1.21.1-8.20.jar",
-      "sha256": "cf192da39ba0d02a151a324b22c073a194dc177c789ec287a357152b7eedce9e",
-      "size": 942780,
+      "relative_path": "mods/collective-1.21.1-8.22.jar",
+      "file_name": "collective-1.21.1-8.22.jar",
+      "sha256": "a91714404b5c8c7cb192afd0a447af2234fe2ba73ee32a209bdd026362518cbb",
+      "size": 943020,
       "source_type": "direct",
-      "download_url": "https://zernel09.github.io/survync/files/mods/collective-1.21.1-8.20.jar"
+      "download_url": "https://zernel09.github.io/survync/files/mods/collective-1.21.1-8.22.jar"
     },
     {
       "relative_path": "mods/comforts-neoforge-9.0.5+1.21.1.jar",
@@ -694,12 +694,12 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/notenoughanimations-neoforge-1.12.2-mc1.21.1.jar"
     },
     {
-      "relative_path": "mods/packetfixer-neoforge-2.0.1-1.21-to-1.21.3.jar",
-      "file_name": "packetfixer-neoforge-2.0.1-1.21-to-1.21.3.jar",
-      "sha256": "9fe3599284b0901f473447ca07c9a20a27e6185342ae988049d4afb75323b765",
-      "size": 26114,
+      "relative_path": "mods/packetfixer-3.3.1-1.20.5-1.21.X-merged.jar",
+      "file_name": "packetfixer-3.3.1-1.20.5-1.21.X-merged.jar",
+      "sha256": "2979a8a3f44e5d5df4f9f6315d18c220f3debf736bb8a2c2740acdfb13bd820f",
+      "size": 46623,
       "source_type": "direct",
-      "download_url": "https://zernel09.github.io/survync/files/mods/packetfixer-neoforge-2.0.1-1.21-to-1.21.3.jar"
+      "download_url": "https://zernel09.github.io/survync/files/mods/packetfixer-3.3.1-1.20.5-1.21.X-merged.jar"
     },
     {
       "relative_path": "mods/particle_core-0.3.3+1.21+neoforge.jar",
@@ -870,12 +870,12 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/supermartijn642corelib-1.1.21-neoforge-mc1.21.jar"
     },
     {
-      "relative_path": "mods/supplementaries-1.21-3.5.34-neoforge.jar",
-      "file_name": "supplementaries-1.21-3.5.34-neoforge.jar",
-      "sha256": "3e82252fcd89b090786e1640f8cf8fac76e3e35f30465849944e7b89ca2f433b",
-      "size": 13366044,
+      "relative_path": "mods/supplementaries-neoforge-1.21.1-3.6.0.jar",
+      "file_name": "supplementaries-neoforge-1.21.1-3.6.0.jar",
+      "sha256": "d5415c2631edaf8e62be588406b67773f6baad5aa58a660119501caed2def2db",
+      "size": 13298166,
       "source_type": "direct",
-      "download_url": "https://zernel09.github.io/survync/files/mods/supplementaries-1.21-3.5.34-neoforge.jar"
+      "download_url": "https://zernel09.github.io/survync/files/mods/supplementaries-neoforge-1.21.1-3.6.0.jar"
     },
     {
       "relative_path": "mods/t_and_t-neoforge-fabric-1.13.7+1.21.1.jar",
@@ -996,6 +996,14 @@
       "size": 3066,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/config/aeronautics-server.toml"
+    },
+    {
+      "relative_path": "config/almanac-common.toml",
+      "file_name": "almanac-common.toml",
+      "sha256": "43303ea5835f439a1fc1e7eb771834cfce26450a2381ad192621e4ed5532ff29",
+      "size": 575,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/almanac-common.toml"
     },
     {
       "relative_path": "config/appleskin-client.toml",
@@ -1176,7 +1184,7 @@
     {
       "relative_path": "config/chunky/tasks/minecraft/overworld.properties",
       "file_name": "overworld.properties",
-      "sha256": "06cb95657ca571519a3d7899f0f6d296ab68775a901154836e486c3892c6cc4f",
+      "sha256": "3f23f9384f5fedde1901eff63a637ef09630bd5151616e1fb81a2415277f7f04",
       "size": 138,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/config/chunky/tasks/minecraft/overworld.properties"
@@ -1870,6 +1878,14 @@
       "download_url": "https://zernel09.github.io/survync/files/config/exposure-server.toml"
     },
     {
+      "relative_path": "config/fabric/indigo-renderer.properties",
+      "file_name": "indigo-renderer.properties",
+      "sha256": "6cf36fed7405cad9486c662e8b4626fdf1df14e0957472200d28bf2c077f8a71",
+      "size": 290,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/fabric/indigo-renderer.properties"
+    },
+    {
       "relative_path": "config/fantasy_armor-armor_attributes.toml",
       "file_name": "fantasy_armor-armor_attributes.toml",
       "sha256": "502c9d8ab114fa928f786a21bf4b0280d7769602da5e339eb277fed4101be2b4",
@@ -1960,7 +1976,7 @@
     {
       "relative_path": "config/iris.properties",
       "file_name": "iris.properties",
-      "sha256": "2c71f1164b4943849f035b2abf2ea13da74d5b2d1bea4648275f0847520bf8ea",
+      "sha256": "55fc995b7569d5459c56c9bf3c801fd9800c9bb6572bc2eda5fbd8456bc2a831",
       "size": 281,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/config/iris.properties"
@@ -2030,6 +2046,62 @@
       "download_url": "https://zernel09.github.io/survync/files/config/jamlib/known_suspicious_jars.txt"
     },
     {
+      "relative_path": "config/jei/blacklist.json",
+      "file_name": "blacklist.json",
+      "sha256": "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648",
+      "size": 19,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jei/blacklist.json"
+    },
+    {
+      "relative_path": "config/jei/jei-client.ini",
+      "file_name": "jei-client.ini",
+      "sha256": "f6841387ba118885299e6fe6574daaa62ad5adcf4e73f851ec2e9f8977ea066d",
+      "size": 10746,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jei/jei-client.ini"
+    },
+    {
+      "relative_path": "config/jei/jei-colors.ini",
+      "file_name": "jei-colors.ini",
+      "sha256": "755f199a3868224bdccb2a8ffd8f1a4eb2d96140757f444ba31f8d677a66034f",
+      "size": 1362,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jei/jei-colors.ini"
+    },
+    {
+      "relative_path": "config/jei/jei-debug.ini",
+      "file_name": "jei-debug.ini",
+      "sha256": "960b16c7af6d62bbe7b58fb52216a8a15771bddecbeefab49a8614b7ca86dcbd",
+      "size": 1326,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jei/jei-debug.ini"
+    },
+    {
+      "relative_path": "config/jei/jei-mod-id-format.ini",
+      "file_name": "jei-mod-id-format.ini",
+      "sha256": "6a91c09d1cabc1980d90ab102a03ec58c0551213ab16a459b599d768b334d054",
+      "size": 489,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jei/jei-mod-id-format.ini"
+    },
+    {
+      "relative_path": "config/jei/recipe-category-sort-order.ini",
+      "file_name": "recipe-category-sort-order.ini",
+      "sha256": "7d489ac2f8aeaea0d5b5760bfc5a1c5d9a7f95bca33b02d73dcad81255c16ce6",
+      "size": 1499,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jei/recipe-category-sort-order.ini"
+    },
+    {
+      "relative_path": "config/jei-server.toml",
+      "file_name": "jei-server.toml",
+      "sha256": "702acd04d99445bce659d04fcc488e1a98c8a803983c31ae262b0f3a47fdc8d3",
+      "size": 324,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jei-server.toml"
+    },
+    {
       "relative_path": "config/justhammers.json",
       "file_name": "justhammers.json",
       "sha256": "8beb976cccdb18afdf50b327cbfc109aef189a17be5b9989310353d4573edd57",
@@ -2044,6 +2116,14 @@
       "size": 14272,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/config/lambdynlights.toml"
+    },
+    {
+      "relative_path": "config/letmedespawn.json",
+      "file_name": "letmedespawn.json",
+      "sha256": "6af411644e22ede34383135509cb96b2a636d8ed45494b28976514a95537105e",
+      "size": 72,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/letmedespawn.json"
     },
     {
       "relative_path": "config/lithium.properties",
@@ -2166,6 +2246,14 @@
       "download_url": "https://zernel09.github.io/survync/files/config/offroad-server.toml"
     },
     {
+      "relative_path": "config/packetfixer.properties",
+      "file_name": "packetfixer.properties",
+      "sha256": "3d7daebe006058894033ecaf38127145fbfee4b87c3ed99b13233b14aa3003e7",
+      "size": 437,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/packetfixer.properties"
+    },
+    {
       "relative_path": "config/particle_core_config.toml",
       "file_name": "particle_core_config.toml",
       "sha256": "9f21aae26ba31a4fd9bab85c4bb4e37d10ac408aff9feed91ad6acdf1e269634",
@@ -2236,6 +2324,14 @@
       "size": 710,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/config/ritchiesprojectilelib-server.toml"
+    },
+    {
+      "relative_path": "config/rrls.toml",
+      "file_name": "rrls.toml",
+      "sha256": "50aa30a1d8c6d5c07552b639a63169d7dc34936d84bd8b97af80e0083e851b9d",
+      "size": 924,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/rrls.toml"
     },
     {
       "relative_path": "config/sable-client.toml",
@@ -2712,8 +2808,8 @@
     {
       "relative_path": "emi.json",
       "file_name": "emi.json",
-      "sha256": "f2a3f84c34d083bdf5f6252ded18a213c8adc719ffa5283f3bc2bad2ef5dc60a",
-      "size": 7909,
+      "sha256": "c53d0b7fbc5a486d62a320e8a3c869cdfe2178dfbc0af99d731e89f12f6ced38",
+      "size": 10379,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/emi.json"
     }
