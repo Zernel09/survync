@@ -1,10 +1,10 @@
 {
   "pack_name": "survival",
-  "pack_version": "2026.05.02.2214",
+  "pack_version": "2026.05.02.2216",
   "minecraft_version": "1.21.1",
   "loader_name": "neoforge",
   "loader_version": "21.1.228",
-  "generated_at": "2026-05-03T01:14:13.619634+00:00",
+  "generated_at": "2026-05-03T01:16:54.664731+00:00",
   "manifest_url": "https://zernel09.github.io/survync/manifest.json",
   "minimum_launcher_version": "0.1.0",
   "release_notes": ""

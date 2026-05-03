@@ -1,6 +1,6 @@
 {
   "pack_name": "survival",
-  "pack_version": "2026.05.02.2214",
+  "pack_version": "2026.05.02.2216",
   "minecraft_version": "1.21.1",
   "loader_name": "neoforge",
   "loader_version": "21.1.228",
@@ -870,12 +870,12 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/supermartijn642corelib-1.1.21-neoforge-mc1.21.jar"
     },
     {
-      "relative_path": "mods/supplementaries-neoforge-1.21.1-3.6.0.jar",
-      "file_name": "supplementaries-neoforge-1.21.1-3.6.0.jar",
-      "sha256": "d5415c2631edaf8e62be588406b67773f6baad5aa58a660119501caed2def2db",
-      "size": 13298166,
+      "relative_path": "mods/supplementaries-1.21-3.5.34-neoforge.jar",
+      "file_name": "supplementaries-1.21-3.5.34-neoforge.jar",
+      "sha256": "3e82252fcd89b090786e1640f8cf8fac76e3e35f30465849944e7b89ca2f433b",
+      "size": 13366044,
       "source_type": "direct",
-      "download_url": "https://zernel09.github.io/survync/files/mods/supplementaries-neoforge-1.21.1-3.6.0.jar"
+      "download_url": "https://zernel09.github.io/survync/files/mods/supplementaries-1.21-3.5.34-neoforge.jar"
     },
     {
       "relative_path": "mods/t_and_t-neoforge-fabric-1.13.7+1.21.1.jar",
@@ -1084,6 +1084,14 @@
       "size": 425,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/config/betterfortresses-neoforge-1_21.toml"
+    },
+    {
+      "relative_path": "config/block_factorys_bosses-client.toml",
+      "file_name": "block_factorys_bosses-client.toml",
+      "sha256": "1ff86fe2d701ae9ee1cd775c077b9f6edb6184144c3505ffc6312f3d71e9658c",
+      "size": 2637,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/block_factorys_bosses-client.toml"
     },
     {
       "relative_path": "config/bosses_of_mass_destruction.json5",
@@ -1880,7 +1888,7 @@
     {
       "relative_path": "config/fabric/indigo-renderer.properties",
       "file_name": "indigo-renderer.properties",
-      "sha256": "6cf36fed7405cad9486c662e8b4626fdf1df14e0957472200d28bf2c077f8a71",
+      "sha256": "f40b0c068a9b455a27625eaec1ca63224553219e2f6906147dfbbca752dfef92",
       "size": 290,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/config/fabric/indigo-renderer.properties"
@@ -1976,7 +1984,7 @@
     {
       "relative_path": "config/iris.properties",
       "file_name": "iris.properties",
-      "sha256": "55fc995b7569d5459c56c9bf3c801fd9800c9bb6572bc2eda5fbd8456bc2a831",
+      "sha256": "306cbe85a2735ad2301055eee1ffa662cb79c7d90ede7e957e630c2d57b4b6ca",
       "size": 281,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/config/iris.properties"
@@ -2248,8 +2256,8 @@
     {
       "relative_path": "config/packetfixer.properties",
       "file_name": "packetfixer.properties",
-      "sha256": "3d7daebe006058894033ecaf38127145fbfee4b87c3ed99b13233b14aa3003e7",
-      "size": 437,
+      "sha256": "da7a4b254bd8e454315b62174e243cd07ab72addbfc9ce8354842da91bc324b9",
+      "size": 487,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/config/packetfixer.properties"
     },
@@ -2448,8 +2456,8 @@
     {
       "relative_path": "config/sound_physics_remastered/sound_rates.properties",
       "file_name": "sound_rates.properties",
-      "sha256": "28e15a5606aa1785aa50ad9e02df7b00bef365d764a202bc267be37407b6b11e",
-      "size": 102504,
+      "sha256": "a98a9c58a371172ca427b76d4dab2e4a3ea443eab28c86eec9990d14fcf1aec7",
+      "size": 103955,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/config/sound_physics_remastered/sound_rates.properties"
     },
