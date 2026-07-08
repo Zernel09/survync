@@ -1,10 +1,26 @@
 {
   "pack_name": "survival",
-  "pack_version": "2026.07.08.1530",
+  "pack_version": "2026.07.08.1743",
   "minecraft_version": "1.20.4",
   "loader_name": "fabric",
   "loader_version": "0.15.0",
   "files": [
+    {
+      "relative_path": "mods/alexsmobs-1.22.9.jar",
+      "file_name": "alexsmobs-1.22.9.jar",
+      "sha256": "16bc5bcc19db9029c24f951346ec71098e6f5b0afef96e61894a2e9407aad37c",
+      "size": 26350793,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/alexsmobs-1.22.9.jar"
+    },
+    {
+      "relative_path": "mods/appleskin-forge-mc1.20.1-2.5.1.jar",
+      "file_name": "appleskin-forge-mc1.20.1-2.5.1.jar",
+      "sha256": "e12419e43e3babc810af289403c5cd96bd7f09809b389acc6bb2f122b4b2a426",
+      "size": 47428,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/appleskin-forge-mc1.20.1-2.5.1.jar"
+    },
     {
       "relative_path": "mods/architectury-9.2.14-forge.jar",
       "file_name": "architectury-9.2.14-forge.jar",
@@ -54,6 +70,14 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/BOMD-Forge-1.20.1-1.1.2.jar"
     },
     {
+      "relative_path": "mods/carryon-forge-1.20.1-2.1.2.7.jar",
+      "file_name": "carryon-forge-1.20.1-2.1.2.7.jar",
+      "sha256": "d7470921fc5ff988788d43409083f62478aecc91f4b81d7e6b63c80c933d4613",
+      "size": 439457,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/carryon-forge-1.20.1-2.1.2.7.jar"
+    },
+    {
       "relative_path": "mods/CerbonsAPI-Forge-1.20.1-1.1.0.jar",
       "file_name": "CerbonsAPI-Forge-1.20.1-1.1.0.jar",
       "sha256": "54a0a20da56ab1af2d0d7f5cf1133c059a7523485d567521084f822e81505dfb",
@@ -84,6 +108,14 @@
       "size": 1181413,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/mods/cloth-config-11.1.136-forge.jar"
+    },
+    {
+      "relative_path": "mods/collective-1.20.1-8.39.jar",
+      "file_name": "collective-1.20.1-8.39.jar",
+      "sha256": "594bc5d40f2a3fec1ad95732524f65e01a27ac2abeb9d59889cd9f01fd8db6cb",
+      "size": 745947,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/collective-1.20.1-8.39.jar"
     },
     {
       "relative_path": "mods/connectedglass-1.1.14-forge-mc1.20.1.jar",
@@ -142,6 +174,14 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/dynamiclights-v1.9-mc1.17-1.21.9-mod.jar"
     },
     {
+      "relative_path": "mods/elevatorid-1.20.1-1.9.1-forge.jar",
+      "file_name": "elevatorid-1.20.1-1.9.1-forge.jar",
+      "sha256": "7487c091bc8e6ae7b83c61471c97258b380fab2a0f421ed84df78f92ba630f75",
+      "size": 187868,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/elevatorid-1.20.1-1.9.1-forge.jar"
+    },
+    {
       "relative_path": "mods/embeddium-0.3.31+mc1.20.1.jar",
       "file_name": "embeddium-0.3.31+mc1.20.1.jar",
       "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb",
@@ -158,6 +198,14 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/emi-1.1.24+1.20.1+forge.jar"
     },
     {
+      "relative_path": "mods/EnchantingInfuser-v8.0.3-1.20.1-Forge.jar",
+      "file_name": "EnchantingInfuser-v8.0.3-1.20.1-Forge.jar",
+      "sha256": "1fe75e73787718a864932415ce0785426c88b7051829ee34768ddbd2cf119fa5",
+      "size": 177441,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/EnchantingInfuser-v8.0.3-1.20.1-Forge.jar"
+    },
+    {
       "relative_path": "mods/entityculling-forge-1.10.5-mc1.20.1.jar",
       "file_name": "entityculling-forge-1.10.5-mc1.20.1.jar",
       "sha256": "db0ee6aaf7e78d758885969e1d237e6efef07109195d4bb81fa06b304ddc12aa",
@@ -166,12 +214,28 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/entityculling-forge-1.10.5-mc1.20.1.jar"
     },
     {
+      "relative_path": "mods/FarmersDelight-1.20.1-1.3.2.jar",
+      "file_name": "FarmersDelight-1.20.1-1.3.2.jar",
+      "sha256": "47aed94bb9192c4978fe199f9d3ca5895aeccfbe5b5a0869fdf3aa011c2641f7",
+      "size": 3313327,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/FarmersDelight-1.20.1-1.3.2.jar"
+    },
+    {
       "relative_path": "mods/ferritecore-6.0.1-forge.jar",
       "file_name": "ferritecore-6.0.1-forge.jar",
       "sha256": "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54",
       "size": 123034,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/mods/ferritecore-6.0.1-forge.jar"
+    },
+    {
+      "relative_path": "mods/ftb-ultimine-forge-2001.1.8.jar",
+      "file_name": "ftb-ultimine-forge-2001.1.8.jar",
+      "sha256": "b80dde55b2c91fd27f09f15ed2aefb0756c7bd704316e488ae8a06b179e85730",
+      "size": 129653,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/ftb-ultimine-forge-2001.1.8.jar"
     },
     {
       "relative_path": "mods/Fusion-1.20.1-6.0.0.3.jar",
@@ -196,6 +260,14 @@
       "size": 87551,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/mods/GlitchCore-forge-1.20.1-0.0.1.1.jar"
+    },
+    {
+      "relative_path": "mods/handcrafted-forge-1.20.1-3.0.6.jar",
+      "file_name": "handcrafted-forge-1.20.1-3.0.6.jar",
+      "sha256": "1da3c7c524bfb656bb370757af55f08f1678e8e1cb934e1c4c04aa773ed64a79",
+      "size": 7111059,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/handcrafted-forge-1.20.1-3.0.6.jar"
     },
     {
       "relative_path": "mods/iceandfire-2.1.13-1.20.1-beta-5.jar",
@@ -294,6 +366,22 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar"
     },
     {
+      "relative_path": "mods/naturalist-5.0pre3+forge-1.20.1.jar",
+      "file_name": "naturalist-5.0pre3+forge-1.20.1.jar",
+      "sha256": "7c39dcbd49e60a11955d60545498815fd2a0f490172aff28d3bd43f07111b458",
+      "size": 3806919,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/naturalist-5.0pre3+forge-1.20.1.jar"
+    },
+    {
+      "relative_path": "mods/oculus-mc1.20.1-1.8.0.jar",
+      "file_name": "oculus-mc1.20.1-1.8.0.jar",
+      "sha256": "0945df0cba0f62b3901dd80c3268e5311b770ece78c78037a45db12ac0425fef",
+      "size": 2851119,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/oculus-mc1.20.1-1.8.0.jar"
+    },
+    {
       "relative_path": "mods/Patchouli-1.20.1-85-FORGE.jar",
       "file_name": "Patchouli-1.20.1-85-FORGE.jar",
       "sha256": "05f7b5d52f6b8f0fd7f8b4822fa07a192d1394d83a264309c9d221d6d4fd21c5",
@@ -308,6 +396,14 @@
       "size": 181437,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar"
+    },
+    {
+      "relative_path": "mods/PuzzlesLib-v8.1.33-1.20.1-Forge.jar",
+      "file_name": "PuzzlesLib-v8.1.33-1.20.1-Forge.jar",
+      "sha256": "f3077a9f817629b8e8929c1951042d1a1adc62d30b72adebd54d2b074a4faf4f",
+      "size": 1342987,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/PuzzlesLib-v8.1.33-1.20.1-Forge.jar"
     },
     {
       "relative_path": "mods/Quark-4.0-462.jar",
@@ -332,6 +428,14 @@
       "size": 5726781,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/mods/RegionsUnexploredForge-0.5.6+1.20.1.jar"
+    },
+    {
+      "relative_path": "mods/resourcefullib-forge-1.20.1-2.1.29.jar",
+      "file_name": "resourcefullib-forge-1.20.1-2.1.29.jar",
+      "sha256": "b13afb95231d88e1caea5a045967e0fc291b29020b0d26ad39e6f9e9a551fee8",
+      "size": 432753,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/resourcefullib-forge-1.20.1-2.1.29.jar"
     },
     {
       "relative_path": "mods/SimpleCoreLib-1.20.1-6.0.1.2.jar",
@@ -398,12 +502,12 @@
       "download_url": "https://zernel09.github.io/survync/files/mods/The-Harvest-1.20.1-1.1.1.jar"
     },
     {
-      "relative_path": "mods/timber-strike-3.0.jar",
-      "file_name": "timber-strike-3.0.jar",
-      "sha256": "4c88a7aa1d1f773795a24839c37cab253ac026c9a4a113a80ddb62750f74349c",
-      "size": 121994,
+      "relative_path": "mods/treeharvester-1.20.1-9.1.jar",
+      "file_name": "treeharvester-1.20.1-9.1.jar",
+      "sha256": "97632ffc055a41970ad3d3390ea726d6629636abe7c07321a0eb94cfea21d186",
+      "size": 82743,
       "source_type": "direct",
-      "download_url": "https://zernel09.github.io/survync/files/mods/timber-strike-3.0.jar"
+      "download_url": "https://zernel09.github.io/survync/files/mods/treeharvester-1.20.1-9.1.jar"
     },
     {
       "relative_path": "mods/waystones-forge-1.20.1-14.1.20.jar",
@@ -536,8 +640,8 @@
     {
       "relative_path": "config/embeddium-options.json",
       "file_name": "embeddium-options.json",
-      "sha256": "b4b0aaec74cd2c37a2d0d384a4195768d8d7cbc9f86c7d993694e394fa35664d",
-      "size": 852,
+      "sha256": "b78e1a745d5080dc2e50dd192982aeb59f32b1645626b77ac38a2b725ea52122",
+      "size": 851,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/config/embeddium-options.json"
     },
@@ -1390,6 +1494,38 @@
       "download_url": "https://zernel09.github.io/survync/files/config/zeta-common.toml"
     },
     {
+      "relative_path": "shaderpacks/BSL_v10.1.3.zip",
+      "file_name": "BSL_v10.1.3.zip",
+      "sha256": "185774628b5259c36255183fc1adeb0f64f89235f7ea2c826fa327d1112687a8",
+      "size": 1127026,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/shaderpacks/BSL_v10.1.3.zip"
+    },
+    {
+      "relative_path": "shaderpacks/ComplementaryReimagined_r5.8.1.zip",
+      "file_name": "ComplementaryReimagined_r5.8.1.zip",
+      "sha256": "3f1cd389e717b2e62f58edff222059b9c60de71b14bb49b517eb58318ce35b15",
+      "size": 546925,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/shaderpacks/ComplementaryReimagined_r5.8.1.zip"
+    },
+    {
+      "relative_path": "shaderpacks/ComplementaryUnbound_r5.8.1.zip",
+      "file_name": "ComplementaryUnbound_r5.8.1.zip",
+      "sha256": "bb89b1fc54687d4147a837fb2e3c3f7261a13bee51819761e9b6a91cb7915965",
+      "size": 546928,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/shaderpacks/ComplementaryUnbound_r5.8.1.zip"
+    },
+    {
+      "relative_path": "shaderpacks/photon_v1.3b.zip",
+      "file_name": "photon_v1.3b.zip",
+      "sha256": "120897768eaa8cb1f14a3e98f88dff009ae3204ee3b96904a4fe8586edfc1ead",
+      "size": 3800987,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/shaderpacks/photon_v1.3b.zip"
+    },
+    {
       "relative_path": "resourcepacks/Quark Programmer Art.zip",
       "file_name": "Quark Programmer Art.zip",
       "sha256": "41cb720cf256a12ea247b2f38068b363aa5b1675470c4b5aa66850701a78bc4d",
@@ -1400,8 +1536,8 @@
     {
       "relative_path": "emi.json",
       "file_name": "emi.json",
-      "sha256": "527a338129ec44f97ae3ea2646edeffbf3d5f0801645940da8bed993fa7f86b3",
-      "size": 248,
+      "sha256": "abc9596b05fd110eb4331fdb0f10e33d153c4e9e071e9440f638479e98ac526d",
+      "size": 1476,
       "source_type": "direct",
       "download_url": "https://zernel09.github.io/survync/files/emi.json"
     },
