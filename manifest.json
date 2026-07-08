@@ -1,0 +1,1570 @@
+{
+  "pack_name": "survival",
+  "pack_version": "2026.07.08.1752",
+  "minecraft_version": "1.20.4",
+  "loader_name": "fabric",
+  "loader_version": "0.15.0",
+  "files": [
+    {
+      "relative_path": "mods/alexsmobs-1.22.9.jar",
+      "file_name": "alexsmobs-1.22.9.jar",
+      "sha256": "16bc5bcc19db9029c24f951346ec71098e6f5b0afef96e61894a2e9407aad37c",
+      "size": 26350793,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/alexsmobs-1.22.9.jar"
+    },
+    {
+      "relative_path": "mods/appleskin-forge-mc1.20.1-2.5.1.jar",
+      "file_name": "appleskin-forge-mc1.20.1-2.5.1.jar",
+      "sha256": "e12419e43e3babc810af289403c5cd96bd7f09809b389acc6bb2f122b4b2a426",
+      "size": 47428,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/appleskin-forge-mc1.20.1-2.5.1.jar"
+    },
+    {
+      "relative_path": "mods/architectury-9.2.14-forge.jar",
+      "file_name": "architectury-9.2.14-forge.jar",
+      "sha256": "218b471d0b8a1f6cda14cfc1beb9eeb0df54304500acc6c5613d9b88ec65d9af",
+      "size": 580602,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/architectury-9.2.14-forge.jar"
+    },
+    {
+      "relative_path": "mods/artifacts-forge-9.5.19.jar",
+      "file_name": "artifacts-forge-9.5.19.jar",
+      "sha256": "f1e4dc786866b6e4f2a48142f2acf63bb9bee54ac2f31621ad5d8f18ab54c7b0",
+      "size": 850974,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/artifacts-forge-9.5.19.jar"
+    },
+    {
+      "relative_path": "mods/balm-forge-1.20.1-7.3.39-all.jar",
+      "file_name": "balm-forge-1.20.1-7.3.39-all.jar",
+      "sha256": "0f5714fe4ebf281e9b2618f484dbfa776990e38d3d037ff5cf08fdcf8af853e6",
+      "size": 601013,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/balm-forge-1.20.1-7.3.39-all.jar"
+    },
+    {
+      "relative_path": "mods/BiomesOPlenty-forge-1.20.1-19.0.0.96.jar",
+      "file_name": "BiomesOPlenty-forge-1.20.1-19.0.0.96.jar",
+      "sha256": "84bbfe8fa25a453dae3a8e6c46e8e129f48f7d9df58e33bb7f3d28b90f591b3f",
+      "size": 22381010,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/BiomesOPlenty-forge-1.20.1-19.0.0.96.jar"
+    },
+    {
+      "relative_path": "mods/block_factorys_bosses-2.1.2-forge-1.20.1.jar",
+      "file_name": "block_factorys_bosses-2.1.2-forge-1.20.1.jar",
+      "sha256": "8c61087aa483f90861451682519582e03fa76e773d855e35180a8ed3428938bc",
+      "size": 23963009,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/block_factorys_bosses-2.1.2-forge-1.20.1.jar"
+    },
+    {
+      "relative_path": "mods/BOMD-Forge-1.20.1-1.1.2.jar",
+      "file_name": "BOMD-Forge-1.20.1-1.1.2.jar",
+      "sha256": "2b17c8333d2c63ee60ee3d316a2d75d5c19d581cbb7dce9f38a9931aab221188",
+      "size": 1753623,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/BOMD-Forge-1.20.1-1.1.2.jar"
+    },
+    {
+      "relative_path": "mods/carryon-forge-1.20.1-2.1.2.7.jar",
+      "file_name": "carryon-forge-1.20.1-2.1.2.7.jar",
+      "sha256": "d7470921fc5ff988788d43409083f62478aecc91f4b81d7e6b63c80c933d4613",
+      "size": 439457,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/carryon-forge-1.20.1-2.1.2.7.jar"
+    },
+    {
+      "relative_path": "mods/CerbonsAPI-Forge-1.20.1-1.1.0.jar",
+      "file_name": "CerbonsAPI-Forge-1.20.1-1.1.0.jar",
+      "sha256": "54a0a20da56ab1af2d0d7f5cf1133c059a7523485d567521084f822e81505dfb",
+      "size": 241148,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/CerbonsAPI-Forge-1.20.1-1.1.0.jar"
+    },
+    {
+      "relative_path": "mods/Chunky-1.3.146.jar",
+      "file_name": "Chunky-1.3.146.jar",
+      "sha256": "996a3c9b53e6c0e0850fb9e78d3546d2c37a1b789ddaf529b17e4fe62ab23141",
+      "size": 341451,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/Chunky-1.3.146.jar"
+    },
+    {
+      "relative_path": "mods/citadel-2.6.3-1.20.1.jar",
+      "file_name": "citadel-2.6.3-1.20.1.jar",
+      "sha256": "56c7ab87348a5292583aac787b6cf11b5193e77f02af1d17ea75a96f8640b3ce",
+      "size": 3185275,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/citadel-2.6.3-1.20.1.jar"
+    },
+    {
+      "relative_path": "mods/cloth-config-11.1.136-forge.jar",
+      "file_name": "cloth-config-11.1.136-forge.jar",
+      "sha256": "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2",
+      "size": 1181413,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/cloth-config-11.1.136-forge.jar"
+    },
+    {
+      "relative_path": "mods/collective-1.20.1-8.39.jar",
+      "file_name": "collective-1.20.1-8.39.jar",
+      "sha256": "594bc5d40f2a3fec1ad95732524f65e01a27ac2abeb9d59889cd9f01fd8db6cb",
+      "size": 745947,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/collective-1.20.1-8.39.jar"
+    },
+    {
+      "relative_path": "mods/connectedglass-1.1.14-forge-mc1.20.1.jar",
+      "file_name": "connectedglass-1.1.14-forge-mc1.20.1.jar",
+      "sha256": "a00e37b978c6d73110157879373fe3e97784bbf0c8d4e5fc8dbd9f00e1113fc0",
+      "size": 873714,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/connectedglass-1.1.14-forge-mc1.20.1.jar"
+    },
+    {
+      "relative_path": "mods/corpse-forge-1.20.1-1.0.23.jar",
+      "file_name": "corpse-forge-1.20.1-1.0.23.jar",
+      "sha256": "9f639204588512abe767bb5c2ff97d41f50352af916de939ac8029c95d57ae7b",
+      "size": 245643,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/corpse-forge-1.20.1-1.0.23.jar"
+    },
+    {
+      "relative_path": "mods/curios-forge-5.14.1+1.20.1.jar",
+      "file_name": "curios-forge-5.14.1+1.20.1.jar",
+      "sha256": "1e817919a35b37cf30524aaec73f0ca5130452f23f168f844854df282eb8e51f",
+      "size": 398066,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/curios-forge-5.14.1+1.20.1.jar"
+    },
+    {
+      "relative_path": "mods/Dungeon Now Loading-forge-1.20.1-2.2.jar",
+      "file_name": "Dungeon Now Loading-forge-1.20.1-2.2.jar",
+      "sha256": "287b6ddbf4eceac67607114ee03b4bc08f7c355dfe7d1c2193f6ae884ec0c2f3",
+      "size": 85065508,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/Dungeon Now Loading-forge-1.20.1-2.2.jar"
+    },
+    {
+      "relative_path": "mods/Dungeon-Realm-1.20.1-1.1.3.jar",
+      "file_name": "Dungeon-Realm-1.20.1-1.1.3.jar",
+      "sha256": "f5d496e214e2696a65336391c363650273cd3e5669c5e0b64dacb76fd7394924",
+      "size": 4130892,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/Dungeon-Realm-1.20.1-1.1.3.jar"
+    },
+    {
+      "relative_path": "mods/DungeonsArise-1.20.x-2.1.58-release.jar",
+      "file_name": "DungeonsArise-1.20.x-2.1.58-release.jar",
+      "sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+      "size": 8762342,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/DungeonsArise-1.20.x-2.1.58-release.jar"
+    },
+    {
+      "relative_path": "mods/dynamiclights-v1.9-mc1.17-1.21.9-mod.jar",
+      "file_name": "dynamiclights-v1.9-mc1.17-1.21.9-mod.jar",
+      "sha256": "f02d2bcb995ee5531555995d6625571bc7f3518fa3f5e45bba230d08cd89a608",
+      "size": 406570,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/dynamiclights-v1.9-mc1.17-1.21.9-mod.jar"
+    },
+    {
+      "relative_path": "mods/elevatorid-1.20.1-1.9.1-forge.jar",
+      "file_name": "elevatorid-1.20.1-1.9.1-forge.jar",
+      "sha256": "7487c091bc8e6ae7b83c61471c97258b380fab2a0f421ed84df78f92ba630f75",
+      "size": 187868,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/elevatorid-1.20.1-1.9.1-forge.jar"
+    },
+    {
+      "relative_path": "mods/embeddium-0.3.31+mc1.20.1.jar",
+      "file_name": "embeddium-0.3.31+mc1.20.1.jar",
+      "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb",
+      "size": 1320675,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/embeddium-0.3.31+mc1.20.1.jar"
+    },
+    {
+      "relative_path": "mods/emi-1.1.24+1.20.1+forge.jar",
+      "file_name": "emi-1.1.24+1.20.1+forge.jar",
+      "sha256": "92784dcf5222d72983a420c90f2e9240468ee0fece96f757c82d7884b6cbdb72",
+      "size": 1121750,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/emi-1.1.24+1.20.1+forge.jar"
+    },
+    {
+      "relative_path": "mods/EnchantingInfuser-v8.0.3-1.20.1-Forge.jar",
+      "file_name": "EnchantingInfuser-v8.0.3-1.20.1-Forge.jar",
+      "sha256": "1fe75e73787718a864932415ce0785426c88b7051829ee34768ddbd2cf119fa5",
+      "size": 177441,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/EnchantingInfuser-v8.0.3-1.20.1-Forge.jar"
+    },
+    {
+      "relative_path": "mods/entityculling-forge-1.10.5-mc1.20.1.jar",
+      "file_name": "entityculling-forge-1.10.5-mc1.20.1.jar",
+      "sha256": "db0ee6aaf7e78d758885969e1d237e6efef07109195d4bb81fa06b304ddc12aa",
+      "size": 1590221,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/entityculling-forge-1.10.5-mc1.20.1.jar"
+    },
+    {
+      "relative_path": "mods/FarmersDelight-1.20.1-1.3.2.jar",
+      "file_name": "FarmersDelight-1.20.1-1.3.2.jar",
+      "sha256": "47aed94bb9192c4978fe199f9d3ca5895aeccfbe5b5a0869fdf3aa011c2641f7",
+      "size": 3313327,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/FarmersDelight-1.20.1-1.3.2.jar"
+    },
+    {
+      "relative_path": "mods/ferritecore-6.0.1-forge.jar",
+      "file_name": "ferritecore-6.0.1-forge.jar",
+      "sha256": "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54",
+      "size": 123034,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/ferritecore-6.0.1-forge.jar"
+    },
+    {
+      "relative_path": "mods/ftb-library-forge-2001.2.13.jar",
+      "file_name": "ftb-library-forge-2001.2.13.jar",
+      "sha256": "41810281b65336265cae2c88412022d02f2f0a3f28c66a06173d86f98acf14a7",
+      "size": 780558,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/ftb-library-forge-2001.2.13.jar"
+    },
+    {
+      "relative_path": "mods/ftb-ultimine-forge-2001.1.8.jar",
+      "file_name": "ftb-ultimine-forge-2001.1.8.jar",
+      "sha256": "b80dde55b2c91fd27f09f15ed2aefb0756c7bd704316e488ae8a06b179e85730",
+      "size": 129653,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/ftb-ultimine-forge-2001.1.8.jar"
+    },
+    {
+      "relative_path": "mods/Fusion-1.20.1-6.0.0.3.jar",
+      "file_name": "Fusion-1.20.1-6.0.0.3.jar",
+      "sha256": "aa534ea968b0344da8ed4d8903247bb3fb6d39318f123e0316255f9353d7f29e",
+      "size": 496254,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/Fusion-1.20.1-6.0.0.3.jar"
+    },
+    {
+      "relative_path": "mods/geckolib-forge-1.20.1-4.8.4.jar",
+      "file_name": "geckolib-forge-1.20.1-4.8.4.jar",
+      "sha256": "4518779a31b6c2abb92c98b5ad17ef3d60177df68626bfc86c44de2764913c2b",
+      "size": 1038209,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/geckolib-forge-1.20.1-4.8.4.jar"
+    },
+    {
+      "relative_path": "mods/GlitchCore-forge-1.20.1-0.0.1.1.jar",
+      "file_name": "GlitchCore-forge-1.20.1-0.0.1.1.jar",
+      "sha256": "dedd857b1ee356f002471ec97a2174c7d193d6d1aede60782d0bbe2c241b2a7f",
+      "size": 87551,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/GlitchCore-forge-1.20.1-0.0.1.1.jar"
+    },
+    {
+      "relative_path": "mods/handcrafted-forge-1.20.1-3.0.6.jar",
+      "file_name": "handcrafted-forge-1.20.1-3.0.6.jar",
+      "sha256": "1da3c7c524bfb656bb370757af55f08f1678e8e1cb934e1c4c04aa773ed64a79",
+      "size": 7111059,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/handcrafted-forge-1.20.1-3.0.6.jar"
+    },
+    {
+      "relative_path": "mods/iceandfire-2.1.13-1.20.1-beta-5.jar",
+      "file_name": "iceandfire-2.1.13-1.20.1-beta-5.jar",
+      "sha256": "2b80245fc9b7d6fdc61d71f9892f4c6114eb7f303f65634845aaab25f84d1e82",
+      "size": 21854126,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/iceandfire-2.1.13-1.20.1-beta-5.jar"
+    },
+    {
+      "relative_path": "mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
+      "file_name": "ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
+      "sha256": "82db19cc65b5c11a444498fb4b8cbcb0393c043e794cb5bf368631a0af765035",
+      "size": 532063,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar"
+    },
+    {
+      "relative_path": "mods/irons_lib-1.20.1-2.1.0.jar",
+      "file_name": "irons_lib-1.20.1-2.1.0.jar",
+      "sha256": "db4c7cc853c0ffb1d36a0f19af22c224a8608b2a55c747adc70fb44455baf097",
+      "size": 428969,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/irons_lib-1.20.1-2.1.0.jar"
+    },
+    {
+      "relative_path": "mods/irons_spellbooks-1.20.1-3.16.2.jar",
+      "file_name": "irons_spellbooks-1.20.1-3.16.2.jar",
+      "sha256": "b3a2cc3eac6990dd5badb845bb2e2b74ff89539bc54d793045ee1af6c70cd155",
+      "size": 15554022,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/irons_spellbooks-1.20.1-3.16.2.jar"
+    },
+    {
+      "relative_path": "mods/Jade-1.20.1-Forge-11.13.2.jar",
+      "file_name": "Jade-1.20.1-Forge-11.13.2.jar",
+      "sha256": "31949971a7a8d5a5bc95ad9d400cbedfd2d65ffbfb3cea7c0b2fa3b47431a0a5",
+      "size": 552486,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/Jade-1.20.1-Forge-11.13.2.jar"
+    },
+    {
+      "relative_path": "mods/jei-1.20.1-forge-15.20.0.133.jar",
+      "file_name": "jei-1.20.1-forge-15.20.0.133.jar",
+      "sha256": "4d59c2fd5cea526e5bd1017bb3166d83bb31afba81b3d43cd1f04a0c7df547bb",
+      "size": 1409767,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/jei-1.20.1-forge-15.20.0.133.jar"
+    },
+    {
+      "relative_path": "mods/legendarymonsters-2.1.20 MC 1.20.1.jar",
+      "file_name": "legendarymonsters-2.1.20 MC 1.20.1.jar",
+      "sha256": "61494573295cda4240eb11dd8e991b84a4597e303c0f28f3dcc77f969b436b1b",
+      "size": 44855367,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/legendarymonsters-2.1.20 MC 1.20.1.jar"
+    },
+    {
+      "relative_path": "mods/Library_of_Exile-1.20.1-2.1.3.jar",
+      "file_name": "Library_of_Exile-1.20.1-2.1.3.jar",
+      "sha256": "3bc5c8943bcbb507a98aef388c200cf99e56a401138a0078ec19fbe4f8a87b33",
+      "size": 630415,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/Library_of_Exile-1.20.1-2.1.3.jar"
+    },
+    {
+      "relative_path": "mods/memoryleakfix-forge-1.17+-1.1.5.jar",
+      "file_name": "memoryleakfix-forge-1.17+-1.1.5.jar",
+      "sha256": "925c3db4e1d085a43c4d2beaa4eec18367c22abc90c2ce8594b8a129fd3f28dd",
+      "size": 227925,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/memoryleakfix-forge-1.17+-1.1.5.jar"
+    },
+    {
+      "relative_path": "mods/modernfix-forge-5.27.58+mc1.20.1.jar",
+      "file_name": "modernfix-forge-5.27.58+mc1.20.1.jar",
+      "sha256": "f44b48000387398bae450814c78cb2fb483a5608d50a64d27d944d1797f0637f",
+      "size": 990660,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/modernfix-forge-5.27.58+mc1.20.1.jar"
+    },
+    {
+      "relative_path": "mods/moonlight-1.20-2.16.34-forge.jar",
+      "file_name": "moonlight-1.20-2.16.34-forge.jar",
+      "sha256": "007c05ae799417ca7aa26669c5d97be9dface5b6fc27aca4ca8031cafe4ddd6e",
+      "size": 1419416,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/moonlight-1.20-2.16.34-forge.jar"
+    },
+    {
+      "relative_path": "mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+      "file_name": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+      "sha256": "6c27d16aa715ac6613a55fc463739e2c7b78279e4e4c4cede299e4a2d4a70f08",
+      "size": 76237,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar"
+    },
+    {
+      "relative_path": "mods/naturalist-5.0pre3+forge-1.20.1.jar",
+      "file_name": "naturalist-5.0pre3+forge-1.20.1.jar",
+      "sha256": "7c39dcbd49e60a11955d60545498815fd2a0f490172aff28d3bd43f07111b458",
+      "size": 3806919,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/naturalist-5.0pre3+forge-1.20.1.jar"
+    },
+    {
+      "relative_path": "mods/oculus-mc1.20.1-1.8.0.jar",
+      "file_name": "oculus-mc1.20.1-1.8.0.jar",
+      "sha256": "0945df0cba0f62b3901dd80c3268e5311b770ece78c78037a45db12ac0425fef",
+      "size": 2851119,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/oculus-mc1.20.1-1.8.0.jar"
+    },
+    {
+      "relative_path": "mods/Patchouli-1.20.1-85-FORGE.jar",
+      "file_name": "Patchouli-1.20.1-85-FORGE.jar",
+      "sha256": "05f7b5d52f6b8f0fd7f8b4822fa07a192d1394d83a264309c9d221d6d4fd21c5",
+      "size": 642732,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/Patchouli-1.20.1-85-FORGE.jar"
+    },
+    {
+      "relative_path": "mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+      "file_name": "player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+      "sha256": "90d9965cb9efdbda29fdc5610be3914cf7008bf5c392ff34f7ab25f96a852691",
+      "size": 181437,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar"
+    },
+    {
+      "relative_path": "mods/PuzzlesLib-v8.1.33-1.20.1-Forge.jar",
+      "file_name": "PuzzlesLib-v8.1.33-1.20.1-Forge.jar",
+      "sha256": "f3077a9f817629b8e8929c1951042d1a1adc62d30b72adebd54d2b074a4faf4f",
+      "size": 1342987,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/PuzzlesLib-v8.1.33-1.20.1-Forge.jar"
+    },
+    {
+      "relative_path": "mods/Quark-4.0-462.jar",
+      "file_name": "Quark-4.0-462.jar",
+      "sha256": "c90b96f049d92825c4a103721988c80d72e5ad380d17be46a0f53e114874c478",
+      "size": 14935230,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/Quark-4.0-462.jar"
+    },
+    {
+      "relative_path": "mods/radium-mc1.20.1-0.12.4+git.26c9d8e.jar",
+      "file_name": "radium-mc1.20.1-0.12.4+git.26c9d8e.jar",
+      "sha256": "b42584e2672d6b5329959ec2b0f342395b19389fed0ee4d86ea71072f42f77a0",
+      "size": 713454,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/radium-mc1.20.1-0.12.4+git.26c9d8e.jar"
+    },
+    {
+      "relative_path": "mods/RegionsUnexploredForge-0.5.6+1.20.1.jar",
+      "file_name": "RegionsUnexploredForge-0.5.6+1.20.1.jar",
+      "sha256": "5ba96a83d12c0e2eb3b22c0fa11262ff6d49ba8d2ebd03e1c59ab47ea7dcc2c6",
+      "size": 5726781,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/RegionsUnexploredForge-0.5.6+1.20.1.jar"
+    },
+    {
+      "relative_path": "mods/resourcefullib-forge-1.20.1-2.1.29.jar",
+      "file_name": "resourcefullib-forge-1.20.1-2.1.29.jar",
+      "sha256": "b13afb95231d88e1caea5a045967e0fc291b29020b0d26ad39e6f9e9a551fee8",
+      "size": 432753,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/resourcefullib-forge-1.20.1-2.1.29.jar"
+    },
+    {
+      "relative_path": "mods/SimpleCoreLib-1.20.1-6.0.1.2.jar",
+      "file_name": "SimpleCoreLib-1.20.1-6.0.1.2.jar",
+      "sha256": "20782de059615c0acd84c65f46fe70e8de0b6861a96cd2a1b443005828eaf6d0",
+      "size": 175942,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/SimpleCoreLib-1.20.1-6.0.1.2.jar"
+    },
+    {
+      "relative_path": "mods/sophisticatedbackpacks-1.20.1-3.24.59.1960.jar",
+      "file_name": "sophisticatedbackpacks-1.20.1-3.24.59.1960.jar",
+      "sha256": "50507134dde69043ade4d4a49ed7b1c00772af8a1d85342016e4e7ceea30dcef",
+      "size": 1129298,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/sophisticatedbackpacks-1.20.1-3.24.59.1960.jar"
+    },
+    {
+      "relative_path": "mods/sophisticatedcore-1.20.1-1.3.60.2099.jar",
+      "file_name": "sophisticatedcore-1.20.1-1.3.60.2099.jar",
+      "sha256": "3628cc4357858def1726bc265798fd2eda0462530fee65864312671abdbaee0c",
+      "size": 1608178,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/sophisticatedcore-1.20.1-1.3.60.2099.jar"
+    },
+    {
+      "relative_path": "mods/spark-1.10.53-forge.jar",
+      "file_name": "spark-1.10.53-forge.jar",
+      "sha256": "eba275ba9bb0cb5b542913c3138c6eeff6a752898266d63d125d185f26ac99ed",
+      "size": 3114590,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/spark-1.10.53-forge.jar"
+    },
+    {
+      "relative_path": "mods/supermartijn642corelib-1.1.21-forge-mc1.20.1.jar",
+      "file_name": "supermartijn642corelib-1.1.21-forge-mc1.20.1.jar",
+      "sha256": "6e4f3664aaa5f4138a43acb246c0d91672372acb78a02b89a0531c11596f2c1c",
+      "size": 554977,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/supermartijn642corelib-1.1.21-forge-mc1.20.1.jar"
+    },
+    {
+      "relative_path": "mods/supplementaries-1.20-3.1.43-forge.jar",
+      "file_name": "supplementaries-1.20-3.1.43-forge.jar",
+      "sha256": "6132fc23a2fe1da0ca57439b35526ee9a1a8d898397ff8e61b2d08fb951cdf6a",
+      "size": 13667742,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/supplementaries-1.20-3.1.43-forge.jar"
+    },
+    {
+      "relative_path": "mods/TerraBlender-forge-1.20.1-3.0.1.10.jar",
+      "file_name": "TerraBlender-forge-1.20.1-3.0.1.10.jar",
+      "sha256": "c77a13e3879f9f991cf592abac60ad0c6d2ed17f5ff697ec2db3872b22902d4a",
+      "size": 107533,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/TerraBlender-forge-1.20.1-3.0.1.10.jar"
+    },
+    {
+      "relative_path": "mods/The-Harvest-1.20.1-1.1.1.jar",
+      "file_name": "The-Harvest-1.20.1-1.1.1.jar",
+      "sha256": "cb34a56a527c6a8cec1b721c2f4d8bfffa4d36f1516e4bcc89eb026108e4c6d8",
+      "size": 417011,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/The-Harvest-1.20.1-1.1.1.jar"
+    },
+    {
+      "relative_path": "mods/treeharvester-1.20.1-9.1.jar",
+      "file_name": "treeharvester-1.20.1-9.1.jar",
+      "sha256": "97632ffc055a41970ad3d3390ea726d6629636abe7c07321a0eb94cfea21d186",
+      "size": 82743,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/treeharvester-1.20.1-9.1.jar"
+    },
+    {
+      "relative_path": "mods/waystones-forge-1.20.1-14.1.20.jar",
+      "file_name": "waystones-forge-1.20.1-14.1.20.jar",
+      "sha256": "f03014fabf2186a1dff69bbe2473b3373ab9d6c7d2ea8aa18e46b4f5c7dbacb2",
+      "size": 533739,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/waystones-forge-1.20.1-14.1.20.jar"
+    },
+    {
+      "relative_path": "mods/xaerominimap-forge-1.20.1-26.1.0.jar",
+      "file_name": "xaerominimap-forge-1.20.1-26.1.0.jar",
+      "sha256": "529257c33bf3cacae473332e029acb1e60807cb8865a96627f2cfbcce736ab8f",
+      "size": 2147158,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/xaerominimap-forge-1.20.1-26.1.0.jar"
+    },
+    {
+      "relative_path": "mods/xaeroworldmap-forge-1.20.1-1.41.2.jar",
+      "file_name": "xaeroworldmap-forge-1.20.1-1.41.2.jar",
+      "sha256": "abe167275d74585112deb55ce9a09f1472f08d7e8cfde84776c99db2584d4bda",
+      "size": 1390482,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/xaeroworldmap-forge-1.20.1-1.41.2.jar"
+    },
+    {
+      "relative_path": "mods/Zeta-1.0-31.jar",
+      "file_name": "Zeta-1.0-31.jar",
+      "sha256": "cd1786902a79434f8fd762d741019d9c8a79725fef7e30a89c153c934e1e6a9e",
+      "size": 1006518,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/mods/Zeta-1.0-31.jar"
+    },
+    {
+      "relative_path": "config/artifacts/client.json5",
+      "file_name": "client.json5",
+      "sha256": "dfae4a12bf924a5e12380032ff257ec535c6b003fef539a3893adb05c0a69c56",
+      "size": 551,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/artifacts/client.json5"
+    },
+    {
+      "relative_path": "config/artifacts/common.json5",
+      "file_name": "common.json5",
+      "sha256": "736bec8c910558091bb749ac7adb013822a253a02f1f70637eb193952768d2b1",
+      "size": 1584,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/artifacts/common.json5"
+    },
+    {
+      "relative_path": "config/biomesoplenty/biome_toggles.json",
+      "file_name": "biome_toggles.json",
+      "sha256": "6e81cf8f8ffd55004413d05e2579a63613d39a180bf5a4ff67ffa98ec44b1aa9",
+      "size": 2101,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/biomesoplenty/biome_toggles.json"
+    },
+    {
+      "relative_path": "config/biomesoplenty/gameplay.toml",
+      "file_name": "gameplay.toml",
+      "sha256": "c48cf5d4b895aae33a2e757aa7b46768d3c30b93f7f09c7a2a3156d5622ec0f1",
+      "size": 113,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/biomesoplenty/gameplay.toml"
+    },
+    {
+      "relative_path": "config/biomesoplenty/generation.toml",
+      "file_name": "generation.toml",
+      "sha256": "b949376d74ae4b3a82851202a1ce79e2995d85c1237a50285f81d85edf29a815",
+      "size": 525,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/biomesoplenty/generation.toml"
+    },
+    {
+      "relative_path": "config/block_factorys_bosses-client.toml",
+      "file_name": "block_factorys_bosses-client.toml",
+      "sha256": "2683821a189ca16e340c9e9cd22517be98362ad6f083e56d789d0f7e0a708b13",
+      "size": 2639,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/block_factorys_bosses-client.toml"
+    },
+    {
+      "relative_path": "config/bosses_of_mass_destruction.json5",
+      "file_name": "bosses_of_mass_destruction.json5",
+      "sha256": "a4522dbaee6d5d4532a3b55906a2a2740424be53ec215c70fbb8931165e81121",
+      "size": 1475,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/bosses_of_mass_destruction.json5"
+    },
+    {
+      "relative_path": "config/citadel-common.toml",
+      "file_name": "citadel-common.toml",
+      "sha256": "3fcd8013137a86c00953d4be1e56945b84b87594be722bbf3b3be8d752e2577f",
+      "size": 648,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/citadel-common.toml"
+    },
+    {
+      "relative_path": "config/curios-client.toml",
+      "file_name": "curios-client.toml",
+      "sha256": "ebc96c813d601e9c61b6929a8490e71fa990dc64918c19e1f9937bb275510abc",
+      "size": 706,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/curios-client.toml"
+    },
+    {
+      "relative_path": "config/curios-common.toml",
+      "file_name": "curios-common.toml",
+      "sha256": "5fe808869d46a4b80e1191fbe40f40a4d63987beda0eaeb2d89b909a990ea2ea",
+      "size": 161,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/curios-common.toml"
+    },
+    {
+      "relative_path": "config/embeddium-fingerprint.json",
+      "file_name": "embeddium-fingerprint.json",
+      "sha256": "753333b914a4fbba8d59194bcfb2bdba6a1cb94435561db13f5285c4caea268c",
+      "size": 427,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/embeddium-fingerprint.json"
+    },
+    {
+      "relative_path": "config/embeddium-mixins.properties",
+      "file_name": "embeddium-mixins.properties",
+      "sha256": "09ff183e061d93b79514bc171bf9118497578757e7a5c45946039487656e2619",
+      "size": 269,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/embeddium-mixins.properties"
+    },
+    {
+      "relative_path": "config/embeddium-options.json",
+      "file_name": "embeddium-options.json",
+      "sha256": "b78e1a745d5080dc2e50dd192982aeb59f32b1645626b77ac38a2b725ea52122",
+      "size": 851,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/embeddium-options.json"
+    },
+    {
+      "relative_path": "config/emi.css",
+      "file_name": "emi.css",
+      "sha256": "b2fefce8b997851759990d1ec0c71d4be631e435857eb7b19516e4806986ac34",
+      "size": 10189,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/emi.css"
+    },
+    {
+      "relative_path": "config/entityculling.json",
+      "file_name": "entityculling.json",
+      "sha256": "e92e6772c4b6ec28b9c179c80831d56d11fc65064591424a120133d397b2ab49",
+      "size": 2228,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/entityculling.json"
+    },
+    {
+      "relative_path": "config/ferritecore-mixin.toml",
+      "file_name": "ferritecore-mixin.toml",
+      "sha256": "c164439c632aa7c95c07edec5cfef74b8e2d5671a8445a781deeb4de7ad0c8b6",
+      "size": 1516,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/ferritecore-mixin.toml"
+    },
+    {
+      "relative_path": "config/fml.toml",
+      "file_name": "fml.toml",
+      "sha256": "eb6e8b8eda9682889a83d55262ef96cf37153d58fe7f0fa5d5cb1da5d9f7dd9b",
+      "size": 1147,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/fml.toml"
+    },
+    {
+      "relative_path": "config/forge-client.toml",
+      "file_name": "forge-client.toml",
+      "sha256": "0b1b3c45343435184c9dde3149b38afcdb97953e287686ecda54385f53ebcddc",
+      "size": 1628,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/forge-client.toml"
+    },
+    {
+      "relative_path": "config/fusion-common.toml",
+      "file_name": "fusion-common.toml",
+      "sha256": "1c7b60264c47b2669f5b444500e2e905613377ab923d9d728cd3f749b0e12b1a",
+      "size": 1411,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/fusion-common.toml"
+    },
+    {
+      "relative_path": "config/iceandfire/amphithere_biomes.json",
+      "file_name": "amphithere_biomes.json",
+      "sha256": "8c44f2cf4903712ff88743373cd6893b31226af031f9822ec63ae337abdbb4b0",
+      "size": 767,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/amphithere_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/cockatrice_biomes.json",
+      "file_name": "cockatrice_biomes.json",
+      "sha256": "d01094612d9d8a48e99809522ff7e009bc1ec7e03a57e0f5f8c9cd51ef44b0bb",
+      "size": 907,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/cockatrice_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/cyclops_cave_biomes.json",
+      "file_name": "cyclops_cave_biomes.json",
+      "sha256": "0ec4ed27179c0a74651de2fe91cc17024ca05bd598b7f8043ebb794ad6d16a3a",
+      "size": 610,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/cyclops_cave_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/deathworm_biomes.json",
+      "file_name": "deathworm_biomes.json",
+      "sha256": "119e3398276786acafe198ebf3fd62d62e0e62e544ec74980c32bf0356c6f0c9",
+      "size": 1369,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/deathworm_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/desert_myrmex_biomes.json",
+      "file_name": "desert_myrmex_biomes.json",
+      "sha256": "119e3398276786acafe198ebf3fd62d62e0e62e544ec74980c32bf0356c6f0c9",
+      "size": 1369,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/desert_myrmex_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/fire_dragon_biomes.json",
+      "file_name": "fire_dragon_biomes.json",
+      "sha256": "0366d55cbee86bf899cd68bee919b8b07f0925a44943a1fab08ffb89505fbeb7",
+      "size": 2113,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/fire_dragon_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/fire_dragon_cave_biomes.json",
+      "file_name": "fire_dragon_cave_biomes.json",
+      "sha256": "0366d55cbee86bf899cd68bee919b8b07f0925a44943a1fab08ffb89505fbeb7",
+      "size": 2113,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/fire_dragon_cave_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/fire_dragon_skeleton_biomes.json",
+      "file_name": "fire_dragon_skeleton_biomes.json",
+      "sha256": "119e3398276786acafe198ebf3fd62d62e0e62e544ec74980c32bf0356c6f0c9",
+      "size": 1369,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/fire_dragon_skeleton_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/fire_lily_biomes.json",
+      "file_name": "fire_lily_biomes.json",
+      "sha256": "0a1b2ea4da236463e214dd7eed0a7837df420c3957ad61434d65995111a67b9a",
+      "size": 277,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/fire_lily_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/forest_troll_biomes.json",
+      "file_name": "forest_troll_biomes.json",
+      "sha256": "071e4cf9db64d5771b17d2487d8229562311c584ce56a824abb478f2cc00a911",
+      "size": 255,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/forest_troll_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/frost_lily_biomes.json",
+      "file_name": "frost_lily_biomes.json",
+      "sha256": "91d500462895af7576de5eb64efd00faed857504f9eefe56cfa418a28ae34001",
+      "size": 624,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/frost_lily_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/gorgon_temple_biomes.json",
+      "file_name": "gorgon_temple_biomes.json",
+      "sha256": "0ec4ed27179c0a74651de2fe91cc17024ca05bd598b7f8043ebb794ad6d16a3a",
+      "size": 610,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/gorgon_temple_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/graveyard_biomes.json",
+      "file_name": "graveyard_biomes.json",
+      "sha256": "44810e5361d38ad87b5028ffaf139832bcbce16c55898de796e79dd86b99d7ab",
+      "size": 467,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/graveyard_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/hippocampus_biomes.json",
+      "file_name": "hippocampus_biomes.json",
+      "sha256": "e33237977094c9d26012e2a1883c75ff7062ca16d43f2c9a66f4ceb5d92d2fc0",
+      "size": 254,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/hippocampus_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/hippogryph_biomes.json",
+      "file_name": "hippogryph_biomes.json",
+      "sha256": "8a199a14a2abf91b76855781bd37ed146491e896fd05ba714a806bc47b2c1657",
+      "size": 855,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/hippogryph_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/hippogryph_black_biomes.json",
+      "file_name": "hippogryph_black_biomes.json",
+      "sha256": "c482e650dee2fc71d0ba8726ebea20d78b9e345865449c57d5717ed55af05b37",
+      "size": 279,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/hippogryph_black_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/hippogryph_brown_biomes.json",
+      "file_name": "hippogryph_brown_biomes.json",
+      "sha256": "a05e7cbe7541bff74314da9b23976b072e727387185840645e60f5eb98e989be",
+      "size": 486,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/hippogryph_brown_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/hippogryph_chestnut_biomes.json",
+      "file_name": "hippogryph_chestnut_biomes.json",
+      "sha256": "88466c293acef0b7725de96c7d21747948769d2e6b33e952d4c204472c898ecd",
+      "size": 601,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/hippogryph_chestnut_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/hippogryph_creamy_biomes.json",
+      "file_name": "hippogryph_creamy_biomes.json",
+      "sha256": "dd16c76d368fd696927c4d5b5cee80f682c0e7fe057af1a93e6cc9059b5abaab",
+      "size": 286,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/hippogryph_creamy_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/hippogryph_dark_brown_biomes.json",
+      "file_name": "hippogryph_dark_brown_biomes.json",
+      "sha256": "a77dad8b397928fb3b1d9b249b586b8103f866790d215b9bed549add0fa6f3db",
+      "size": 1050,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/hippogryph_dark_brown_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/hippogryph_gray_biomes.json",
+      "file_name": "hippogryph_gray_biomes.json",
+      "sha256": "dbb0b4d04fe34c05a26f26df87d21967a4f6090670cfd6194e6de9badf254a1b",
+      "size": 418,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/hippogryph_gray_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/hippogryph_white_biomes.json",
+      "file_name": "hippogryph_white_biomes.json",
+      "sha256": "172c79ed677b97663434c8bd90311802556489bcb8afb5fe246f5c8cac840ea4",
+      "size": 1249,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/hippogryph_white_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/hydra_cave_biomes.json",
+      "file_name": "hydra_cave_biomes.json",
+      "sha256": "ae56c23cf566a2fd020dfa6dd2acbbc4ca7770ee98223fd293b0bd0290fd816a",
+      "size": 747,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/hydra_cave_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/ice_dragon_biomes.json",
+      "file_name": "ice_dragon_biomes.json",
+      "sha256": "31c08e6b056b55ed9afc91ab57f11c8e0806f9d5859886445de0acf5fd35035b",
+      "size": 534,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/ice_dragon_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/ice_dragon_cave_biomes.json",
+      "file_name": "ice_dragon_cave_biomes.json",
+      "sha256": "31c08e6b056b55ed9afc91ab57f11c8e0806f9d5859886445de0acf5fd35035b",
+      "size": 534,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/ice_dragon_cave_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/ice_dragon_skeleton_biomes.json",
+      "file_name": "ice_dragon_skeleton_biomes.json",
+      "sha256": "91d500462895af7576de5eb64efd00faed857504f9eefe56cfa418a28ae34001",
+      "size": 624,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/ice_dragon_skeleton_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/jungle_myrmex_biomes.json",
+      "file_name": "jungle_myrmex_biomes.json",
+      "sha256": "8c44f2cf4903712ff88743373cd6893b31226af031f9822ec63ae337abdbb4b0",
+      "size": 767,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/jungle_myrmex_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/lightning_dragon_biomes.json",
+      "file_name": "lightning_dragon_biomes.json",
+      "sha256": "65ba1662b1a2c9b6f97c6a0f108ee1d1d0e928226d7fc1a05634e0a55329bbbf",
+      "size": 1748,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/lightning_dragon_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/lightning_dragon_cave_biomes.json",
+      "file_name": "lightning_dragon_cave_biomes.json",
+      "sha256": "65ba1662b1a2c9b6f97c6a0f108ee1d1d0e928226d7fc1a05634e0a55329bbbf",
+      "size": 1748,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/lightning_dragon_cave_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/lightning_dragon_skeleton_biomes.json",
+      "file_name": "lightning_dragon_skeleton_biomes.json",
+      "sha256": "d01094612d9d8a48e99809522ff7e009bc1ec7e03a57e0f5f8c9cd51ef44b0bb",
+      "size": 907,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/lightning_dragon_skeleton_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/lightning_lily_biomes.json",
+      "file_name": "lightning_lily_biomes.json",
+      "sha256": "d01094612d9d8a48e99809522ff7e009bc1ec7e03a57e0f5f8c9cd51ef44b0bb",
+      "size": 907,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/lightning_lily_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/mausoleum_biomes.json",
+      "file_name": "mausoleum_biomes.json",
+      "sha256": "183480a63bca5a487b31b28b0ec742fb21f3115a6a1de2f38f0f6daf81d46e3e",
+      "size": 728,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/mausoleum_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/mountain_troll_biomes.json",
+      "file_name": "mountain_troll_biomes.json",
+      "sha256": "a05e7cbe7541bff74314da9b23976b072e727387185840645e60f5eb98e989be",
+      "size": 486,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/mountain_troll_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/ore_gen_biomes.json",
+      "file_name": "ore_gen_biomes.json",
+      "sha256": "e7855fa7d73f4d3af77f47ddd70b4fcbab7862302d004b4ddae9dddc75c4e402",
+      "size": 145,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/ore_gen_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/pixie_village_biomes.json",
+      "file_name": "pixie_village_biomes.json",
+      "sha256": "f363deb6b29d728bacaaf301fa456a393f8ce0498bde963884368956eb42ffdb",
+      "size": 2194,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/pixie_village_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/sapphire_gen_biomes.json",
+      "file_name": "sapphire_gen_biomes.json",
+      "sha256": "91d500462895af7576de5eb64efd00faed857504f9eefe56cfa418a28ae34001",
+      "size": 624,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/sapphire_gen_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/sea_serpent_biomes.json",
+      "file_name": "sea_serpent_biomes.json",
+      "sha256": "e33237977094c9d26012e2a1883c75ff7062ca16d43f2c9a66f4ceb5d92d2fc0",
+      "size": 254,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/sea_serpent_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/siren_biomes.json",
+      "file_name": "siren_biomes.json",
+      "sha256": "e33237977094c9d26012e2a1883c75ff7062ca16d43f2c9a66f4ceb5d92d2fc0",
+      "size": 254,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/siren_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/snowy_troll_biomes.json",
+      "file_name": "snowy_troll_biomes.json",
+      "sha256": "7b0d7d7459b06d0f5a01e0d3cb803d534f9b654ad3b4d9e336f0f50fbe06f4d7",
+      "size": 250,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/snowy_troll_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/stymphalian_bird_biomes.json",
+      "file_name": "stymphalian_bird_biomes.json",
+      "sha256": "ae56c23cf566a2fd020dfa6dd2acbbc4ca7770ee98223fd293b0bd0290fd816a",
+      "size": 747,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/stymphalian_bird_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire/wandering_cyclops_biomes.json",
+      "file_name": "wandering_cyclops_biomes.json",
+      "sha256": "46fb4b80eb9d9667223509ea17aa4b5aa65851f3cb09c09886d6b9dde1a63601",
+      "size": 632,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire/wandering_cyclops_biomes.json"
+    },
+    {
+      "relative_path": "config/iceandfire-client.toml",
+      "file_name": "iceandfire-client.toml",
+      "sha256": "cda35c328969c68f4d112bbf3d537a8015b702610a0bf63f4bd1bf81e4c3e4ee",
+      "size": 320,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire-client.toml"
+    },
+    {
+      "relative_path": "config/iceandfire-common.toml",
+      "file_name": "iceandfire-common.toml",
+      "sha256": "f4f30bb8fc7e695be65bad46edf7233faa1d45ab92dd052a7e6891f0e0b97aa4",
+      "size": 15912,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/iceandfire-common.toml"
+    },
+    {
+      "relative_path": "config/immediatelyfast.json",
+      "file_name": "immediatelyfast.json",
+      "sha256": "f2b7f219198f0a911d04b09f545f2c1256e8d114951443924878dc10963e16aa",
+      "size": 1060,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/immediatelyfast.json"
+    },
+    {
+      "relative_path": "config/irons_spellbooks-client.toml",
+      "file_name": "irons_spellbooks-client.toml",
+      "sha256": "c02cc14cee5f91bbc236f0392ce7ce05d1a182aacc3ee0dbc8540180c739fdb4",
+      "size": 3575,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/irons_spellbooks-client.toml"
+    },
+    {
+      "relative_path": "config/irons_spellbooks_spell_config/global_config.json",
+      "file_name": "global_config.json",
+      "sha256": "7a8fd5e37e183cccd59a72a4af0b9e1fe1b4d930cd034b2f11da7307a8741580",
+      "size": 257,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/irons_spellbooks_spell_config/global_config.json"
+    },
+    {
+      "relative_path": "config/irons_spellbooks_spell_config/irons_spellbooks/example.txt",
+      "file_name": "example.txt",
+      "sha256": "ac4206122e76a2e3fb29cbfcdc3ba9b48c695de8b889b9959a3da70e210924f1",
+      "size": 683,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/irons_spellbooks_spell_config/irons_spellbooks/example.txt"
+    },
+    {
+      "relative_path": "config/jade/hide-blocks.json",
+      "file_name": "hide-blocks.json",
+      "sha256": "247df2699ebb5a0d4c9585aeeb267ef9388cd5bee2b13ca340f35124a135b35b",
+      "size": 191,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jade/hide-blocks.json"
+    },
+    {
+      "relative_path": "config/jade/hide-entities.json",
+      "file_name": "hide-entities.json",
+      "sha256": "22b4560c3dc05da35a70bb6611da0ce04cff295ab8c663afd58e725c396a24b3",
+      "size": 325,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jade/hide-entities.json"
+    },
+    {
+      "relative_path": "config/jade/jade.json",
+      "file_name": "jade.json",
+      "sha256": "4624fc2e033829004e59a6269ccc409529d653d7cfa902e8cb3dc570daba14a2",
+      "size": 975,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jade/jade.json"
+    },
+    {
+      "relative_path": "config/jade/plugins.json",
+      "file_name": "plugins.json",
+      "sha256": "cdc5f126a278f3905836edeec14d9b0bf7e35cc3a67d720728e4ffc41d81c1ee",
+      "size": 1845,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jade/plugins.json"
+    },
+    {
+      "relative_path": "config/jade/sort-order.json",
+      "file_name": "sort-order.json",
+      "sha256": "bdfbe34388b4d365ac57e223421de2e90fc469dc04565eafe7984d595ada066f",
+      "size": 1697,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jade/sort-order.json"
+    },
+    {
+      "relative_path": "config/jei/blacklist.cfg",
+      "file_name": "blacklist.cfg",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jei/blacklist.cfg"
+    },
+    {
+      "relative_path": "config/jei/jei-client.ini",
+      "file_name": "jei-client.ini",
+      "sha256": "30503916553a0a302f433abd1c99a54303312cf426b7a6b49d0dff0461c82aba",
+      "size": 8658,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jei/jei-client.ini"
+    },
+    {
+      "relative_path": "config/jei/jei-colors.ini",
+      "file_name": "jei-colors.ini",
+      "sha256": "5f37aacd70460fdc2631ff45e98e8a2ce4e52d3e9a50917edf40eeed1236952e",
+      "size": 1338,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jei/jei-colors.ini"
+    },
+    {
+      "relative_path": "config/jei/jei-debug.ini",
+      "file_name": "jei-debug.ini",
+      "sha256": "ee9bb0f0f8465629951fe9a532f3ebe3327671a12d4cc6395860d7f7494b970b",
+      "size": 918,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jei/jei-debug.ini"
+    },
+    {
+      "relative_path": "config/jei/jei-mod-id-format.ini",
+      "file_name": "jei-mod-id-format.ini",
+      "sha256": "326b4f9b813ca8183bfaeee184cf7248c7a75c4d85b59322e349c0e964c253f3",
+      "size": 463,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jei/jei-mod-id-format.ini"
+    },
+    {
+      "relative_path": "config/jei/recipe-category-sort-order.ini",
+      "file_name": "recipe-category-sort-order.ini",
+      "sha256": "b2f9b0a8662241a4c3c32e2564a905c38c1b1f5532ab09c9a04f5d0e12d84434",
+      "size": 485,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/jei/recipe-category-sort-order.ini"
+    },
+    {
+      "relative_path": "config/legendary_monsters-common.toml",
+      "file_name": "legendary_monsters-common.toml",
+      "sha256": "8db759320cfa33e45a980dba1cf071bcba9e75bb54b35084a44b4bd6a1054308",
+      "size": 21190,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/legendary_monsters-common.toml"
+    },
+    {
+      "relative_path": "config/lithium.properties",
+      "file_name": "lithium.properties",
+      "sha256": "b87ee52fdc722ce1497e7ff55fdbd0660fc9df40c8f2f8167465cab55a388f0d",
+      "size": 349,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/lithium.properties"
+    },
+    {
+      "relative_path": "config/mine_and_slash-client.toml",
+      "file_name": "mine_and_slash-client.toml",
+      "sha256": "acf870bfb8e4a1c875d8bef8984ee7f46eb3e4c3b44d80932c63e254199abe1e",
+      "size": 5193,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/mine_and_slash-client.toml"
+    },
+    {
+      "relative_path": "config/mine_and_slash_neat_gui-client.toml",
+      "file_name": "mine_and_slash_neat_gui-client.toml",
+      "sha256": "a3e74ad62e11336de1d60d0fe4b3f4490c74d927d912605d22f0c498b33b7c1b",
+      "size": 991,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/mine_and_slash_neat_gui-client.toml"
+    },
+    {
+      "relative_path": "config/modernfix-common.toml",
+      "file_name": "modernfix-common.toml",
+      "sha256": "fad9aea710ec3508eab562cd8f2b5f8e2dda6ee1c5fb1fe818f90ce253017f66",
+      "size": 107,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/modernfix-common.toml"
+    },
+    {
+      "relative_path": "config/modernfix-mixins.properties",
+      "file_name": "modernfix-mixins.properties",
+      "sha256": "cc9db08ca3f44714cf14117fb1772eed88c9cc3272fea6d17e657292c8799fe0",
+      "size": 6643,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/modernfix-mixins.properties"
+    },
+    {
+      "relative_path": "config/moonlight-client.toml",
+      "file_name": "moonlight-client.toml",
+      "sha256": "47297d47ca3fa4525d1adbc7234b9b0dc2ee490b87216fe6002e34ff69acac08",
+      "size": 1027,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/moonlight-client.toml"
+    },
+    {
+      "relative_path": "config/moonlight-common.toml",
+      "file_name": "moonlight-common.toml",
+      "sha256": "02cd35fbcc371cf63303ae1264ad9f4613b3f73ace93417af825baf7d3ac7baf",
+      "size": 1023,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/moonlight-common.toml"
+    },
+    {
+      "relative_path": "config/MouseTweaks.cfg",
+      "file_name": "MouseTweaks.cfg",
+      "sha256": "4069ce1a439d8c37453c1b1e9f2037e0942674c7e48723a39b37eab245792ad4",
+      "size": 135,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/MouseTweaks.cfg"
+    },
+    {
+      "relative_path": "config/patchouli-client.toml",
+      "file_name": "patchouli-client.toml",
+      "sha256": "d289f4c7540e3e24bcf6bbf3f5a2aaaf87ccf58027d2213e40497fc627422068",
+      "size": 1091,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/patchouli-client.toml"
+    },
+    {
+      "relative_path": "config/quark-common.toml",
+      "file_name": "quark-common.toml",
+      "sha256": "fedbbde3fe40c39afe3628c07d6ca35c40c8626a715d47a6048c34748b44f606",
+      "size": 82276,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/quark-common.toml"
+    },
+    {
+      "relative_path": "config/regions_unexplored/ru-common.toml",
+      "file_name": "ru-common.toml",
+      "sha256": "f172a7acb56bb4a3ce23925f1ef85b6441e47f94956c24e4db4c34bf8366745c",
+      "size": 3644,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/regions_unexplored/ru-common.toml"
+    },
+    {
+      "relative_path": "config/regions_unexplored/ru-primary-region.toml",
+      "file_name": "ru-primary-region.toml",
+      "sha256": "03a3a59b20d66a1be08da11863340029ea42060a92e413f145eaa5daf9a582d4",
+      "size": 13851,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/regions_unexplored/ru-primary-region.toml"
+    },
+    {
+      "relative_path": "config/regions_unexplored/ru-secondary-region.toml",
+      "file_name": "ru-secondary-region.toml",
+      "sha256": "77d4b1625ba1754bc129bc47a98186ad1869e86737867dac98cabd8621ed916f",
+      "size": 13786,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/regions_unexplored/ru-secondary-region.toml"
+    },
+    {
+      "relative_path": "config/simplecorelib-common.toml",
+      "file_name": "simplecorelib-common.toml",
+      "sha256": "9d2496cf8043eadfba1c0bde1838fda593b99e8ef498b4f8c7cf465d365dc5c1",
+      "size": 140,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/simplecorelib-common.toml"
+    },
+    {
+      "relative_path": "config/sophisticatedbackpacks-common.toml",
+      "file_name": "sophisticatedbackpacks-common.toml",
+      "sha256": "6674ec92f625296aa8accc93d71fdf1eecfc8050111c5ae7b6d9a94b4fe14506",
+      "size": 122,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/sophisticatedbackpacks-common.toml"
+    },
+    {
+      "relative_path": "config/sophisticatedcore-client.toml",
+      "file_name": "sophisticatedcore-client.toml",
+      "sha256": "3175ac14ac1da55ba706d1f0321c0b5620cd968a381e60323b283778e7b6d9e6",
+      "size": 478,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/sophisticatedcore-client.toml"
+    },
+    {
+      "relative_path": "config/sophisticatedcore-common.toml",
+      "file_name": "sophisticatedcore-common.toml",
+      "sha256": "48a311ab9b359425aabe29976900df1bbe1c7d827da7bfaf897ba673ed3f3ece",
+      "size": 3195,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/sophisticatedcore-common.toml"
+    },
+    {
+      "relative_path": "config/supplementaries-client.toml",
+      "file_name": "supplementaries-client.toml",
+      "sha256": "3337f7faeb788bc4580a8379464759c64f104028d37fa3c8fc7b7d7041398c33",
+      "size": 9370,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/supplementaries-client.toml"
+    },
+    {
+      "relative_path": "config/supplementaries-common.toml",
+      "file_name": "supplementaries-common.toml",
+      "sha256": "0ec0c0ef3729d1135c51135fd7275807f72e293d20edafa30646040ac17773ad",
+      "size": 24952,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/supplementaries-common.toml"
+    },
+    {
+      "relative_path": "config/terrablender.toml",
+      "file_name": "terrablender.toml",
+      "sha256": "11ef4c2666fa094b456310710c2b5cb8babbd71982d4d187c9a80ad4011d8014",
+      "size": 552,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/terrablender.toml"
+    },
+    {
+      "relative_path": "config/transition.json",
+      "file_name": "transition.json",
+      "sha256": "60420a41571a4658b91babfa2b47d6fefb7c1766eeea969f51ff98ab34c2431c",
+      "size": 97,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/transition.json"
+    },
+    {
+      "relative_path": "config/trender.json",
+      "file_name": "trender.json",
+      "sha256": "fe0bed19bd0927b3d519816c73378730689080a8f07e66a6167c266ffde29dd2",
+      "size": 44,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/trender.json"
+    },
+    {
+      "relative_path": "config/waystones-common.toml",
+      "file_name": "waystones-common.toml",
+      "sha256": "4cf1d13d8827bcdce75acadb1f3ea24732fd6fa6575ec8a261a37b21c481674d",
+      "size": 6956,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/waystones-common.toml"
+    },
+    {
+      "relative_path": "config/xaero/lib/client.cfg",
+      "file_name": "client.cfg",
+      "sha256": "43ed9dbfa5b4d6f0f3d2e8c2ced17ad298164b22c68ff11d415257a39b074336",
+      "size": 26,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/lib/client.cfg"
+    },
+    {
+      "relative_path": "config/xaero/lib/common.cfg",
+      "file_name": "common.cfg",
+      "sha256": "98f698d96a6d21d830a455b4ad045b70516fa63c298021742d8499e7f0366cd2",
+      "size": 236,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/lib/common.cfg"
+    },
+    {
+      "relative_path": "config/xaero/lib/profiles/default.cfg",
+      "file_name": "default.cfg",
+      "sha256": "34ae854b17d896d7cb853bdc28c27231a3947e91cb9f0991f372846ee3c2a907",
+      "size": 121,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/lib/profiles/default.cfg"
+    },
+    {
+      "relative_path": "config/xaero/lib/server_profiles/default.cfg",
+      "file_name": "default.cfg",
+      "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
+      "size": 75,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/lib/server_profiles/default.cfg"
+    },
+    {
+      "relative_path": "config/xaero/minimap/client.cfg",
+      "file_name": "client.cfg",
+      "sha256": "c0915eff5d1a7905cd1038d646eb9086fd1a29e2f637d53535e4da161de17b9f",
+      "size": 235,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/minimap/client.cfg"
+    },
+    {
+      "relative_path": "config/xaero/minimap/common.cfg",
+      "file_name": "common.cfg",
+      "sha256": "2b49df024c03a369c62a303c72755e7fedeb4f4653ff53a12fd37bd83ccd4ed0",
+      "size": 147,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/minimap/common.cfg"
+    },
+    {
+      "relative_path": "config/xaero/minimap/default_radar_categories_client.json",
+      "file_name": "default_radar_categories_client.json",
+      "sha256": "94fc0e69a1754ef80c54e1f3c9193526c620b0ac646f94a4a0f560bcc58826a8",
+      "size": 5531,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/minimap/default_radar_categories_client.json"
+    },
+    {
+      "relative_path": "config/xaero/minimap/default_radar_categories_server.json",
+      "file_name": "default_radar_categories_server.json",
+      "sha256": "a4c652cafa7dea324e5f5cf3b1df46a84e54b6d4f877195857bce55a559c1cfd",
+      "size": 4597,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/minimap/default_radar_categories_server.json"
+    },
+    {
+      "relative_path": "config/xaero/minimap/profiles/default.cfg",
+      "file_name": "default.cfg",
+      "sha256": "db49c4dde15db318eb25e8a43fa06992778f0e17b3a963fff5cbee35da11fb81",
+      "size": 3657,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/minimap/profiles/default.cfg"
+    },
+    {
+      "relative_path": "config/xaero/minimap/profiles/info_display_config/default.cfg.txt",
+      "file_name": "default.cfg.txt",
+      "sha256": "184e654fa1fc8ad09943c97c4e65ab78acb5b3cfca22417a831513d1b6d9bbc6",
+      "size": 684,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/minimap/profiles/info_display_config/default.cfg.txt"
+    },
+    {
+      "relative_path": "config/xaero/minimap/server_profiles/default.cfg",
+      "file_name": "default.cfg",
+      "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
+      "size": 75,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/minimap/server_profiles/default.cfg"
+    },
+    {
+      "relative_path": "config/xaero/world-map/client.cfg",
+      "file_name": "client.cfg",
+      "sha256": "201e49f557c160a48657d8df3aa25830cb68b1316735f69f3564e78223e3317a",
+      "size": 491,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/world-map/client.cfg"
+    },
+    {
+      "relative_path": "config/xaero/world-map/common.cfg",
+      "file_name": "common.cfg",
+      "sha256": "0c229eb0daf85bd09af51f21eeeb99497a3bd50a825d5ab1ca695fb21bf6cf9d",
+      "size": 141,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/world-map/common.cfg"
+    },
+    {
+      "relative_path": "config/xaero/world-map/profiles/default.cfg",
+      "file_name": "default.cfg",
+      "sha256": "7b24c882801bcc7f0a8aedc625d419f661fa490fa0e9d5ebe39599a1ce2dcbd5",
+      "size": 1379,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/world-map/profiles/default.cfg"
+    },
+    {
+      "relative_path": "config/xaero/world-map/server_profiles/default.cfg",
+      "file_name": "default.cfg",
+      "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
+      "size": 75,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaero/world-map/server_profiles/default.cfg"
+    },
+    {
+      "relative_path": "config/xaerohud.txt",
+      "file_name": "xaerohud.txt",
+      "sha256": "58c9270f258d0b224bb7d0f7c927544d5fbe5f1b8027c820e1e14ecbf48fb88c",
+      "size": 123,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaerohud.txt"
+    },
+    {
+      "relative_path": "config/xaeropatreon.txt",
+      "file_name": "xaeropatreon.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/xaeropatreon.txt"
+    },
+    {
+      "relative_path": "config/zeta-common.toml",
+      "file_name": "zeta-common.toml",
+      "sha256": "684816927033626b990f8e277a43c0e24f6ef650cb38f9fee935f974fffd7392",
+      "size": 1912,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/config/zeta-common.toml"
+    },
+    {
+      "relative_path": "shaderpacks/BSL_v10.1.3.zip",
+      "file_name": "BSL_v10.1.3.zip",
+      "sha256": "185774628b5259c36255183fc1adeb0f64f89235f7ea2c826fa327d1112687a8",
+      "size": 1127026,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/shaderpacks/BSL_v10.1.3.zip"
+    },
+    {
+      "relative_path": "shaderpacks/ComplementaryReimagined_r5.8.1.zip",
+      "file_name": "ComplementaryReimagined_r5.8.1.zip",
+      "sha256": "3f1cd389e717b2e62f58edff222059b9c60de71b14bb49b517eb58318ce35b15",
+      "size": 546925,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/shaderpacks/ComplementaryReimagined_r5.8.1.zip"
+    },
+    {
+      "relative_path": "shaderpacks/ComplementaryUnbound_r5.8.1.zip",
+      "file_name": "ComplementaryUnbound_r5.8.1.zip",
+      "sha256": "bb89b1fc54687d4147a837fb2e3c3f7261a13bee51819761e9b6a91cb7915965",
+      "size": 546928,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/shaderpacks/ComplementaryUnbound_r5.8.1.zip"
+    },
+    {
+      "relative_path": "shaderpacks/photon_v1.3b.zip",
+      "file_name": "photon_v1.3b.zip",
+      "sha256": "120897768eaa8cb1f14a3e98f88dff009ae3204ee3b96904a4fe8586edfc1ead",
+      "size": 3800987,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/shaderpacks/photon_v1.3b.zip"
+    },
+    {
+      "relative_path": "resourcepacks/Quark Programmer Art.zip",
+      "file_name": "Quark Programmer Art.zip",
+      "sha256": "41cb720cf256a12ea247b2f38068b363aa5b1675470c4b5aa66850701a78bc4d",
+      "size": 266434,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/resourcepacks/Quark Programmer Art.zip"
+    },
+    {
+      "relative_path": "emi.json",
+      "file_name": "emi.json",
+      "sha256": "abc9596b05fd110eb4331fdb0f10e33d153c4e9e071e9440f638479e98ac526d",
+      "size": 1476,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/emi.json"
+    },
+    {
+      "relative_path": "patchouli_data.json",
+      "file_name": "patchouli_data.json",
+      "sha256": "0d6f8bff5d59d58e2ddda36b742394251afe308cb8cf96fac6c6c06144e28a15",
+      "size": 70,
+      "source_type": "direct",
+      "download_url": "https://zernel09.github.io/survync/files/patchouli_data.json"
+    }
+  ],
+  "preserve_paths": [
+    "saves/",
+    "screenshots/",
+    "logs/",
+    "crash-reports/",
+    "options.txt",
+    "optionsof.txt",
+    "servers.dat"
+  ]
+}

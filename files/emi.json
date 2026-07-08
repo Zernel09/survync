@@ -1,0 +1,43 @@
+{
+  "favorites": [],
+  "lookup_history": [
+    "item:regions_unexplored:redstone_bulb",
+    "item:regions_unexplored:raw_redstone_block",
+    "item:legendary_monsters:anchor_handle{Damage:0}",
+    "item:legendary_monsters:ancient_spike",
+    "item:sophisticatedbackpacks:backpack",
+    "#item:forge:chests/wooden",
+    "item:sophisticatedbackpacks:backpack{borderColor:16383998,clothColor:16383998,inventorySlots:27,upgradeSlots:1}",
+    "item:the_harvest:harvest",
+    "item:iceandfire:hippocampus_slapper{Damage:147}",
+    "item:iceandfire:shiny_scales",
+    "item:iceandfire:dragonbone_arrow",
+    "item:iceandfire:hippocampus_fin",
+    "item:regions_unexplored:stripped_joshua_wood"
+  ],
+  "craft_history": [
+    "minecraft:torch",
+    "minecraft:dark_oak_planks",
+    "quark:building/crafting/furnaces/cobblestone_furnace",
+    "minecraft:crafting_table",
+    "sophisticatedbackpacks:backpack",
+    "quark:building/crafting/chests/oak_chest",
+    "minecraft:oak_planks",
+    "minecraft:shield",
+    "minecraft:acacia_planks",
+    "regions_unexplored:maple_planks",
+    "quark:tweaks/crafting/utility/tools/stone_axe",
+    "minecraft:stick",
+    "quark:tweaks/crafting/utility/tools/stone_sword",
+    "quark:tweaks/crafting/utility/tools/stone_shovel",
+    "quark:tweaks/crafting/utility/tools/stone_pickaxe",
+    "minecraft:wooden_pickaxe"
+  ],
+  "recipe_defaults": {
+    "added": [],
+    "tags": {},
+    "resolutions": {},
+    "disabled": []
+  },
+  "hidden_stacks": []
+}
